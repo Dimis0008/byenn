@@ -313,21 +313,21 @@ def menu(my_name,my_id):
 		dump_massal()
 	elif _____brayennn___xd____ in ['3','03']:
 		result()
-	elif bray in('4','04'):
+	elif _____brayennn___xd____ in('4','04'):
 		crack_nama()
-	elif bray in('5','05'):
+	elif _____brayennn___xd____ in('5','05'):
 		pengikut()
-	elif bray in('6','06'):
+	elif _____brayennn___xd____ in('6','06'):
 		crack_file()
-	elif bray in('7','07'):
+	elif _____brayennn___xd____ in('7','07'):
 		crack_email()
-	elif bray in('8','08'):
+	elif _____brayennn___xd____ in('8','08'):
 		file_cp()
-	elif bray in('9','09'):
+	elif _____brayennn___xd____ in('9','09'):
 		spam_sms()
-	elif bray in('10','10'):
+	elif _____brayennn___xd____ in('10','10'):
 		spam_wa()
-	elif bray in('11','11'):
+	elif _____brayennn___xd____ in('11','11'):
 		cetak(panel(f"Apapun Bug Pada Script Tolong Laporkan Kepada Saya Agar Bisa Mengembangkan Sc Ini Semakin Dikit Bugnya Semakin Baik Sc Ini , Anda Akan Di Arahkan Ke WhatsApp",width=90,title=f"[bold green]Report Bug",padding=(0,3),style=f"bold white"))
 		os.system("xdg-open https://wa.me/+6289622155832?text=Selamat+Pagi+Bang+Saya+Mau+Melaporkan+Bug+Pada+Sc+Mu+Bang")
 		time.sleep(3)
@@ -1887,4 +1887,4 @@ if __name__=='__main__':
 	except:pass
 	try:os.system('clear')
 	except:pass
-	login() 
+	login()

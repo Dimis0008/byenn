@@ -186,10 +186,10 @@ def back():
 #------------------[ LOGO-LAKNAT ]-----------------#
 def banner():
 	cetak(panel(f"""
-\x1b[1;97m  _________   _____ ____________________ Author:Bintang
-\x1b[1;97m /   _____/  /     \\______   \_   _____/Recode:XyzonXD
-\x1b[1;97m \_____  \  /  \ /  \|    |  _/|    __)WhatsApp:+6288299xxxx
-\x1b[1;97m /        \/    Y    \    |   \|     \ Facebook:RamzGzz!!
+\x1b[1;97m  _________   _____ ____________________ 
+\x1b[1;97m /   _____/  /     \\______   \_   _____/
+\x1b[1;97m \_____  \  /  \ /  \|    |  _/|    __)
+\x1b[1;97m /        \/    Y    \    |   \|     \ 
 \x1b[1;97m/_______  /\____|__  /______  /\___  / SMBF:Simple Multi Brute Facebook
              """,width=90,title=f"LOGO",style=f"bold white"))
 #--------------------[ BAGIAN-MASUK ]--------------#

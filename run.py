@@ -306,6 +306,7 @@ def menu(my_name,my_id):
 	cetak(panel(f'[bold white] Thanks To Alvino Adijaya , Rozhak XD , DerrXr , Asepit-Gans And Others 😁 😁',width=90,style=f"bold white"))
 	cetak(panel(f'[bold white][[bold green]•[/][bold white]][/] [bold white]Username : [bold green]{my_name}[/]\n[bold white][[bold green]•[/][bold white]][/] [bold white]User Idz : [bold green]{my_id}[/]\n[bold white][[bold green]•[/][bold white]][/] [bold white]User Ip  : [bold green]{ip}[/][/] ',width=90,title=f"[bold green]Infomasi",style=f"bold white"))
 	cetak(panel(f'[bold white][[bold green]01[/][bold white]][/] [bold white]Crack Publick [[bold green] ON [bold white]][/]\n[bold white][[bold green]02[/][bold white]][/] [bold white]Crack Massal [[bold green] ON [bold white]][/]\n[bold white][[bold green]03[/][bold white]][/] [bold white]Cek Result [[bold green] ON [bold white]][/]\n[bold white][[bold green]00[/][bold white]][/] [bold red]Ganti Cookies [[bold green] ON [bold white]][/]',width=90,title=f"[bold green]List Menu",style=f"bold white"))
+	cetak(panel(f"[04] Cek Opsi Cp [[bold green] ON [bold white]]                  [05] Spam WhatsApp [[bold green] ON [bold white]]\n[06] Spam Sms [[bold green] ON [bold white]]                     [07] Report Bug [[bold green] ON [bold white]]",width=90,title=f"[bold green]Menu Bot",padding=(0,8),style=f"bold white"))
 	cetak(panel(f'[bold white]Ketik [bold green]"Lainnya"[bold white] Untuk Melihat Menu Tambahan | Ketik [bold green]"Bot"[bold white] Untuk Ke Menu Tambahan',width=90,title=f"[bold green]Informasi Crack",style=f"bold white"))
 	_____brayennn___xd____ = input(f' ╰─  Pilih Menu Crack : ')
 	if _____brayennn___xd____ in ['1','01']:
@@ -314,10 +315,19 @@ def menu(my_name,my_id):
 		dump_massal()
 	elif _____brayennn___xd____ in ['3','03']:
 		result()
+	if bray in('4','04'):
+		file_cp()
+	elif bray in('5','05'):
+		spam_sms()
+	elif bray in('6','06'):
+		spam_wa()
+	elif bray in('7','07'):
+		cetak(panel(f"Apapun Bug Pada Script Tolong Laporkan Kepada Saya Agar Bisa Mengembangkan Sc Ini Semakin Dikit Bugnya Semakin Baik Sc Ini , Anda Akan Di Arahkan Ke WhatsApp",width=90,title=f"[bold green]Report Bug",padding=(0,3),style=f"bold white"))
+		os.system("xdg-open https://wa.me/+6289622155832?text=Selamat+Pagi+Bang+Saya+Mau+Melaporkan+Bug+Pada+Sc+Mu+Bang")
+		time.sleep(3)
+		exit()
 	elif _____brayennn___xd____ in ['lainnya','Lainnya','LAINNYA']:
 		lainnya()
-	elif _____brayennn___xd____ in ['Bot','BOT','bot']:
-		bot()
 	elif _____brayennn___xd____ in ['0','00']:
 		os.system('rm -rf .token.txt')
 		os.system('rm -rf .cookie.txt')

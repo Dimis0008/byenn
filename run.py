@@ -51,7 +51,7 @@ from rich.table import Table
 from rich.columns import Columns
 from rich.progress import Progress,SpinnerColumn,BarColumn,TextColumn,TimeElapsedColumn
 console = Console()
-sys.stdout.write('\x1b]2; BMBF | BrayennnXD Multi Brute Facebook\x07')
+sys.stdout.write('\x1b]2;SMBF | SIMPLE MULTI BRUTE FACEBOOK\x07')
 #------------------[ USER-AGENT ]-------------------#
 pretty.install()
 CON=sol()
@@ -302,10 +302,10 @@ def menu(my_name,my_id):
 	os.system('clear')
 	banner()
 	ip = requests.get("https://api.ipify.org").text
-	cetak(panel(f'[bold white] Terima Kasih Kepada "XyzonXD" Telah MemRecode Script Ini, Simple Multi Brute Facebook',width=90,style=f"bold white"))
+	cetak(panel(f'[bold white] Terima Kasih Kepada [bold green]XyzonXD[bold white] Yang Telah Recode Script Ini, Simple Multi Brute Facebook',width=90,style=f"bold white"))
 	cetak(panel(f'[bold white][[bold green]•[/][bold white]][/] [bold white]Username : [bold green]{my_name}[/]\n[bold white][[bold green]•[/][bold white]][/] [bold white]User Idz : [bold green]{my_id}[/]\n[bold white][[bold green]•[/][bold white]][/] [bold white]User Ip  : [bold green]{ip}[/][/] ',width=90,title=f"[bold green]Infomasi",style=f"bold white"))
 	cetak(panel(f'[bold white][[bold green]01[/][bold white]][/] [bold white]Crack Publick OR Friends [[bold green] ON [bold white]][/]\n[bold white][[bold green]02[/][bold white]][/] [bold white]Crack Massal [[bold green] ON [bold white]][/]\n[bold white][[bold green]03[/][bold white]][/] [bold white]Crack Username [[bold green] ON [bold white]]\n[bold white][[bold green]04[/][bold white]][/] [bold white]Crack File [[bold green] ON [bold white]]\n[bold white][[bold green]05[/][bold white]][/] [bold white]Crack Followers [[bold green] ON [bold white]]\n[bold white][[bold green]06[/][bold white]][/] [bold white]Crack Email [[bold green] ON [bold white]]\n[bold white][[bold green]07[/][bold white]][/] [bold white]Cek Result [[bold green] ON [bold white]][/]\n[bold white][[bold green]08[/][bold white]][/] [bold white]Cek Opsi Chekpoint [[bold green] ON [bold white]]\n[bold white][[bold green]09[/][bold white]][/] [bold white]Spam WhatsApp [[bold green] ON [bold white]]\n[bold white][[bold green]10[/][bold white]][/] [bold white]Spam Sms [[bold green] ON [bold white]]\n[bold white][[bold green]11[/][bold white]][/] [bold white]Report Bug [[bold green] ON [bold white]]\n[bold white][[bold green]00[/][bold white]][/] [bold red]Ganti Cookies [[bold green] ON [bold white]][/]',width=90,title=f"[bold green]List Menu",style=f"bold white"))
-	cetak(panel(f'[bold white]Ketik [bold green]"News"[bold white] Untuk Melihat Menu Tambahan Yang Tersedia di Script',width=90,title=f"[bold green]Informasi Crack",style=f"bold white"))
+	cetak(panel(f'[bold Red]Warning[bold white] Gunakan Script Ini Dengan Baik Jangan Di Salah Gunakan',width=90,title=f"[bold green]Informasi Crack",style=f"bold white"))
 	_____brayennn___xd____ = input(f' ╰─  Pilih Menu Crack : ')
 	if _____brayennn___xd____ in ['1','01']:
 		brayen_dump()
@@ -345,25 +345,6 @@ def error():
 	print(f' ╰─  Maaf Fitur Ini Masih Di Perbaiki')
 	time.sleep(4)
 	back() 
-
-#----------------------[ MENU CRACK ]----------------------#
-def bot():
-	cetak(panel(f"[01] Cek Opsi Cp [[bold green] ON [bold white]]                  [03] Spam WhatsApp [[bold green] ON [bold white]]\n[02] Spam Sms [[bold green] ON [bold white]]                     [04] Report Bug [[bold green] ON [bold white]]",width=90,title=f"[bold green]Menu Bot",padding=(0,8),style=f"bold white"))
-	bray = input(f' ╰─  Pilih Menu Crack : ')
-	if bray in(''):
-		print(' ╰─  Pilih Yang Bener Asu ');back()
-	if bray in('1','01'):
-		file_cp()
-	elif bray in('2','02'):
-		spam_sms()
-	elif bray in('3','03'):
-		spam_wa()
-	elif bray in('4','04'):
-		cetak(panel(f"Apapun Bug Pada Script Tolong Laporkan Kepada Saya Agar Bisa Mengembangkan Sc Ini Semakin Dikit Bugnya Semakin Baik Sc Ini , Anda Akan Di Arahkan Ke WhatsApp",width=90,title=f"[bold green]Report Bug",padding=(0,3),style=f"bold white"))
-		os.system("xdg-open https://wa.me/+6289622155832?text=Selamat+Pagi+Bang+Saya+Mau+Melaporkan+Bug+Pada+Sc+Mu+Bang")
-		time.sleep(3)
-		exit()
-
 #------------------[ DEFF SPAM SMS ]-------------------#
 
 agent = random.choice(
@@ -896,21 +877,6 @@ class sxp_wa:
 		self.wa_otp_6(nomor)
 		cetak(panel(f" Sukses Spam WA Ke No : {K2}+62{nomor}",width=90,padding=(0,2),style=f"bold white"))
 	
-#----------------------[ MENU CRACK V2 ]----------------------#
-def lainnya():
-	cetak(panel(f"[01] Crack Username [[bold green] ON [bold white]]                  [03] Crack File [[bold green] ON [bold white]]\n[02] Crack Followers [[bold green] ON [bold white]]                 [04] Crack Email [[bold green] ON [bold white]]",width=90,title=f"[bold green]Menu Crack",padding=(0,8),style=f"bold white"))
-	bray = input(f' ╰─  Pilih Menu Crack : ')
-	if bray in(''):
-		print(' ╰─  Pilih Yang Bener Asu ');back()
-	if bray in('1','01'):
-		crack_nama()
-	elif bray in('2','02'):
-		pengikut()
-	elif bray in('3','03'):
-		crack_file()
-	elif bray in('4','04'):
-		crack_email()
-
 ###----------[ DUMP PENGIKUT ]---------- ###
 def pengikut():
 	try:

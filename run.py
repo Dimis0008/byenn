@@ -1536,7 +1536,7 @@ def reguler1(idf,pwv):
 			time.sleep(31)
 	loop+=1
 
-def mbasic(idf,pwv):
+def reguler2(idf,pwv):
 	global loop,ok,cp
 	bo = random.choice([m,k,h,b,u,x])
 	ua = random.choice(ugen)

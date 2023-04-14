@@ -186,11 +186,11 @@ def back():
 #------------------[ LOGO-LAKNAT ]-----------------#
 def banner():
 	cetak(panel(f"""
-   \x1b[1;97m  _________   _____ ____________________Simple                                                                                    
-   \x1b[1;97m /   _____/  /     \\______   \_   _____/Multi                                                              
-   \x1b[1;97m \_____  \  /  \ /  \|    |  _/|    __)Brute
-   \x1b[1;97m /        \/    Y    \    |   \|     \                                                                                                    
-   \x1b[1;97m/_______  /\____|__  /______  /\___  /Facebook                                                                                           SMBF:Simple Multi Brute Facebook
+   \x1b[1;97m  _________   _____ ____________________                                                                                     
+   \x1b[1;97m /   _____/  /     \\______   \_   _____/Author:XyzonXD                                                              
+   \x1b[1;97m \_____  \  /  \ /  \|    |  _/|    __)Now:CakCulay  
+   \x1b[1;97m /        \/    Y    \    |   \|     \ youtube:YakinDek                                                                                                   
+   \x1b[1;97m/_______  /\____|__  /______  /\___  /LampungTimur                                                                                  SMBF:Simple Multi Brute Facebook
              """,width=90,title=f"LOGO",style=f"bold white"))
 #--------------------[ BAGIAN-MASUK ]--------------#
 def login123():

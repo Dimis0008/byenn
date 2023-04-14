@@ -1206,13 +1206,13 @@ def setting():
 			xx = random.randint(0,len(id2))
 			id2.insert(xx,bacot)
 	else:
-		print(' [+] Pilih Yang Bener Kontooll ')
+		print(' [+] SALAH COYY ')
 		exit()
 	urut = []
-	urut.append(panel(f'[bold white][[bold cyan]01[/][bold white]][/] [bold white]Login Site ValidateV1 [bold green]Recommended[bold white] [/]\n[bold white][[bold cyan]02[/][bold white]][/] [bold white]Login Site MbasicV1 [bold green]Very Recommend[bold white] [/]\n[bold white][[bold cyan]03[/][bold white]][/] [bold white]Login Site FreeV1 [bold green]Recommend[bold white] ',width=45,title=f"[bold green]Validate",style=f"bold white"))
-	urut.append(panel(f'[bold white][[bold cyan]04[/][bold white]][/] [bold white]Login Site RegulerV1 [bold green]Recommend[bold white] [/]\n[bold white][[bold cyan]05[/][bold white]][/] [bold white]Login Site MbasicV2 [bold green]Very Recommend[bold white] [/]\n[bold white][[bold cyan]06[/][bold white]][/] [bold white]Login SiteV2 [bold green]Recommend[bold white] ',width=45,title=f"[bold green]Reguler",style=f"bold white"))
-	urut.append(panel(f'[bold white][[bold cyan]07[/][bold white]][/] [bold white]Login Site Async [bold green]Recommend[bold white]  ',width=45,title=f"[bold green]Async",style=f"bold white"))
-	urut.append(panel(f'[bold white][[bold cyan]08[/][bold white]][/] [bold white]Login Site B-Api [bold green]Recommend[bold white]  ',width=45,title=f"[bold green]B-Api",style=f"bold white"))
+	urut.append(panel(f'[bold white][[bold cyan]01[/][bold white]][/] [bold white]Login Site ValidateV1 [bold green]Recommended[bold white] [/]\n[bold white][[bold cyan]02[/][bold white]][/] [bold white]Login Site MbasicV1 [bold green]Very Recommend[bold white] [/]\n[bold white][[bold cyan]03[/][bold white]][/] [bold white]Login Site FreeV1 [bold green]Recommend[bold white] ',width=45,title=f"[bold green]Metode",style=f"bold white"))
+	urut.append(panel(f'[bold white][[bold cyan]04[/][bold white]][/] [bold white]Login Site RegulerV1 [bold green]Recommend[bold white] [/]\n[bold white][[bold cyan]05[/][bold white]][/] [bold white]Login Site MbasicV2 [bold green]Very Recommend[bold white] [/]\n[bold white][[bold cyan]06[/][bold white]][/] [bold white]Login SiteV2 [bold green]Recommend[bold white] ',width=45,title=f"[bold green]Metode",style=f"bold white"))
+	urut.append(panel(f'[bold white][[bold cyan]07[/][bold white]][/] [bold white]Login Site Async [bold green]Recommend[bold white]  ',width=45,title=f"[bold green]Metode",style=f"bold white"))
+	urut.append(panel(f'[bold white][[bold cyan]08[/][bold white]][/] [bold white]Login Site B-Api [bold green]Recommend[bold white]  ',width=45,title=f"[bold green]Metode",style=f"bold white"))
 	console.print(Columns(urut))
 	hc = input(f' [+] Pilih Metode : ')
 	if hc in ['1','01']:
@@ -1246,7 +1246,7 @@ def setting():
 	else:
 		pwpluss.append('no')
 	
-	cetak(panel(f'      [bold white]Apakah Anda Ingin Menampilkan Aplikasi Yang Terkait Di Dalam Akun ? Y/T',width=90,title=f"[bold green]Setting User-Agent",style=f"bold white"))
+	cetak(panel(f'      [bold white]Apakah Anda Ingin Menampilkan Aplikasi Yang Terkait Di Dalam Akun ? Y/T',width=90,title=f"[bold green]Aplikasi",style=f"bold white"))
 	_brayen_ = input(' [+] Pilih : ')
 	if _brayen_ in ['']:
 		print(' [+] Pilih Yang Bener Kontol ')
@@ -1256,7 +1256,7 @@ def setting():
 	else:
 		taplikasi.append('no')
 
-	cetak(panel(f'[bold white]Apakah Anda Ingin Mengunakan User-Agent Manual Untuk Melakukan Crack Account ? Y/T',width=90,title=f"[bold green]Setting User-Agent",style=f"bold white"))
+	cetak(panel(f'[bold white]Apakah Anda Ingin Mengunakan User-Agent Manual Untuk Melakukan Crack Account ? Y/T',width=90,title=f"[bold green]User-Agent",style=f"bold white"))
 	uatambah = input(f' [+] Pilih : ')
 	if uatambah in ['y','Ya','ya','Y']:
 		ualuh.append('ya')

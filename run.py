@@ -191,7 +191,6 @@ def banner():
 \x1b[1;97m \_____  \  /  \ /  \|    |  _/|    __)  
 \x1b[1;97m /        \/    Y    \    |   \|     \   
 \x1b[1;97m/_______  /\____|__  /______  /\___  /   
-             """,width=90,title=f"Banner",style=f"bold white"))
 #--------------------[ BAGIAN-MASUK ]--------------#
 def login123():
 	os.system('clear')

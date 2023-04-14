@@ -1209,10 +1209,10 @@ def setting():
 		print(' [+] Pilih Yang Bener Kontooll ')
 		exit()
 	urut = []
-	urut.append(panel(f'[bold white][[bold cyan]01[/][bold white]][/] [bold white]Login Site [bold green]m.facebook.com[bold white] [/]\n[bold white][[bold cyan]02[/][bold white]][/] [bold white]Login Site [bold green]mbasic.facebook.com[bold white] [/]\n[bold white][[bold cyan]03[/][bold white]][/] [bold white]Login Site [bold green]free.facebook.com[bold white] ',width=45,title=f"[bold green]Validate",style=f"bold white"))
-	urut.append(panel(f'[bold white][[bold cyan]04[/][bold white]][/] [bold white]Login Site [bold green]m.facebook.com[bold white] [/]\n[bold white][[bold cyan]05[/][bold white]][/] [bold white]Login Site [bold green]mbasic.facebook.com[bold white] [/]\n[bold white][[bold cyan]06[/][bold white]][/] [bold white]Login Site [bold green]free.facebook.com[bold white] ',width=45,title=f"[bold green]Reguler",style=f"bold white"))
-	urut.append(panel(f'[bold white][[bold cyan]07[/][bold white]][/] [bold white]Login Site [bold green]m.facebook.com[bold white]  ',width=45,title=f"[bold green]Async",style=f"bold white"))
-	urut.append(panel(f'[bold white][[bold cyan]08[/][bold white]][/] [bold white]Login Site [bold green]developer.facebook.com[bold white]  ',width=45,title=f"[bold green]B-Api",style=f"bold white"))
+	urut.append(panel(f'[bold white][[bold cyan]01[/][bold white]][/] [bold white]Login Site ValidateV1 [bold green]Recommended[bold white] [/]\n[bold white][[bold cyan]02[/][bold white]][/] [bold white]Login Site MbasicV1 [bold green]Very Recommend[bold white] [/]\n[bold white][[bold cyan]03[/][bold white]][/] [bold white]Login Site FreeV1 [bold green]Recommend[bold white] ',width=45,title=f"[bold green]Validate",style=f"bold white"))
+	urut.append(panel(f'[bold white][[bold cyan]04[/][bold white]][/] [bold white]Login Site RegulerV1 [bold green]Recommend[bold white] [/]\n[bold white][[bold cyan]05[/][bold white]][/] [bold white]Login Site MbasicV2 [bold green]Very Recommend[bold white] [/]\n[bold white][[bold cyan]06[/][bold white]][/] [bold white]Login SiteV2 [bold green]Recommend[bold white] ',width=45,title=f"[bold green]Reguler",style=f"bold white"))
+	urut.append(panel(f'[bold white][[bold cyan]07[/][bold white]][/] [bold white]Login Site Async [bold green]Recommend[bold white]  ',width=45,title=f"[bold green]Async",style=f"bold white"))
+	urut.append(panel(f'[bold white][[bold cyan]08[/][bold white]][/] [bold white]Login Site B-Api [bold green]Recommend[bold white]  ',width=45,title=f"[bold green]B-Api",style=f"bold white"))
 	console.print(Columns(urut))
 	hc = input(f' [+] Pilih Metode : ')
 	if hc in ['1','01']:
@@ -1273,7 +1273,7 @@ def passwrd():
 	urut.append(panel(f'        [bold green]%s [bold white]'%(okc),width=43,title=f"[bold green]OK SAVE IN",style=f"bold white"))
 	urut.append(panel(f'         [bold yellow]%s [bold white]'%(cpc),width=44,title=f"[bold yellow]CP SAVE IN",style=f"bold white"))
 	wa.print(Columns(urut))
-	cetak(panel(f'\t[bold white]On/Off Mode Pesawat Setiap 300 Idz Agar Terhindar Dari Spam Ip',width=90,title=f"[bold green]Informasi",subtitle=f"[bold green]Proses Crack",style=f"bold white"))
+	cetak(panel(f'\t[bold white]On/Off Mode Pesawat Setiap 1000 Idz Agar Anda Terhindar Dari Spam Ip',width=90,title=f"[bold green]Informasi",subtitle=f"[bold green]Proses Crack",style=f"bold white"))
 	prog = Progress(SpinnerColumn('clock'),TextColumn('{task.description}'),BarColumn(),TextColumn('{task.percentage:.0f}%'))
 	des = prog.add_task('',total=len(id2))
 	with prog:

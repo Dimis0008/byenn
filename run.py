@@ -1275,7 +1275,7 @@ def passwrd():
 	global prog,des
 	print('')
 	urut = []
-	urut.append(panel(f'         [bold white]Hasil Crack [bold green]OK[bold white] Tersimpan Ke : [bold green]%s \n[bold white]Hasil Crack [bold yellow]CP[bold white]Tersimpan Ke : [bold yellow]%s [bold white]'%(cpc)%(okc),width=90,title=f"[bold green]",style=f"bold white"))
+	urut.append(panel(f'        [bold green]%s [bold white]'%(okc),width=43,title=f"[bold green]OK SAVE IN",style=f"bold white"))
 	urut.append(panel(f'         [bold yellow]%s [bold white]'%(cpc),width=44,title=f"[bold yellow]CP SAVE IN",style=f"bold white"))
 	wa.print(Columns(urut))
 	cetak(panel(f'[bold white]On/Off Mode Pesawat Setiap 1000 Idz Agar Anda Terhindar Dari Spam Ip',width=90,title=f"[bold green]Informasi",subtitle=f"[bold green]Proses Crack",style=f"bold white"))

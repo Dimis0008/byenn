@@ -195,19 +195,19 @@ def banner():
 def login123():
 	os.system('clear')
 	banner()
-	cetak(panel(f"[01] Login Menggunakan Cookie [[bold green] ON [bold white]]\n[02] Doa Sebelum Crack [[bold green] ON [bold white]]\n[03] Cara Mengambil Cookies Facebook [[bold green] ON [bold white]]\n[04] Cek Hasil Crack [[bold green] ON [bold white]]",width=90,title=f"[bold green]Menu Bot",padding=(0,2),style=f"bold white"))
+	cetak(panel(f"[01] Login Menggunakan Cookies [[bold green] ON [bold white]]\n[02] Doa Sebelum Crack [[bold green] ON [bold white]]\n[03] Cara Mengambil Cookies Facebook [[bold green] ON [bold white]]\n[04] Cek Hasil Crack [[bold green] ON [bold white]]",width=90,title=f"[bold green]Menu Login",padding=(0,2),style=f"bold white"))
 	cetak(panel(f'Anda Wajib Login Menggunakan Cookies Untuk Unlock Semua Fitur Spesial Yang Ada Di Script Ini [bold green]By XyzonXD',width=90,title=f"[bold green]Informasi",style=f"bold white"))
-	bryn = input(f' [+] Pilih Menu : ')
-	if bryn in ['1','01']:
+	vevek = input(f' [+] Pilih Menu : ')
+	if vevek in ['1','01']:
 		login_lagi334()
-	elif bryn in ['2','02']:
+	elif vevek in ['2','02']:
 		doa_halal()
-	elif bryn in ['3','03']:
+	elif vevek in ['3','03']:
 		cetak(panel(f"Anda Akan Di Arahkan Ke Youtube Dan Liat Lah Dengan Mata Kepala Anda Sendiri Bagaimana Mengambil Cookies Yang Benar Dan Ikut Tutorial Nya",width=90,title=f"[bold green]Cookies Facebook",padding=(0,3),style=f"bold white"))
 		os.system("xdg-open https://youtu.be/iPs-ShFVOJA")
 		time.sleep(3)
 		exit()
-	elif bryn in ['4','04']:
+	elif vevek in ['4','04']:
 		result()
 	else:
 		print(' [+] Pilih Yang Bener Asu ')
@@ -309,33 +309,33 @@ def menu(my_name,my_id):
 	cetak(panel(f'[bold white][[bold green]•[/][bold white]][/] [bold white]Username : [bold green]{my_name}[/]\n[bold white][[bold green]•[/][bold white]][/] [bold white]User Idz : [bold green]{my_id}[/]\n[bold white][[bold green]•[/][bold white]][/] [bold white]User Ip  : [bold green]{ip}[/][/][bold white]\n[[bold green]•[/][bold white]][/] [bold white]Status   : [bold green]Premium ',width=90,title=f"[bold green]Infomasi",style=f"bold white"))
 	cetak(panel(f'[bold white][[bold green]01[/][bold white]][/] [bold white]Crack Publick OR Friends [[bold green] ON [bold white]][/]\n[bold white][[bold green]02[/][bold white]][/] [bold white]Crack Massal [[bold green] ON [bold white]][/]\n[bold white][[bold green]03[/][bold white]][/] [bold white]Crack Username [[bold green] ON [bold white]]\n[bold white][[bold green]04[/][bold white]][/] [bold white]Crack File [[bold green] ON [bold white]]\n[bold white][[bold green]05[/][bold white]][/] [bold white]Crack Followers [[bold green] ON [bold white]]\n[bold white][[bold green]06[/][bold white]][/] [bold white]Crack Email [[bold green] ON [bold white]]\n[bold white][[bold green]07[/][bold white]][/] [bold white]Cek Hasil Crack [[bold green] ON [bold white]][/]\n[bold white][[bold green]08[/][bold white]][/] [bold white]Cek Opsi Chekpoint [[bold green] ON [bold white]]\n[bold white][[bold green]09[/][bold white]][/] [bold white]Spam WhatsApp [[bold green] ON [bold white]]\n[bold white][[bold green]10[/][bold white]][/] [bold white]Spam Sms [[bold green] ON [bold white]]\n[bold white][[bold green]11[/][bold white]][/] [bold white]Report Bug [[bold green] ON [bold white]]\n[bold white][[bold red]00[/][bold white]][/] [bold red]Ganti Cookies [[bold green] ON [bold white]][/]',width=90,title=f"[bold green]List Menu",style=f"bold white"))
 	cetak(panel(f'[bold Red]Warning[bold white] Gunakan Script Ini Dengan Baik Jangan Di Salah Gunakan [bold green]By XyzonXD',width=90,title=f"[bold green]Informasi Crack",style=f"bold white"))
-	_____brayennn___xd____ = input(f' [+] Pilih Menu Crack : ')
-	if _____brayennn___xd____ in ['1','01']:
+	_____xyzon___xd____ = input(f' [+] Pilih Menu Crack : ')
+	if _____xyzon___xd____ in ['1','01']:
 		brayen_dump()
-	elif _____brayennn___xd____ in ['2','02']:
+	elif _____xyzon___xd____ in ['2','02']:
 		dump_massal()
-	elif _____brayennn___xd____ in ['3','03']:
+	elif _____xyzon___xd____ in ['3','03']:
 		crack_nama()
-	elif _____brayennn___xd____ in('4','04'):
+	elif _____xyzon___xd____ in('4','04'):
 		crack_file()
-	elif _____brayennn___xd____ in('5','05'):
+	elif _____xyzon___xd____ in('5','05'):
 		pengikut()
-	elif _____brayennn___xd____ in('6','06'):
+	elif _____xyzon___xd____ in('6','06'):
 		crack_email()
-	elif _____brayennn___xd____ in('7','07'):
+	elif _____xyzon___xd____ in('7','07'):
 		result()
-	elif _____brayennn___xd____ in('8','08'):
+	elif _____xyzon___xd____ in('8','08'):
 		file_cp()
-	elif _____brayennn___xd____ in('9','09'):
+	elif _____xyzon___xd____ in('9','09'):
 		spam_wa()
-	elif _____brayennn___xd____ in('10','10'):
+	elif _____xyzon___xd____ in('10','10'):
 		spam_sms()
-	elif _____brayennn___xd____ in('11','11'):
+	elif _____xyzon___xd____ in('11','11'):
 		cetak(panel(f"Apapun Bug Pada Script Tolong Laporkan Kepada Saya Agar Bisa Mengembangkan Sc Ini Semakin Dikit Bugnya Semakin Baik Sc Ini , Anda Akan Di Arahkan Ke WhatsApp",width=90,title=f"[bold green]Report Bug",padding=(0,3),style=f"bold white"))
 		os.system("xdg-open https://wa.me/+6282183929059?text=Asalammualikum+Bang+Saya+Mau+Melaporkan+Bug+Pada+Sc+Mu+Bang")
 		time.sleep(3)
 		exit()
-	elif _____brayennn___xd____ in('0','00'):
+	elif _____xyzon___xd____ in('0','00'):
 		os.system('rm -rf .token.txt')
 		os.system('rm -rf .cookie.txt')
 		print(f' [+] {m}Sukses Logout+Hapus Cookies{x}')

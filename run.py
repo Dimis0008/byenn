@@ -200,7 +200,7 @@ def banner():
 def login123():
 	os.system('clear')
 	banner()
-	cetak(panel(f"[01] Login Menggunakan Cookies [[bold green] ON [bold white]]\n[02] Doa Sebelum Crack [[bold green] ON [bold white]]\n[03] Cara Mengambil Cookies Facebook [[bold green] ON [bold white]]\n[04] Cek Hasil Crack [[bold green] ON [bold white]]\n[00] [bold red]Keluar [[bold green] ON [bold white]]\n",width=90,title=f"[bold green]Menu Login",padding=(0,2),style=f"bold white"))
+	cetak(panel(f"[01] Login Menggunakan Cookies [[bold green] ON [bold white]]\n[02] Doa Sebelum Crack [[bold green] ON [bold white]]\n[03] Cara Mengambil Cookies Facebook [[bold green] ON [bold white]]\n[04] Cek Hasil Crack [[bold green] ON [bold white]]\n",width=90,title=f"[bold green]Menu Login",padding=(0,2),style=f"bold white"))
 	cetak(panel(f'Anda Wajib Login Menggunakan Cookies Untuk Unlock Semua Fitur Spesial Yang Ada Di Script Ini [bold green]By XyzonXD',width=90,title=f"[bold green]Informasi",style=f"bold white"))
 	vevek = input(f' [+] Pilih Menu : ')
 	if vevek in ['1','01']:
@@ -214,8 +214,6 @@ def login123():
 		exit()
 	elif vevek in ['4','04']:
 		result()
-	elif vevek in ['0','00']:
-		keluar()
 	else:
 		print(' [+] Pilih Yang Bener Asu ')
 		time.sleep(5)

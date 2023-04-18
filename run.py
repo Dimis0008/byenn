@@ -46,70 +46,7 @@ try:
 except ImportError:
 	cetak(nel('\t• Sedang Menginstall Modul Requests •'))
 	os.system('pip install requests && pip install mechanize ')
-f"""{Hj}
- • Skrip info :
- 	
- - penulis : BintangTzy
- - instagram : not instagram
- - facebook : https://www.facebook.com/profile.php?id=100077866622074
- - halaman penggemar: facebook.com/100022086172556
- - whatsapp : +62 821-8392-9059
- - github: github.com/XyzonXD
- - nama skrip: byenn
- - versi: 3.7
- - update pada : 18 April 2023
- 
-+ ---------------------------------------- +
-            CRACK METODE TENTANG
-+ ---------------------------------------- +
- - b-api: Metode ini prosesnya sangat cepat
-          tapi rawan spam jadi wajar hasilnya
-          tidak memuaskan dan jarang dapat hasil
-
-- mbasic: Metode ini prosesnya lumayan lambat
-          tapi jika menggunakan metode ini hasilnya
-          yg di dapat memuaskan dan jarang kena
-          spam
-
-- mobile: Metode ini prosesnya sangat lambat
-          tapi jika menggunakan metode ini hasilnya
-          yg di dapat sangat memuaskan dan jarang
-          kena spam
-          
-- free: Metode ini prosesnya sangat lambat
-          tapi jika menggunakan metode ini hasilnya
-          yg di dapat memuaskan dan jarang kena
-          spam
-          
-- Asnyc: Metode ini prosesnya sangat lambat
-          tapi jika menggunakan metode ini hasilnya
-          yg di dapat sangat memuaskan dan jarang
-          kena spam
-
-- Reguler: Metode ini prosesnya sangat lambat
-          tapi jika menggunakan metode ini hasilnya
-          yg di dapat sangat memuaskan dan jarang
-          kena spam 
-+ ---------------------------------------- +
-             TIDAK SUPORT KARTU
-+ ---------------------------------------- +
-- Kartu Smarftren tidak suport untuk crack
-  jadi wajar jika tidak dapat hasil atau lama
-  pada saat crack, Karena rawan spam.
-  Rekomendasi kartu Telkomsel, Indosat.
- 
-+ ---------------------------------------- +
-                MODE PESAWAT
-+ ---------------------------------------- +
-- Jika gunakan mode pesawat itu guna nya
-  akan melewati beberapa ID dan merubah IP
-  kita pada saat proses crack. Cukup gunakan
-  mode pesawat 1-2 detik saja. Jika gunakan
-  mode pesawat terlalu lama maka akan semakin banyak
-  banyak ID yg terlewatkan. Maka dari itu cukup
-  gunakan 1-2 detik saja.
-  
-{Mr}!{Mt} Jika bug/error pada script harap laporkan saya""")
+	
 ###----------[ IMPORT MODULE RICH ]---------- ###
 from rich.panel import Panel
 from rich.tree import Tree

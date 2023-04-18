@@ -214,7 +214,7 @@ def login123():
 		exit()
 	elif vevek in ['4','04']:
 		result()
-	elif vevek in ['3','03']:
+	elif vevek in ['0','00']:
 		keluar()
 	else:
 		print(' [+] Pilih Yang Bener Asu ')

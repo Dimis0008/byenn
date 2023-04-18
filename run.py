@@ -1236,7 +1236,7 @@ def setting():
 	pwplus=input(f' [+] {P}Pilih sandi : ')
 	if pwplus in ['03','3']:
 		pwpluss.append('ya')
-		pwku=input(f' [+] {P}Sandi : ')
+		pwku=input(f' [+] Sandi : ')
 		pwkuh=pwku.split(',')
 		for xpw in pwkuh:
 			pwnya.append(xpw)
@@ -1247,7 +1247,7 @@ def setting():
 	uatambah = input(f' [+] Pilih : ')
 	if uatambah in ['y','Ya','ya','Y']:
 		ualuh.append('ya')
-		bzer = input(f' [+] Masukan User-Agent : ')
+		bzer = input(f' [+] {P}Masukan User-Agent : ')
 		ualu.append(bzer)
 	else:
 		ualuh.append('tidak')
@@ -1257,7 +1257,8 @@ def passwrd():
 	global prog,des
 	print('')
 	urut = []
-	urut.append(panel(f'        [bold green]%s [bold white]'%(okc),width=30,title=f"[bold green]OK SAVE IN",style=f"bold white"))urut.append(panel(f'        [bold yellow]%s [bold white]'%(cpc)"))
+	print ('\n%s%s%s akun %s[OK] %stersimpan ke file %s> %sOK/%s.txt'%(U,til,O,H,O,M,H,waktu) );jeda(0,2)
+	print ('%s%s%s akun %s[%sCP%s]%s tersimpan ke file %s> %sCP/%s.txt'%(U,til,O,M,K,M,O, M,K,waktu));jeda(0.2)
 	wa.print(Columns(urut))
 	cetak(panel(f'[bold white]On/Off Mode Pesawat Setiap 1000 Idz Agar Terhindar Dari Spam Ip',width=90,title=f"[bold green]Informasi",subtitle=f"[bold green]Proses Crack",style=f"bold white"))
 	prog = Progress(SpinnerColumn('clock'),TextColumn('{task.description}'),BarColumn(),TextColumn('{task.percentage:.0f}%'))

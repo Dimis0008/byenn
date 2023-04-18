@@ -2043,8 +2043,3 @@ if __name__=='__main__':
 	except:pass
 	login()
 	
-'''''''
-Biar Apasih Lu ngerikode sc orang 
-kagak paedah bro mending Mabar epep 
-lebih berpaedah
-''''''

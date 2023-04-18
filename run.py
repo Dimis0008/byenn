@@ -109,8 +109,7 @@ f"""{Hj}
   banyak ID yg terlewatkan. Maka dari itu cukup
   gunakan 1-2 detik saja.
   
-{Mr}!{Mt} Jika bug/error pada script harap laporkan saya
-""")
+{Mr}!{Mt} Jika bug/error pada script harap laporkan saya""")
 ###----------[ IMPORT MODULE RICH ]---------- ###
 from rich.panel import Panel
 from rich.tree import Tree

@@ -1257,7 +1257,7 @@ def passwrd():
 	global prog,des
 	print('')
 	urut = []
-	print('{p}<---------------------------------------------------------------->')
+	print('<---------------------------------------------------------------->')
 	wa.print(Columns(urut))
 	cetak(panel(f'[bold white]On/Off Mode Pesawat Setiap 1000 Idz Agar Terhindar Dari Spam Ip',width=90,title=f"[bold green]Informasi",subtitle=f"[bold green]Proses Crack",style=f"bold white"))
 	prog = Progress(SpinnerColumn('clock'),TextColumn('{task.description}'),BarColumn(),TextColumn('{task.percentage:.0f}%'))
@@ -1305,7 +1305,7 @@ def passwrd():
 				else:
 					pool.submit(crackmbasic,idf,pwv)
 		print('')
-	print('{p}<---------------------------------------------------------------->')
+	print('<---------------------------------------------------------------->')
 	print(f'  {p}Crack Telah Selesai,Semoga Anda Bersyukur Dengan Hasil Nya')
 	print(f'  [{h}•{x}]{h} OK : {h}%s '%(ok))
 	print(f'{x}  [{h}•{x}]{k} CP : {k}%s{x} '%(cp))

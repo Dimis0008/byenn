@@ -1,3 +1,7 @@
+# pengkodean = python
+# coding oleh BintangTzy
+# Izin dlu lah bro kalau mau recode, gk ngotak njir_-
+# Note : jangan di ubah lagi! nanti error, script udah enak
 #-----------------[ IMPORT - PREMIUM ]-------------------
 import requests,bs4,json,os,sys,random,datetime,time,re
 import urllib3,rich,base64
@@ -42,6 +46,71 @@ try:
 except ImportError:
 	cetak(nel('\t• Sedang Menginstall Modul Requests •'))
 	os.system('pip install requests && pip install mechanize ')
+f"""{Hj}
+ • Skrip info :
+ 	
+ - penulis : BintangTzy
+ - instagram : not instagram
+ - facebook : https://www.facebook.com/profile.php?id=100077866622074
+ - halaman penggemar: facebook.com/100022086172556
+ - whatsapp : +62 821-8392-9059
+ - github: github.com/XyzonXD
+ - nama skrip: byenn
+ - versi: 3.7
+ - update pada : 18 April 2023
+ 
++ ---------------------------------------- +
+            CRACK METODE TENTANG
++ ---------------------------------------- +
+ - b-api: Metode ini prosesnya sangat cepat
+          tapi rawan spam jadi wajar hasilnya
+          tidak memuaskan dan jarang dapat hasil
+
+- mbasic: Metode ini prosesnya lumayan lambat
+          tapi jika menggunakan metode ini hasilnya
+          yg di dapat memuaskan dan jarang kena
+          spam
+
+- mobile: Metode ini prosesnya sangat lambat
+          tapi jika menggunakan metode ini hasilnya
+          yg di dapat sangat memuaskan dan jarang
+          kena spam
+          
+- free: Metode ini prosesnya sangat lambat
+          tapi jika menggunakan metode ini hasilnya
+          yg di dapat memuaskan dan jarang kena
+          spam
+          
+- Asnyc: Metode ini prosesnya sangat lambat
+          tapi jika menggunakan metode ini hasilnya
+          yg di dapat sangat memuaskan dan jarang
+          kena spam
+
+- Reguler: Metode ini prosesnya sangat lambat
+          tapi jika menggunakan metode ini hasilnya
+          yg di dapat sangat memuaskan dan jarang
+          kena spam 
++ ---------------------------------------- +
+             TIDAK SUPORT KARTU
++ ---------------------------------------- +
+- Kartu Smarftren tidak suport untuk crack
+  jadi wajar jika tidak dapat hasil atau lama
+  pada saat crack, Karena rawan spam.
+  Rekomendasi kartu Telkomsel, Indosat.
+ 
++ ---------------------------------------- +
+                MODE PESAWAT
++ ---------------------------------------- +
+- Jika gunakan mode pesawat itu guna nya
+  akan melewati beberapa ID dan merubah IP
+  kita pada saat proses crack. Cukup gunakan
+  mode pesawat 1-2 detik saja. Jika gunakan
+  mode pesawat terlalu lama maka akan semakin banyak
+  banyak ID yg terlewatkan. Maka dari itu cukup
+  gunakan 1-2 detik saja.
+  
+{Mr}!{Mt} Jika bug/error pada script harap laporkan saya
+""")
 ###----------[ IMPORT MODULE RICH ]---------- ###
 from rich.panel import Panel
 from rich.tree import Tree
@@ -195,7 +264,7 @@ def banner():
 def login123():
 	os.system('clear')
 	banner()
-	cetak(panel(f"[01] Login Menggunakan Cookies [[bold green] ON [bold white]]\n[02] Doa Sebelum Crack [[bold green] ON [bold white]]\n[03] Cara Mengambil Cookies Facebook [[bold green] ON [bold white]]\n[04] Cek Hasil Crack [[bold green] ON [bold white]]",width=90,title=f"[bold green]Menu Login",padding=(0,2),style=f"bold white"))
+	cetak(panel(f"[01] Login Menggunakan Cookies [[bold green] ON [bold white]]\n[02] Doa Sebelum Crack [[bold green] ON [bold white]]\n[03] Cara Mengambil Cookies Facebook [[bold green] ON [bold white]]\n[04] Cek Hasil Crack [[bold green] ON [bold white]]\n[00] [bold red]Keluar [[bold green] ON [bold white]]\n",width=90,title=f"[bold green]Menu Login",padding=(0,2),style=f"bold white"))
 	cetak(panel(f'Anda Wajib Login Menggunakan Cookies Untuk Unlock Semua Fitur Spesial Yang Ada Di Script Ini [bold green]By XyzonXD',width=90,title=f"[bold green]Informasi",style=f"bold white"))
 	vevek = input(f' [+] Pilih Menu : ')
 	if vevek in ['1','01']:
@@ -209,6 +278,8 @@ def login123():
 		exit()
 	elif vevek in ['4','04']:
 		result()
+	elif vevek in ['3','03']:
+		keluar()
 	else:
 		print(' [+] Pilih Yang Bener Asu ')
 		time.sleep(5)
@@ -1025,7 +1096,7 @@ def crack_file():
 		setting()
 #-----------------[ HASIL-CRACK ]-----------------#
 def result():
-	cetak(panel(f'[bold white][[bold green]01[/][bold white]][/] [bold white]Hasil OK[/]\n[bold white][[bold green]02[/][bold white]][/] [bold white]Hasil CP[/]\n[bold white][[bold green]03[/][bold white]][/] [bold red]Kembali[/]',width=90,title=f"[bold white]• [/][bold green]List Menu Cek[/][bold white] •[/]",style=f"bold white"))
+	cetak(panel(f'[bold white][[bold green]01[/][bold white]][/] [bold white]Hasil OK[/]\n[bold white][[bold green]02[/][bold white]][/] [bold white]Hasil CP[/]\n[bold white][[bold green]00[/][bold white]][/] [bold red]Kembali[/]',width=90,title=f"[bold white]• [/][bold green]List Menu Cek[/][bold white] •[/]",style=f"bold white"))
 	kz = input(f'[+]Pilih : ')
 	if kz in ['2','02']:
 		try:vin = os.listdir('CP')
@@ -1065,7 +1136,7 @@ def result():
 			nocp=0
 			for cpku in range(len(lin)):
 				cpkuni=lin[nocp].split('|')
-				cpkuh=f'# ID : {cpkuni[0]} PASSWORD : {cpkuni[1]}'
+				cpkuh=f'# +--> {cpkuni[0]} | {cpkuni[1]}'
 				sol().print(mark(cpkuh,style="yellow"))
 				nocp +=1
 			input('[ Klik Enter ]')
@@ -1108,7 +1179,7 @@ def result():
 			nocp=0
 			for cpku in range(len(lin)):
 				cpkuni=lin[nocp].split('|')
-				cpkuh=f'# ID : {cpkuni[0]} PASSWORD : {cpkuni[1]}'
+				cpkuh=f'# +--> {cpkuni[0]} | {cpkuni[1]}'
 				sol().print(mark(cpkuh,style="green"))
 				print(f'{hh}USER-AGENT : {x}{cpkuni[2]}')
 				nocp +=1
@@ -1150,7 +1221,7 @@ def dump_massal():
 	except IOError:
 		exit()
 	try:
-		cetak(panel('\t            [bold white]Ketik [bold green]Me[/] Jika Ingin Crack Pertemanan Sendiri',width=90,title=f"[bold green]Crack Massal",style=f"bold white"))
+		cetak(panel('            [bold white]Ketik [bold green]Me[/] Jika Ingin Crack Pertemanan Sendiri',width=90,title=f"[bold green]Crack Massal",style=f"bold white"))
 		jum = int(input(f' [+] Mau Berapa Idz Target {x} : '))
 	except ValueError:
 		print(' [+] Wrong input ')
@@ -2035,3 +2106,9 @@ if __name__=='__main__':
 	try:os.system('clear')
 	except:pass
 	login()
+	
+'''''''
+Biar Apasih Lu ngerikode sc orang 
+kagak paedah bro mending Mabar epep 
+lebih berpaedah
+''''''

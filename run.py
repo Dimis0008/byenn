@@ -1196,42 +1196,6 @@ def dump_massal():
 		print(f' [+] {k} Friendship Not Public {x}')
 		time.sleep(3)
 		back()
-#CEK HASIL IGEH
-def hasil_igehh():
-	mencetak('')
-	untuk saya di os.listdir('IG'):
-		print("%s•%s> %s%s"%(U,M,J,i));jeda(0.07)
-	mencoba:
-		c=input("\n%s•%s masukan berkas %s:%s "%(U,O,M,K))
-		jika c di['']:
-			exit("\n%s• isi yang benar kentod"%(M))
-		g=buka("IG/%s"%(c)).baca().splitlines()
-	kecuali FileNotFoundError:
-		exit("\n%s• file tidak tersedia"%(M))
-	xx=c.split("-")
-	xc=xx[0]
-	print(" %s# %s---------------------------------------- %s #"%(P,M,P));jeda(2)
-	print('%s%s%s Total akun %s: %s%s '%(U,til,O,M,H,len(g)))
-	print(" %s# %s---------------------------------------- %s #"%(P,M,P));jeda(2)
-	untuk s dalam g:
-		usr=s.split("|")[0]
-		pwd=s.split("|")[1]
-		fol=s.split("|")[2]
-		ful=s.split("|")[3]
-		jika xc=="CP":
-			print(f"""{J}╔══[ {K}Pos pemeriksaan                      
-{J}║══[ {K}Nama Pengguna {M}> {K}{usr}{C}
-{J}║══[ {K}Kata Sandi {M}> {K}{pwd}{C}
-{J}║══[ {K}Pengikut {M}> {K}{fol}{C}
-{J}╚══[ {K}Mengikuti {M}> {K}{ful}{C}
-			""")
-		kalau tidak:
-			print(f"""{J}╔══[ {H}Berhasil                      
-{J}║══[ {H}Nama Pengguna {M}> {H}{usr}{C}
-{J}║══[ {H}Kata Sandi {M}> {H}{pwd}{C}
-{J}║══[ {H}Pengikut {M}> {H}{fol}{C}
-{J}╚══[ {H}Mengikuti {M}> {H}{ful}{C}
-			""")
 
 #-------------------------------------------------#
 #---{ CRACK INSTAGRAM }---#

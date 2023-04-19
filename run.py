@@ -1212,7 +1212,6 @@ USN="Mozilla/5.0 (Linux; Android 10; SM-G973F Build/QP1A.190711.020; wv) AppleWe
 internal=[]
 eksternal=[]
 sukses=[]
-pos pemeriksaan=[]
 putaran=0
 mengikuti=[]
 s=permintaan.Sesi()

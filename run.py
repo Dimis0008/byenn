@@ -210,12 +210,8 @@ while loop == "true":
 			loop = "false"
 		else:
 			print("\x1b[1;91mPassword Salah")
-			time.sleep(0.05)
-			back()
 	else:
 		print("\x1b[1;91mUsername Salah")
-		time.sleep(0.05)
-		back()
 def lisensi():
 	os.system("clear")
 	masuk()

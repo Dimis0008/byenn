@@ -1,7 +1,7 @@
 # pengkodean = python
 # coding oleh BintangTzy
 # Izin dlu lah bro kalau mau recode, gk ngotak njir_-
-# Note : jangan di ubah lagi! nanti error, script udah enak
+# Note : jangan di ubah lagi! nanti error, script nya udah enak
 #-----------------[ IMPORT - PREMIUM ]-------------------
 import requests,bs4,json,os,sys,random,datetime,time,re
 import urllib3,rich,base64
@@ -196,11 +196,34 @@ def banner():
         [bold green]  |  _/   / _|| |\/| || || |_| | |\/| |
         [bold green]  |_| |_|_\___|_|  |_|___|\___/|_|  |_|
              """,width=90,title=f"LOGO",style=f"bold white"))
+#---------Password Script ---------------#
+CorrectUsername = "BintangTzy"
+CorrectPassword = "XyzonXD"
+loop = "true"
+while loop == "true":
+	username = unik = raw_input("\x1b[1;93mUsername Tools : \x1b[1;96m")
+	if username == CorrectUsername:
+		password = unik = raw_input("\x1b[1;93mPassword Tools : \x1b[1;96m")
+		if password == CorrectPassword:
+			print("Login Berhasil as Dattebayo")
+			time.sleep(0.03)
+			loop = "false"
+		else:
+			print("Wrong Password")
+			os.system("xdg-open https://www.facebook.com/bintangt.zy.92")
+	else:
+		print("Wrong Username")
+		os.system("xdg-open https://www.facebook.com/bintangt.zy.92")		
+def lisensi():
+	os.system("clear")
+	masuk()
+# Berpikir Sebelum Bertindakk!! 
+
 #--------------------[ BAGIAN-MASUK ]--------------#
 def login123():
 	os.system('clear')
 	banner()
-	cetak(panel(f"[01] Login Menggunakan Cookies [[bold green] ON [bold white]]\n[02] Doa Sebelum Crack [[bold green] ON [bold white]]\n[03] Cara Mengambil Cookies Facebook [[bold green] ON [bold white]]\n[04] Cek Hasil Crack [[bold green] ON [bold white]]\n",width=90,title=f"[bold green]Menu Login",padding=(0,2),style=f"bold white"))
+	cetak(panel(f"[01] Login Menggunakan Cookies [[bold green] ON [bold white]]\n[02] Doa Sebelum Crack [[bold green] ON [bold white]]\n[03] Cara Mengambil Cookies Facebook [[bold green] ON [bold white]]\n[04] Cek Hasil Crack [[bold green] ON [bold white]]",width=90,title=f"[bold green]Menu Login",padding=(0,2),style=f"bold white"))
 	cetak(panel(f'Anda Wajib Login Menggunakan Cookies Untuk Unlock Semua Fitur Spesial Yang Ada Di Script Ini [bold green]By XyzonXD',width=90,title=f"[bold green]Informasi",style=f"bold white"))
 	vevek = input(f' [+] Pilih Menu : ')
 	if vevek in ['1','01']:
@@ -241,7 +264,7 @@ def login():
 		
 def login_lagi334():
 	try:
-		cetak(nel('Disarankan Untuk Menggunakan Cookie Yang Masih Fresh Untuk Melakukan Crack Account',width=90,style=f"bold white"))
+		cetak(nel('Disarankan Untuk Menggunakan Cookie Yang Masih Fresh Untuk Melakukan Crack Account Facebook',width=90,style=f"bold white"))
 		your_cookies = input(' [+] Cookie Facebook : ')
 		with requests.Session() as r:
 			try:
@@ -310,13 +333,13 @@ def menu(my_name,my_id):
 	os.system('clear')
 	banner()
 	ip = requests.get("https://api.ipify.org").text
-	cetak(panel(f'[bold white]Terima Kasih Kepada [bold green]BintangTzy[bold white] Yang Telah Recode Script Ini, Premium Multi Brute Facebook',width=90,style=f"bold white"))
+	cetak(panel(f'[bold white]Terima Kasih Kepada [bold green]BintangTzy[bold white] Yang Telah Membuat Script Ini, Premium Multi Brute Facebook',width=90,style=f"bold white"))
 	cetak(panel(f'[bold white][[bold green]•[/][bold white]][/] [bold white]Username : [bold green]{my_name}[/]\n[bold white][[bold green]•[/][bold white]][/] [bold white]User Idz : [bold green]{my_id}[/]\n[bold white][[bold green]•[/][bold white]][/] [bold white]User Ip  : [bold green]{ip}[/][/][bold white]\n[[bold green]•[/][bold white]][/] [bold white]Status   : [bold green]Premium ',width=90,title=f"[bold green]Infomasi",style=f"bold white"))
 	cetak(panel(f'[bold white][[bold green]01[/][bold white]][/] [bold white]Crack Publick OR Friends [[bold green] ON [bold white]][/]\n[bold white][[bold green]02[/][bold white]][/] [bold white]Crack Massal [[bold green] ON [bold white]][/]\n[bold white][[bold green]03[/][bold white]][/] [bold white]Crack Username [[bold green] ON [bold white]]\n[bold white][[bold green]04[/][bold white]][/] [bold white]Crack File [[bold green] ON [bold white]]\n[bold white][[bold green]05[/][bold white]][/] [bold white]Crack Followers [[bold green] ON [bold white]]\n[bold white][[bold green]06[/][bold white]][/] [bold white]Crack Email [[bold green] ON [bold white]]\n[bold white][[bold green]07[/][bold white]][/] [bold white]Cek Hasil Crack [[bold green] ON [bold white]][/]\n[bold white][[bold green]08[/][bold white]][/] [bold white]Cek Opsi Chekpoint [[bold green] ON [bold white]]\n[bold white][[bold green]09[/][bold white]][/] [bold white]Spam WhatsApp [[bold green] ON [bold white]]\n[bold white][[bold green]10[/][bold white]][/] [bold white]Spam Sms [[bold green] ON [bold white]]\n[bold white][[bold green]11[/][bold white]][/] [bold white]Report Bug [[bold green] ON [bold white]]\n[bold white][[bold red]00[/][bold white]][/] [bold red]Ganti Cookies [[bold green] ON [bold white]][/]',width=90,title=f"[bold green]List Menu",style=f"bold white"))
 	cetak(panel(f'[bold Red]Warning[bold white] Gunakan Script Ini Dengan Baik Jangan Di Salah Gunakan [bold green]By XyzonXD',width=90,title=f"[bold green]Informasi Crack",style=f"bold white"))
 	_____xyzon___xd____ = input(f' [+] Pilih Menu Crack : ')
 	if _____xyzon___xd____ in ['1','01']:
-		brayen_dump()
+		xyzoncrackpublik()
 	elif _____xyzon___xd____ in ['2','02']:
 		dump_massal()
 	elif _____xyzon___xd____ in ['3','03']:
@@ -1125,7 +1148,7 @@ def result():
 		print(' [+] Pilih Yang Bener Kontol ')
 		exit()
 #-------------------[ CRACK-PUBLIK-MASSAL]----------------#
-def brayen_dump():
+def xyzoncrackpublik():
 	try:
 		token = open('.token.txt','r').read()
 		kukis = open('.cok.txt','r').read()

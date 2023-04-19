@@ -196,27 +196,6 @@ def banner():
         [bold green]  |  _/   / _|| |\/| || || |_| | |\/| |
         [bold green]  |_| |_|_\___|_|  |_|___|\___/|_|  |_|
              """,width=90,title=f"LOGO",style=f"bold white"))
-#---------Password Script ---------------#
-CorrectUsername = "BintangTzy"
-CorrectPassword = "XyzonXD"
-loop = "true"
-while loop == "true":
-	username = unik = input("\x1b[1;93mUsername Tools : \x1b[1;96m")
-	if username == CorrectUsername:
-		password = unik = input("\x1b[1;93mPassword Tools : \x1b[1;96m")
-		if password == CorrectPassword:
-			print("\x1b[1;92mLogin Berhasil as Dattebayo")
-			time.sleep(0.10)
-			loop = "false"
-		else:
-			print("\x1b[1;91mPassword Salah")
-	else:
-		print("\x1b[1;91mUsername Salah")
-def lisensi():
-	os.system("clear")
-	masuk()
-# Berpikir Sebelum Bertindakk!! 
-
 #--------------------[ BAGIAN-MASUK ]--------------#
 def login123():
 	os.system('clear')

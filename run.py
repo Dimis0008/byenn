@@ -1216,12 +1216,6 @@ putaran=0
 mengikuti=[]
 s=permintaan.Sesi()
 
-mencoba:
-    # python 2
-	urllib_quote_plus = urllib.quote
-kecuali:
-    # python3
-	urllib_quote_plus = urllib.parse.quote_plus
 
 def cekAPI(cookie):
 	pengguna=buka('.namapengguna','r').baca()

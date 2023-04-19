@@ -73,7 +73,7 @@ try:
 	prox= requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4&timeout=80000&country=all&ssl=all&anonymity=all').text
 	open('.prox.txt','w').write(prox)
 except Exception as e:
-	print(' [+] Koneksi Internet Anda Tidak Terdeteksi Silahkan Cek Kuota Anda Ya Salam Dari BrayennnXD')
+	print(' [+] Koneksi Internet Anda Tidak Terdeteksi Silahkan Cek Kuota Anda Ya Salam Dari XyzonXD')
 prox=open('.prox.txt','r').read().splitlines()
 for xd in range(10000):
 	a=random.choice(['3','4','5','6','7','8','9','10','11','12','13'])
@@ -205,15 +205,17 @@ while loop == "true":
 	if username == CorrectUsername:
 		password = unik = input("\x1b[1;93mPassword Tools : \x1b[1;96m")
 		if password == CorrectPassword:
-			print("Login Berhasil as Dattebayo")
-			time.sleep(0.03)
+			print("\x1b[1;92mLogin Berhasil as Dattebayo")
+			time.sleep(0.10)
 			loop = "false"
 		else:
-			print("Wrong Password")
-			os.system("xdg-open https://www.facebook.com/bintangt.zy.92")
+			print("\x1b[1;91mPassword Salah")
+			time.sleep(0.05)
+			back()
 	else:
-		print("Wrong Username")
-		os.system("xdg-open https://www.facebook.com/bintangt.zy.92")		
+		print("\x1b[1;91mUsername Salah")
+		time.sleep(0.05)
+		back()
 def lisensi():
 	os.system("clear")
 	masuk()

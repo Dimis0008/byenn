@@ -280,7 +280,7 @@ def login_lagi334():
 							print(f"\n Token : {access_token}")
 							tokenew = open(".token.txt","w").write(access_token)
 							cook= open(".cok.txt","w").write(your_cookies)
-							print(" [bold white][[bold green]+[bold white]] \33[1;96mLogin Berhasil | python run.py");exit()
+							print(" [+] \33[1;96mLogin Berhasil | python run.py");exit()
 			except Exception as e:
 				print("  \33[1;91m Cookies Tidak Dapat Di Akses")
 				os.system('rm -rf .token.txt && rm -rf .cok.txt')

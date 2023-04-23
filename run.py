@@ -229,7 +229,7 @@ def login():
 def login_lagi334():
 	try:
 		cetak(nel('[bold cyan]Disarankan Untuk Menggunakan Cookie Yang Masih Fresh Untuk Melakukan Crack Account Facebook',width=90,style=f"bold white"))
-		your_cookies = input(' [[bold green]+[bold white]] [bold cyan]Cookie Facebook : ')
+		your_cookies = input(' [bold cyan][+]Cookie  : [bold white]')
 		with requests.Session() as r:
 			try:
 				r.headers.update({'content-type': 'application/x-www-form-urlencoded',})

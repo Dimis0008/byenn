@@ -1079,7 +1079,7 @@ def result():
 				else:
 					lol.update({str(cih):str(isi)})
 					print('['+str(cih)+'] '+isi+' [ '+str(len(hem))+' Account ]'+x)
-			geeh = input('\n {P}[{H}+{P}]\33[1;96m Pilih : {P}')
+			geeh = input('\n [+]\33[1;96m Pilih : ')
 			try:geh = lol[geeh]
 			except KeyError:
 				print('  \33[1;91m Pilih Yang Bener Kontol ')
@@ -1096,7 +1096,7 @@ def result():
 				sol().print(mark(cpkuh,style="green"))
 				print(f'{hh}USER-AGENT : {x}{cpkuni[2]}')
 				nocp +=1
-			input('{P}[{H}+{P}]\33[1;96m ENTER')
+			input(' \33[1;96m ENTER')
 			back()
 	elif kz in ['3','03']:
 		back()
@@ -1792,7 +1792,7 @@ def mengecek(user,pw):
 		response2=bs4.BeautifulSoup(an.text,"html.parser")
 		cek=[cek.text for cek in response2.find_all("option")]
 		number=0
-		print("\r%s {P}[{H}+{P}] %s\33[1;96mterdapat %s%s%s \33[1;96mopsi %s:"%(U,O,P,str(len(cek)),O,M));jeda(0.07)
+		print("\r%s %s\33[1;96mterdapat %s%s%s \33[1;96mopsi %s:"%(U,O,P,str(len(cek)),O,M));jeda(0.07)
 		if(len(cek)==0):
 			if "Lihat Detail Login Yang Ditampilkan. Ini Anda?" in title:
 				if "ubah_sandi" in ubah_pass:
@@ -1819,7 +1819,7 @@ def mengecek(user,pw):
 					open('OK/OK-%s.txt' %(waktu), 'a').write("%s %s|%s|%s\n" % (H,user,pw,coki))
 					cek_apk(kuki)
 			elif "Masukkan Kode Masuk untuk Melanjutkan" in re.findall("\<title>(.*?)<\/title>",str(response)):
-				print("\r%s {P}[{H}+{P}] \33[1;91mAkun Terpasang Autentikasi Dua Faktor			"%(M))
+				print("\r%s \33[1;91mAkun Terpasang Autentikasi Dua Faktor			"%(M))
 			else:
 				print("%s%s\33[1;91mTerjadi Kesalahan"%(M,til))
 		else:
@@ -1831,9 +1831,9 @@ def mengecek(user,pw):
 			jalan ("  %s%s. %s%s"%(P,str(number),K,cek[opsi]))
 	elif "login_error" in str(response):
 		oh = run.find("div",{"id":"login_error"}).find("div").text
-		print("%s {P}[{H}+{P}]\33[1;96m %s"%(M,oh))
+		print("%s \33[1;96m %s"%(M,oh))
 	else:
-		print("%s {P}[{H}+{P}]\33[1;91mLogin Gagal, Silahkan Cek Kembali Id Dan Kata Sandi"%(M))
+		print("%s \33[1;91mLogin Gagal, Silahkan Cek Kembali Id Dan Kata Sandi"%(M))
 		  
 def scarpping_ua():
     # Url & Headers website #

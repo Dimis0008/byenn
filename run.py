@@ -1052,7 +1052,7 @@ def result():
 				cpkuh=f'# +--> {cpkuni[0]} | {cpkuni[1]}'
 				sol().print(mark(cpkuh,style="yellow"))
 				nocp +=1
-			input('{P}[{H}+{P}]\33[1;96m ENTER')
+			input(' \33[1;96m ENTER')
 			back()
 	elif kz in ['1','01']:
 		try:vin = os.listdir('OK')

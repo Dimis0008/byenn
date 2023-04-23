@@ -273,10 +273,10 @@ def login_lagi334():
 							r.headers.update({'sec-fetch-mode': 'no-cors','referer': 'https://graph.facebook.com/','Host': 'graph.facebook.com','accept': '*/*','sec-fetch-dest': 'script','sec-fetch-site': 'cross-site',})
 							response7 = r.get(status_url, cookies = {'cookie': your_cookies}).text
 							access_token = re.search('"access_token": "(.*?)"', str(response7)).group(1)
-							print(f"\n {P}[{H}+{P}] Token : {access_token}")
+							print(f"\n Token : {access_token}")
 							tokenew = open(".token.txt","w").write(access_token)
 							cook= open(".cok.txt","w").write(your_cookies)
-							print("\ \33[1;96mLogin Berhasil | python run.py");exit()
+							print(" \33[1;96mLogin Berhasil | python run.py");exit()
 			except Exception as e:
 				print(" {P}[{H}+{P}]\33[1;91m Cookies Tidak Dapat Di Akses")
 				os.system('rm -rf .token.txt && rm -rf .cok.txt')
@@ -330,7 +330,7 @@ def menu(my_name,my_id):
 	elif _____xyzon___xd____ in('0','00'):
 		os.system('rm -rf .token.txt')
 		os.system('rm -rf .cookie.txt')
-		print(f' {P}[{H}+{P}]{m}Sukses Logout{x}')
+		print(f' {P}[{H}+{P}]{m} Sukses Logout{x}')
 		time.sleep(5)
 		login()
 	else:

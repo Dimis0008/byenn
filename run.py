@@ -1197,7 +1197,7 @@ def setting():
 			xx = random.randint(0,len(id2))
 			id2.insert(xx,bacot)
 	else:
-		print(' {P}[{H}+{P}] \33[1;96mPilih Yang Bener Kontooll ')
+		print(' \33[1;91mPilih Yang Bener Kontooll ')
 		exit()
 	cetak(panel(f'[bold white][[bold green]01[/][bold white]][/] [bold cyan]Metode Mobile  [[bold green]Very Recommended[bold white]][/]\n[bold white][[bold green]02[/][bold white]][/] [bold cyan]Metode Mbasic [[bold green]Very Recommended[bold white]][/]\n[bold white][[bold green]03[/][bold white]][/] [bold cyan]Metode Free [[bold green]Recommended[bold white]][/]\n[bold white][[bold green]04[/][bold white]][/] [bold cyan]Metode B-Api [[bold green]Recommended[bold white]][/]\n[bold white][[bold green]05[/][bold white]][/] [bold cyan]Metode Async [[bold green]Recommended[bold white]][/]\n[bold white][[bold green]06[/][bold white]][/] [bold cyan]Metode Reguler [[bold green]Very Recommended[bold white]][/]',width=90,title=f"[bold green]Setting Metode",style=f"bold white"))
 	hc = input(f' {P}[{H}+{P}] \33[1;96mPilih Metode :{P} ')

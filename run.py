@@ -67,7 +67,7 @@ console = Console()
 ses=requests.Session()
 id,id2,loop,ok,cp,akun,oprek,lisensiku,tokenku,uid,lisensikuni,method,pwpluss,pwnya= [],[],0,0,0,[],[],[],[],[],[],[],[],[]
 ugen2,ugen,dia,cokbrut,dump,memek,ualu,ualuh,lisensikuni,lisensiku,princp=[],[],[],[],[],[],[],[],[],[],[]
-sys.stdout.write('\x1b]2; BMBF | BrayennnXD Multi Brute Facebook\x07')
+sys.stdout.write('\x1b]2; PMBF | Premium Multi Brute Facebook\x07')
 #------------------[ USER-AGENT ]-------------------#
 try:
 	prox= requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4&timeout=80000&country=all&ssl=all&anonymity=all').text
@@ -187,7 +187,7 @@ def banner():
 def login123():
 	os.system('clear')
 	banner()
-	cetak(panel(f"{P}[{H}01{P}][bold cyan] Login Menggunakan Cookies {P}[{H}ON{P}][/]\n{P}[{H}02{P}][bold cyan] Doa Sebelum Crack {P}[{H}ON{P}][/]\n{P}[{H}03{P}] [bold cyan]Cara Mengambil Cookies Facebook {P}[{H}ON{P}][/]\n{P}[{H}04{P}] [bold cyan]Cek Hasil Crack {P}[{H}ON{P}][/]",width=90,title=f"[bold green]Menu Login",padding=(0,2),style=f"bold white"))
+	cetak(panel(f"{P}[{H}01{P}][bold cyan] Login Menggunakan Cookies [[bold green] ON [bold white]][/]\n{P}[{H}02{P}][bold cyan] Doa Sebelum Crack [[bold green] ON [bold white]][/]\n{P}[{H}03{P}] [bold cyan]Cara Mengambil Cookies Facebook [[bold green] ON [bold white]][/]\n{P}[{H}04{P}] [bold cyan]Cek Hasil Crack [[bold green] ON [bold white]][/]",width=90,title=f"[bold green]Menu Login",padding=(0,2),style=f"bold white"))
 	cetak(panel(f'[bold cyan]Anda Wajib Login Menggunakan Cookies Untuk Unlock Semua Fitur Spesial Yang Ada Di Script Ini [bold green]By XyzonXD',width=90,title=f"[bold green]Informasi",style=f"bold white"))
 	vevek = input(f' {P}[{H}+{P}]\33[1;96m Pilih Menu : {P}')
 	if vevek in ['1','01']:

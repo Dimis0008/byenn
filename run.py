@@ -976,7 +976,7 @@ def crack_email():
 		
 #-----------------[ CRACK GRUP ]-----------------# 
 def crack_group():
-	cetak(nel('[bold cyan Masukan Idz Grup Pastikan Grup Bersifat Publik Bukan Private',width=90,padding=(0,8),style=f"bold white"))
+	cetak(nel('[bold cyan] Masukan Idz Grup Pastikan Grup Bersifat Publik Bukan Private',width=90,padding=(0,8),style=f"bold white"))
 	link = input(f' {P}[{H}+{P}]\33[1;96m Id Group : {P}')
 	url = "https://mbasic.facebook.com/groups/"+link
 	try:dump_grup(url)
@@ -1133,7 +1133,7 @@ def dump_massal():
 		cetak(panel('            [bold cyan]Ketik [bold green]Me[/] Jika Ingin Crack Pertemanan Sendiri',width=90,title=f"[bold green]Crack Massal",style=f"bold white"))
 		jum = int(input(f' {P}[{H}+{P}]\33[1;96m Mau Berapa Idz Target  :{P} '))
 	except ValueError:
-		print(' {P}[{H}+{P}]\33[1;91m Wrong input ')
+		print('   \33[1;91m Wrong input ')
 		exit()
 	if jum<1 or jum>80:
 		print(f' {P}[{H}+{P}]\33[1;91m Pertemanan Tidak Publik  ')

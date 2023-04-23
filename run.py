@@ -206,7 +206,7 @@ def login123():
 		time.sleep(3)
 		exit()
 	else:
-		print('   \33[1;91mPilih Yang Bener Asu ')
+		print(' [bold white][[bold green]+[bold white]] \33[1;91mPilih Yang Bener Asu ')
 		time.sleep(5)
 		back()
 		
@@ -223,7 +223,7 @@ def login():
 		except KeyError:
 			login123()
 		except requests.exceptions.ConnectionError:
-			li = ' {P}[{H}+{P}]\33[1;91m Problem Internet Connection, Check And Try Again'
+			li = ' [bold white][[bold green]+[bold white]]\33[1;91m Problem Internet Connection, Check And Try Again'
 			lo = mark(li, style='red')
 			sol().print(lo, style='cyan')
 			exit()
@@ -280,9 +280,9 @@ def login_lagi334():
 							print(f"\n Token : {access_token}")
 							tokenew = open(".token.txt","w").write(access_token)
 							cook= open(".cok.txt","w").write(your_cookies)
-							print(" \33[1;96mLogin Berhasil | python run.py");exit()
+							print(" [bold white][[bold green]+[bold white]] \33[1;96mLogin Berhasil | python run.py");exit()
 			except Exception as e:
-				print(" {P}[{H}+{P}]\33[1;91m Cookies Tidak Dapat Di Akses")
+				print(" [bold white][[bold green]+[bold white]]\33[1;91m Cookies Tidak Dapat Di Akses")
 				os.system('rm -rf .token.txt && rm -rf .cok.txt')
 				print(e)
 				time.sleep(3)
@@ -295,7 +295,7 @@ def menu(my_name,my_id):
 		token = open('.token.txt','r').read()
 		cok = open('.cok.txt','r').read()
 	except IOError:
-		print(' {P}[{H}+{P}]\33[1;91m Cookies Kadaluarsa ')
+		print(' [bold white][[bold green]+[bold white]]\33[1;91m Cookies Kadaluarsa ')
 		time.sleep(5)
 		login()
 	os.system('clear')
@@ -334,14 +334,14 @@ def menu(my_name,my_id):
 	elif _____xyzon___xd____ in('0','00'):
 		os.system('rm -rf .token.txt')
 		os.system('rm -rf .cookie.txt')
-		print(f' {P}[{H}+{P}]{m} Sukses Logout{x}')
+		print(f' [bold white][[bold green]+[bold white]]{m} Sukses Logout{x}')
 		time.sleep(5)
 		login()
 	else:
-		print(' {P}[{H}+{P}]\33[1;91m Pilih Yang Bener Asu ')
+		print(' [bold white][[bold green]+[bold white]]\33[1;91m Pilih Yang Bener Asu ')
 		back()
 def error():
-	print(f' {P}[{H}+{P}]\33[1;91m Maaf Fitur Ini Masih Di Perbaiki')
+	print(f' [bold white][[bold green]+[bold white]]\33[1;91m Maaf Fitur Ini Masih Di Perbaiki')
 	time.sleep(4)
 	back() 
 #-------------------[ DOA HALAL ]-----------------------#
@@ -902,10 +902,10 @@ def pengikut():
 		cetak(panel(f"\33[1;96mBerhasil Mengumpulkan {len(id)} Idz",width=90,padding=(0,22),style=f"bold white"))
 		setting()
 	except requests.exceptions.ConnectionError:
-		print(f" {P}[{H}+{P}] \33[1;91mKoneksi Internet Anda Bermasalah")
+		print(f" [bold white][[bold green]+[bold white]] \33[1;91mKoneksi Internet Anda Bermasalah")
 		time.sleep(3);exit()
 	except (KeyError,IOError):
-		print(f" {P}[{H}+{P}] \33[1;91mGagal Dump Id, Kemungkinan Akun Private")
+		print(f" [bold white][[bold green]+[bold white]] \33[1;91mGagal Dump Id, Kemungkinan Akun Private")
 		time.sleep(3);exit()
 
 #----------------------[ CRACK USERNAME ]----------------------#
@@ -986,7 +986,7 @@ def crack_group():
 	try:dump_grup(url)
 	except KeyboardInterrupt:atur_atur()
 	if len(dump)==0:
-		exit(f' {P}[{H}+{P}]\33[1;91m Gagal Dump Id Grup, Kemungkinan Grup Private')
+		exit(f' [bold white][[bold green]+[bold white]]\33[1;91m Gagal Dump Id Grup, Kemungkinan Grup Private')
 	setting()
 
 def dump_grup(url):
@@ -1014,11 +1014,11 @@ def result():
 	if kz in ['2','02']:
 		try:vin = os.listdir('CP')
 		except FileNotFoundError:
-			print(' {P}[{H}+{P}]\33[1;91m File Tidak Di Temukan ')
+			print(' [bold white][[bold green]+[bold white]]\33[1;91m File Tidak Di Temukan ')
 			time.sleep(3)
 			back()
 		if len(vin)==0:
-			print(' {P}[{H}+{P}] \33[1;96mAnda Tidak Memiliki Hasil CP ')
+			print(' [bold white][[bold green]+[bold white]] \33[1;96mAnda Tidak Memiliki Hasil CP ')
 			time.sleep(4)
 			back()
 		else:
@@ -1043,7 +1043,7 @@ def result():
 				exit()
 			try:lin = open('CP/'+geh,'r').read().splitlines()
 			except:
-				print(' {P}[{H}+{P}] \33[1;96mFile Tidak Di Temukan ')
+				print(' [bold white][[bold green]+[bold white]] \33[1;96mFile Tidak Di Temukan ')
 				time.sleep(4)
 				back()
 			nocp=0
@@ -1057,11 +1057,11 @@ def result():
 	elif kz in ['1','01']:
 		try:vin = os.listdir('OK')
 		except FileNotFoundError:
-			print(' {P}[{H}+{P}]\33[1;91m File Tidak Di Temukan ')
+			print(' [bold white][[bold green]+[bold white]]\33[1;91m File Tidak Di Temukan ')
 			time.sleep(4)
 			back()
 		if len(vin)==0:
-			print(' {P}[{H}+{P}]\33[1;91m Anda Tidak Mempunyai File OK ')
+			print(' [bold white][[bold green]+[bold white]]\33[1;91m Anda Tidak Mempunyai File OK ')
 			time.sleep(4)
 			back()
 		else:
@@ -1082,11 +1082,11 @@ def result():
 			geeh = input('\n {P}[{H}+{P}]\33[1;96m Pilih : {P}')
 			try:geh = lol[geeh]
 			except KeyError:
-				print(' {P}[{H}+{P}]\33[1;91m Pilih Yang Bener Kontol ')
+				print(' [bold white][[bold green]+[bold white]]\33[1;91m Pilih Yang Bener Kontol ')
 				exit()
 			try:lin = open('OK/'+geh,'r').read().splitlines()
 			except:
-				print(' {P}[{H}+{P}]\33[1;91m File Tidak Di Temukan ')
+				print(' [bold white][[bold green]+[bold white]]\33[1;91m File Tidak Di Temukan ')
 				time.sleep(4)
 				back()
 			nocp=0
@@ -1101,7 +1101,7 @@ def result():
 	elif kz in ['3','03']:
 		back()
 	else:
-		print(' {P}[{H}+{P}]\33[1;91m Pilih Yang Bener Kontol ')
+		print(' [bold white][[bold green]+[bold white]]\33[1;91m Pilih Yang Bener Kontol ')
 		exit()
 #-------------------[ CRACK-PUBLIK-MASSAL]----------------#
 def xyzoncrackpublik():
@@ -1111,7 +1111,7 @@ def xyzoncrackpublik():
 	except IOError:
 		exit()
 	cetak(panel('\t[bold cyan]Ketik [bold green]Me[/] Jika Ingin Crack Pertemanan Sendiri',width=90,style='bold white'))
-	pil = input(f' {P}[{H}+{P}]\33[1;96m Masukan ID Target :{P} ')
+	pil = input(f' [bold white][[bold green]+[bold white]]\33[1;96m Masukan ID Target :{P} ')
 	try:
 		koH = requests.get('https://graph.facebook.com/v1.0/'+pil+'?fields=friends.limit(5000)&access_token='+tokenku[0],cookies={'cookie': kukis}).json()
 		for pi in koH['friends']['data']:
@@ -1121,10 +1121,10 @@ def xyzoncrackpublik():
 		print(f' {P}[{H}+{P}]\33[1;96m Total ID yang Terkumpul : {h}'+str(len(id)))
 		setting()
 	except requests.exceptions.ConnectionError:
-		print(' {P}[{H}+{P}]\33[1;91m Internet Lu Gak Ada Anjing')
+		print(' [bold white][[bold green]+[bold white]]\33[1;91m Internet Lu Gak Ada Anjing')
 		exit()
 	except (KeyError,IOError):
-		print(' {P}[{H}+{P}]\33[1;91m Pertemanan Tidak Publick Atau Cookie And Token Anda Busuk')
+		print(' [bold white][[bold green]+[bold white]]\33[1;91m Pertemanan Tidak Publick Atau Cookie And Token Anda Busuk')
 		exit()
 #-------------------[ CRACK-MASAL ]----------------#
 def dump_massal():
@@ -1140,7 +1140,7 @@ def dump_massal():
 		print('   \33[1;91m Wrong input ')
 		exit()
 	if jum<1 or jum>80:
-		print(f' {P}[{H}+{P}]\33[1;91m Pertemanan Tidak Publik  ')
+		print(f' [bold white][[bold green]+[bold white]]\33[1;91m Pertemanan Tidak Publik  ')
 		exit()
 	ses=requests.Session()
 	yz = 0
@@ -1160,7 +1160,7 @@ def dump_massal():
 		except (KeyError,IOError):
 			pass
 		except requests.exceptions.ConnectionError:
-			print(' {P}[{H}+{P}]\33[1;96m Unstable Signal ')
+			print(' [bold white][[bold green]+[bold white]]\33[1;96m Unstable Signal ')
 			exit()
 	try:
 		print(f' {P}[{H}+{P}]\33[1;96m Total Idz Target Yang Terkumpul{x} : {h}'+str(len(id)))
@@ -1170,7 +1170,7 @@ def dump_massal():
 		print(' {P}[{H}+{P}]\33[1;96m Unstable Signal ')
 		back()
 	except (KeyError,IOError):
-		print(f' {P}[{H}+{P}]\33[1;91m Friendship Not Public {x}')
+		print(f' [bold white][[bold green]+[bold white]]\33[1;91m Friendship Not Public {x}')
 		time.sleep(3)
 		back()
 

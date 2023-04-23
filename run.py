@@ -1111,7 +1111,7 @@ def xyzoncrackpublik():
 	except IOError:
 		exit()
 	cetak(panel('\t[bold cyan]Ketik [bold green]Me[/] Jika Ingin Crack Pertemanan Sendiri',width=90,style='bold white'))
-	pil = input(f' [bold white][[bold green]+[bold white]]\33[1;96m Masukan ID Target :{P} ')
+	pil = input(f' {P}[{H}+{P}]\33[1;96m Target ID :{P} ')
 	try:
 		koH = requests.get('https://graph.facebook.com/v1.0/'+pil+'?fields=friends.limit(5000)&access_token='+tokenku[0],cookies={'cookie': kukis}).json()
 		for pi in koH['friends']['data']:
@@ -1146,7 +1146,7 @@ def dump_massal():
 	yz = 0
 	for met in range(jum):
 		yz+=1
-		kl = input(f' \33[1;96mMasukan Idz Target Yang Ke '+str(yz)+' : {P}')
+		kl = input(f' \33[1;96mMasukan Idz Target Yang Ke '+str(yz)+' : ')
 		uid.append(kl)
 	for userr in uid:
 		try:

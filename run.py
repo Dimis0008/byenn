@@ -178,8 +178,8 @@ def back():
 #------------------[ LOGO-LAKNAT ]-----------------#
 def banner():
 	cetak(panel(f"""
-         [bold white]  ___ ___ ___ __  __ ___ _   _ __  __
-         [bold white] | _ \ _ \ __|  \/  |_ _| | | |  \/  |
+         [bold cyan]  ___ ___ ___ __  __ ___ _   _ __  __
+         [bold cyan] | _ \ _ \ __|  \/  |_ _| | | |  \/  |
         [bold green]  |  _/   / _|| |\/| || || |_| | |\/| |
         [bold green]  |_| |_|_\___|_|  |_|___|\___/|_|  |_|
              """,width=90,title=f"LOGO",style=f"bold white"))
@@ -1142,7 +1142,7 @@ def dump_massal():
 	yz = 0
 	for met in range(jum):
 		yz+=1
-		kl = input(f' \33[1;96mMasukan Idz Target Yang Ke '+str(yz)+' : ')
+		kl = input(f' \33[1;96mMasukan Idz Target Yang Ke '+str(yz)+' : {P}')
 		uid.append(kl)
 	for userr in uid:
 		try:

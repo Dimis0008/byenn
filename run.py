@@ -187,7 +187,7 @@ def banner():
 def login123():
 	os.system('clear')
 	banner()
-	cetak(panel(f"{P}[{H}01{P}][bold cyan] Login Menggunakan Cookies [bold white][[bold green] ON [/][bold white]][/]\n{P}[{H}02{P}][bold cyan] Doa Sebelum Crack [bold white][[bold green] ON [/][bold white]][/]\n{P}[{H}03{P}] [bold cyan]Cara Mengambil Cookies Facebook [bold white][[bold green] ON [/][bold white]][/]\n{P}[{H}04{P}] [bold cyan]Cek Hasil Crack [bold white][[bold green] ON [/][bold white]][/]",width=90,title=f"[bold green]Menu Login",padding=(0,2),style=f"bold white"))
+	cetak(panel(f"{P}[{H}01{P}] {p}Login Menggunakan Cookies [bold white][[bold green] ON [/][bold white]][/]\n{P}[{H}02{P}]{p} Doa Sebelum Crack [bold white][[bold green] ON [/][bold white]][/]\n{P}[{H}03{P}] {p}Cara Mengambil Cookies Facebook [bold white][[bold green] ON [/][bold white]][/]\n{P}[{H}04{P}] {p}Cek Hasil Crack [bold white][[bold green] ON [/][bold white]][/]",width=90,title=f"[bold green]Menu Login",padding=(0,2),style=f"bold white"))
 	cetak(panel(f'[bold cyan]Anda Wajib Login Menggunakan Cookies Untuk Unlock Semua Fitur Spesial Yang Ada Di Script Ini [bold green]By XyzonXD',width=90,title=f"[bold green]Informasi",style=f"bold white"))
 	vevek = input(f' {P}[{H}+{P}]\33[1;96m Pilih Menu : {P}')
 	if vevek in ['1','01']:

@@ -1118,7 +1118,7 @@ def xyzoncrackpublik():
 			try:id.append(pi['id']+'|'+pi['name'])
 			except:continue
 		print('')
-		print(f' {P}[{H}+{P}][1;96m Total ID yang Terkumpul : {h}'+str(len(id)))
+		print(f' {P}[{H}+{P}]\33[1;96m Total ID yang Terkumpul : {h}'+str(len(id)))
 		setting()
 	except requests.exceptions.ConnectionError:
 		print(' \33[1;91m Internet Lu Gak Ada Anjing')
